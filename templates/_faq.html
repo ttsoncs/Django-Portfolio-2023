@@ -1,0 +1,89 @@
+{% load static %}
+<section class="grid max-w-2xl grid-cols-1 grid-rows-3 gap-10 mx-auto mt-16">
+    <div class="flex flex-col items-center row-span-1 space-y-4 col-span-full">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="56px"
+             height="56px"
+             stroke-width="1"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             color="#000000">
+            <path d="M12 15a3 3 0 100-6 3 3 0 000 6zM13 9s1-2 1-4-2-4-2-4-2 2-2 4 1 4 1 4" stroke="#525252" stroke-width="0.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M9 11s-2-1-4-1-4 2-4 2 2 2 4 2 4-1 4-1M13 15s1 2 1 4-2 4-2 4-2-2-2-4 1-4 1-4M15 11s2-1 4-1 4 2 4 2-2 2-4 2-4-1-4-1M10.586 9.172S9.879 7.05 8.464 5.636C7.05 4.222 4.222 4.222 4.222 4.222s0 2.828 1.414 4.243c1.414 1.414 3.536 2.121 3.536 2.121M9.172 13.414s-2.122.707-3.536 2.122c-1.414 1.414-1.414 4.242-1.414 4.242s2.828 0 4.242-1.414c1.415-1.414 2.122-3.536 2.122-3.536M14.829 13.414s2.12.707 3.535 2.122c1.414 1.414 1.414 4.242 1.414 4.242s-2.828 0-4.242-1.414c-1.415-1.414-2.122-3.536-2.122-3.536M13.414 9.172s.707-2.122 2.122-3.536c1.414-1.414 4.242-1.414 4.242-1.414s0 2.828-1.414 4.243c-1.414 1.414-3.536 2.121-3.536 2.121" stroke="#525252" stroke-width="0.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+        </svg>
+        <p class="font-['Inter'] text-sm font-medium tracking-wide text-[#525252]">F.A.Q SECTION</p>
+        <div class="col-span-full row-span-1 text-center font-['Inter'] text-5xl font-medium text-white">
+            Frequently Asked Questions
+        </div>
+    </div>
+    {% comment %} <div x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+         class="mx-auto bg-[#0f0f0f] text-white rounded-2xl font-['Inter'] font-medium border border-red-500 space-y-4">
+        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group border border-[#292929] rounded-2xl">
+            <button @click="setActiveAccordion(id)"
+                    class="flex items-center justify-between w-full p-5 text-left select-none group-hover:underline">
+                <span>What is Pines?</span>
+                <svg class="w-4 h-4 duration-200 ease-out"
+                     :class="{ 'rotate-180': activeAccordion==id }"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                <div class="p-4 pt-0 opacity-70">Pines is a UI library built for AlpineJS and TailwindCSS.</div>
+            </div>
+        </div>
+        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group border border-[#292929] rounded-2xl">
+            <button @click="setActiveAccordion(id)"
+                    class="flex items-center justify-between w-full p-5 text-left select-none group-hover:underline">
+                <span>How do I install Pines?</span>
+                <svg class="w-4 h-4 duration-200 ease-out"
+                     :class="{ 'rotate-180': activeAccordion==id }"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                <div class="p-4 pt-0 opacity-70">
+                    Add AlpineJS and TailwindCSS to your page and then copy and paste any of these elements into your project.
+                </div>
+            </div>
+        </div>
+        <div x-data="{ id: $id('accordion') }" class="cursor-pointer group border border-[#292929] rounded-2xl">
+            <button @click="setActiveAccordion(id)"
+                    class="flex items-center justify-between w-full p-5 text-left select-none group-hover:underline">
+                <span>Can I use Pines with other libraries or frameworks?</span>
+                <svg class="w-4 h-4 duration-200 ease-out"
+                     :class="{ 'rotate-180': activeAccordion==id }"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div x-show="activeAccordion==id" x-collapse x-cloak>
+                <div class="p-4 pt-0 opacity-70">
+                    Absolutely! Pines works with any other library or framework. Pines works especially well with the TALL stack.
+                </div>
+            </div>
+        </div>
+    </div>  {% endcomment %}
+</section>
