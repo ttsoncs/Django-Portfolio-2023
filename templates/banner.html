@@ -1,0 +1,34 @@
+{% comment %} <div class="relative px-10 py-2 mx-auto text-sm font-semibold tracking-wide text-white text-center font-['Roboto_Mono'] md:text-md bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+    ⚠️ Thank you for visiting. Portfolio under construction. Exciting updates coming soon!
+</div> {% endcomment %}
+<div x-data="{ bannerVisible: true, }"
+     x-show="bannerVisible"
+     x-transition:enter="transition ease-out duration-500"
+     x-transition:enter-start="-translate-y-10"
+     x-transition:enter-end="translate-y-0"
+     x-transition:leave="transition ease-in duration-300"
+     x-transition:leave-start="translate-y-0"
+     x-transition:leave-end="-translate-y-10"
+     class="bg-[#0b0c0c] border-y border-[#FFD800]"
+     style="background: repeating-linear-gradient( -45deg, #FFD800, #FFD800 25px, #0b0c0c 10.5px, #0b0c0c 52.5px )"
+     x-cloak>
+    <div class="flex items-center justify-center max-w-6xl mx-auto">
+        <div class="grid grid-cols-5 grid-rows-1 w-full font-['Manrope'] font-semibold leading-6 p-1 bg-[#0b0c0c] text-white">
+            <span class="col-span-1">
+                <p>🚧 Under Construction</p>
+            </span>
+            <span class="col-span-3 text-center ">Thank you for visiting. Exciting updates coming soon!</span>
+            <div class="flex items-center justify-end col-span-1">
+                <button @click="bannerVisible=false;" class="w-5 h-5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="1.5"
+                         stroke="#fff">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

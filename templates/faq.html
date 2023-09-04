@@ -1,0 +1,66 @@
+{% load static %}
+<section class="mx-auto mt-16 space-y-10 ax-w-2xl">
+    <div class="flex flex-col items-center space-y-4">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="56px"
+             height="56px"
+             stroke-width="1"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg"
+             color="#000000">
+            <path d="M12 15a3 3 0 100-6 3 3 0 000 6zM13 9s1-2 1-4-2-4-2-4-2 2-2 4 1 4 1 4" stroke="#9c9c9c" stroke-width="0.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M9 11s-2-1-4-1-4 2-4 2 2 2 4 2 4-1 4-1M13 15s1 2 1 4-2 4-2 4-2-2-2-4 1-4 1-4M15 11s2-1 4-1 4 2 4 2-2 2-4 2-4-1-4-1M10.586 9.172S9.879 7.05 8.464 5.636C7.05 4.222 4.222 4.222 4.222 4.222s0 2.828 1.414 4.243c1.414 1.414 3.536 2.121 3.536 2.121M9.172 13.414s-2.122.707-3.536 2.122c-1.414 1.414-1.414 4.242-1.414 4.242s2.828 0 4.242-1.414c1.415-1.414 2.122-3.536 2.122-3.536M14.829 13.414s2.12.707 3.535 2.122c1.414 1.414 1.414 4.242 1.414 4.242s-2.828 0-4.242-1.414c-1.415-1.414-2.122-3.536-2.122-3.536M13.414 9.172s.707-2.122 2.122-3.536c1.414-1.414 4.242-1.414 4.242-1.414s0 2.828-1.414 4.243c-1.414 1.414-3.536 2.121-3.536 2.121" stroke="#9c9c9c" stroke-width="0.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+        </svg>
+        <p class="font-['Inter'] text-sm font-medium tracking-wide text-[#9c9c9c]">F.A.Q SECTION</p>
+        <div class="text-center font-['Inter'] text-5xl font-medium text-white">Frequently Asked Questions</div>
+    </div>
+    <div class="space-y-4">
+        <div x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+             class="relative w-full max-w-md mx-auto text-base font-['Inter'] space-y-4">
+            <div x-data="{ id: $id('accordion') }"
+                 class="bg-[#0b0c0c] text-white border rounded-2xl border-[#292929] group hover:bg-[#141516]"
+                 x-cloak>
+                <button @click="setActiveAccordion(id)"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left select-none">
+                    <span>How can I contact Son?</span>
+                    <div :class="{ 'rotate-90': activeAccordion==id }"
+                         class="relative flex items-center justify-center w-5 h-5 duration-300 ease-out">
+                        <div class="absolute w-0.5 h-full bg-[#858585] rounded-full"></div>
+                        <div :class="{ 'rotate-90': activeAccordion==id }"
+                             class="absolute w-full h-0.5 ease duration-500 bg-[#858585] rounded-full"></div>
+                    </div>
+                </button>
+                <div x-show="activeAccordion==id" x-collapse x-cloak x-transition>
+                    <div class="p-5 pt-0 opacity-70 text-[#a3a3a3] text-sm">
+                        You can reach out to me by email at ttson.cs@gmail.com. I typically respond within 24-48 hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+             class="relative w-full max-w-md mx-auto text-base font-['Inter'] space-y-4">
+            <div x-data="{ id: $id('accordion') }"
+                 class="bg-[#0b0c0c] text-white border rounded-2xl border-[#292929] group hover:bg-[#141516]"
+                 x-cloak>
+                <button @click="setActiveAccordion(id)"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left select-none">
+                    <span>Is Son open to new opportunities or collaborations?</span>
+                    <div :class="{ 'rotate-90': activeAccordion==id }"
+                         class="relative flex items-center justify-center w-5 h-5 duration-300 ease-out">
+                        <div class="absolute w-0.5 h-full bg-[#858585] rounded-full"></div>
+                        <div :class="{ 'rotate-90': activeAccordion==id }"
+                             class="absolute w-full h-0.5 ease duration-500 bg-[#858585] rounded-full"></div>
+                    </div>
+                </button>
+                <div x-show="activeAccordion==id" x-collapse x-cloak x-transition>
+                    <div class="p-5 pt-0 opacity-70 text-[#a3a3a3] text-sm">
+                        I am actively seeking new opportunities and collaborations. Feel free to reach out to me.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
