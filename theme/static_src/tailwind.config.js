@@ -43,20 +43,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: { text: "text 5s ease infinite" },
-      keyframes: {
-        text: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
-          },
-        },
-      },
       gridTemplateRows: { 8: "repeat(8, minmax(0, 1fr))" },
+      colors: {
+        'custom-black': '#0b0c0c',
+        'gray-border': '#212427',
+        'gray-bg': '#141516',
+        'gray-text': '#9c9c9c',
+        'custom-purple': '#772af4',
+      },
     },
   },
   plugins: [
