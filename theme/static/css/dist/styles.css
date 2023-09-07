@@ -928,6 +928,10 @@ select {
   max-width: 28rem;
 }
 
+.max-w-\[\] {
+  max-width: ;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -1852,6 +1856,11 @@ select {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:font-medium {

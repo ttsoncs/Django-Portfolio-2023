@@ -1,7 +1,11 @@
 [x-cloak] {
         display: none !important;
 }
-      
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html {
     overflow: hidden;
     width: 100%;
