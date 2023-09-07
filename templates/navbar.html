@@ -1,7 +1,70 @@
-<header class="bg-custom-black sticky top-0 z-50 w-screen">
-    <div x-data="{ open: false }"
-         class="relative bg-custom-black w-full mx-auto flex max-w-6xl flex-col p-6"
-         :class="{'divide-y divide-gray-border space-y-6 border-b border-b-gray-border rounded-3xl': open}">
+<div class="bg-custom-black sticky top-0 z-50 w-screen">
+  <div x-data="{ open: false, scrolledFromTop: false }" class="bg-custom-black relative mx-auto flex w-full max-w-6xl flex-col p-6 md:flex-row md:items-center md:justify-between md:border-none" :class="{'border-b border-b-gray-border rounded-3xl': open}">
+    <div class="flex flex-row items-center justify-between md:border-none md:pb-0 lg:justify-start" :class="{'border-b border-b-gray-border pb-6': open}">
+      <a href="" class="flex items-center space-x-2.5">
+        <div class="flex items-center">
+          <span class="text-custom-purple font-['Albert_Sans'] text-2xl font-medium">.</span>
+          <span class="font-['Albert_Sans'] text-2xl font-medium text-white">ts</span>
+        </div>
+        <span class="border-gray-border bg-gray-bg text-gray-text rounded-lg border-r border-t px-[0.625rem] py-1 font-['Inter'] text-xs"> Portfolio </span>
+      </a>
+      <button @click="open = !open" class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden" :class="{'bg-gray-bg border-t border-t-gray-border text-gray-text hover:text-white': !open, 'text-white border border-gray-border': open}">
+        <svg class="h-5 w-5" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+          <path :class="{'hidden': open, 'inline-flex': !open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path :class="{'hidden': !open, 'inline-flex': open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex pt-6 transform transition ease-out duration-300': open, 'hidden': !open}" class="hidden flex-grow flex-col space-y-6 md:flex md:flex-row md:justify-end md:pt-0 lg:py-0">
+      <ul class="list-none space-y-6 md:inline-flex md:items-center md:space-x-3 md:space-y-0">
+        <li>
+          <a href="#" class="md:border-gray-border md:bg-gray-bg flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] md:transition-colors md:hover:bg-[#292929]">
+            <span class="text-gray-text font-['Inter'] font-medium md:text-xs md:text-white">home.</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="inline h-6 w-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="md:border-gray-border md:bg-gray-bg flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] md:transition-colors md:hover:bg-[#292929]">
+            <span class="text-gray-text font-['Inter'] font-medium md:text-xs md:text-white">about me.</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="inline h-6 w-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="md:border-gray-border md:bg-gray-bg flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] md:transition-colors md:hover:bg-[#292929]">
+            <span class="text-gray-text font-['Inter'] font-medium md:text-xs md:text-white">works.</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="inline h-6 w-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="md:border-gray-border md:bg-gray-bg flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] md:transition-colors md:hover:bg-[#292929]">
+            <span class="text-gray-text font-['Inter'] font-medium md:text-xs md:text-white">blog.</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="inline h-6 w-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="md:border-gray-border md:bg-gray-bg flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] md:transition-colors md:hover:bg-[#292929]">
+            <span class="text-gray-text font-['Inter'] font-medium md:text-xs md:text-white">contact.</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="inline h-6 w-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="inline transform rounded-full bg-[#772af4] px-8 py-2 text-center font-['Inter'] text-2xl font-medium text-white md:hidden">ttson.cs@gmail.com</a>
+    </nav>
+  </div>
+</div>
+
+{% comment %} <header class="bg-custom-black sticky top-0 z-50 w-screen">
+    <div x-data="{ open: false }" class="relative bg-custom-black w-full mx-auto flex max-w-6xl flex-col p-6 md:items-center md:justify-between md:flex-row" :class="{'divide-y divide-gray-border space-y-6 border-b border-b-gray-border rounded-3xl': open}">
         <div class="flex flex-row items-center justify-between">
             <a href="" class="flex items-center space-x-2.5">
                 <div class="flex items-center">
@@ -10,9 +73,7 @@
                 </div>
                 <span class="border-gray-border bg-gray-bg text-gray-text rounded-lg border-r border-t px-[0.625rem] py-1 font-['Inter'] text-xs"> Portfolio </span>
             </a>
-            <button @click="open = !open"
-                    :class="{'bg-gray-bg border-t border-t-gray-border text-gray-text hover:text-white': !open, 'text-white border border-gray-border': open}"
-                    class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden">
+            <button @click="open = !open" :class="{'bg-gray-bg border-t border-t-gray-border text-gray-text hover:text-white': !open, 'text-white border border-gray-border': open}" class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden">
                 <svg class="h-5 w-5" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path :class="{'hidden': open, 'inline-flex': !open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
                     </path>
@@ -21,70 +82,42 @@
                 </svg>
             </button>
         </div>
-        <nav x-show="open" x-collapse :class="{'flex space-y-6 pt-6': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex lg:py-0 md:justify-end md:flex-row"">
+        <nav x-show="open" x-collapse :class="{'flex space-y-6 pt-6': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row"">
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">home.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="#9c9c9c"
-                     class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">about me.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="#9c9c9c"
-                     class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">works.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="#9c9c9c"
-                     class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">blog.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="#9c9c9c"
-                     class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">contact.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="#9c9c9c"
-                     class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
-            <a href="mailto:ttson.cs@gmail.com"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="transform rounded-full bg-[#772af4] px-8 py-2 font-['Inter'] text-2xl font-medium text-white text-center">ttson.cs@gmail.com
+            <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="transform rounded-full bg-[#772af4] px-8 py-2 font-['Inter'] text-2xl font-medium text-white text-center">ttson.cs@gmail.com
             </a>
         </nav>
     </div>
-</header>
+</header> {% endcomment %}
 {% comment %} <header x-data="{ open: false }" class="sticky top-0 z-10 flex justify-between max-w-[75rem] px-8 py-6 mx-auto bg-custom-black">
     <a href="" class="items-center space-x-2.5 flex">
         <div class="flex items-center font-['Albert_Sans'] font-medium text-2xl">

@@ -1,31 +1,34 @@
 {% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Trinh The Son Portfolio{% endblock %}</title>
-    <link rel="shortcut icon" href="{% static 'images/avatar.webp' %}" type="image/png" />
-    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
-    <style>
-      [x-cloak] {
-        display: none !important;
-      }
-      html {overflow: hidden;width: 100%;}body {height: 100%;position: fixed;overflow-y: scroll;-webkit-overflow-scrolling: touch;}
-    </style>
-    {% tailwind_css %}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&family=Albert+Sans:wght@500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/watford" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/grestelan" rel="stylesheet" />
-  </head>
-  <body class="bg-custom-black overflow-x-hidden ">
-    {% include 'navbar.html' %} {% include 'hero.html' %} {% include 'about_me.html' %} {% include 'faq.html' %} {% include 'footer.html' %}
-    <script type="module" src="{% static 'js/_base.js' %}"></script>
-    <script>
-      function scrollWin() {  window.scrollTo(0, 0);}
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            {% block title %}Trinh The Son Portfolio{% endblock %}
+        </title>
+        <link rel="shortcut icon"
+              href="{% static 'images/avatar.webp' %}"
+              type="image/png" />
+        <script defer
+                src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
+        <script defer
+                src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+        {% tailwind_css %}
+        <link rel="stylesheet" href="{% static 'css/_base.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700&family=Albert+Sans:wght@500&display=swap"
+              rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/watford" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/grestelan" rel="stylesheet" />
+    </head>
+    <body class="bg-custom-black overflow-x-hidden ">
+        {% include 'navbar.html' %}
+        {% include 'hero.html' %}
+        {% include 'about_me.html' %}
+        {% include 'faq.html' %}
+        {% include 'footer.html' %}
+        <script type="module" src="{% static 'js/_base.js' %}"></script>
+    </body>
 </html>
