@@ -1,5 +1,7 @@
-<header class="bg-custom-black fixed top-0 z-10 w-screen">
-    <div x-data="{ open: false }" class="relative bg-custom-black w-full mx-auto flex max-w-6xl flex-col p-6" :class="{'divide-y divide-gray-border space-y-6 border-b border-b-gray-border rounded-3xl': open}">
+<header class="bg-custom-black sticky top-0 z-50 w-screen">
+    <div x-data="{ open: false }"
+         class="relative bg-custom-black w-full mx-auto flex max-w-6xl flex-col p-6"
+         :class="{'divide-y divide-gray-border space-y-6 border-b border-b-gray-border rounded-3xl': open}">
         <div class="flex flex-row items-center justify-between">
             <a href="" class="flex items-center space-x-2.5">
                 <div class="flex items-center">
@@ -8,7 +10,9 @@
                 </div>
                 <span class="border-gray-border bg-gray-bg text-gray-text rounded-lg border-r border-t px-[0.625rem] py-1 font-['Inter'] text-xs"> Portfolio </span>
             </a>
-            <button @click="open = !open" :class="{'bg-gray-bg border-t border-t-gray-border text-gray-text hover:text-white': !open, 'text-white border border-gray-border': open}" class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden">
+            <button @click="open = !open"
+                    :class="{'bg-gray-bg border-t border-t-gray-border text-gray-text hover:text-white': !open, 'text-white border border-gray-border': open}"
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden">
                 <svg class="h-5 w-5" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path :class="{'hidden': open, 'inline-flex': !open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
                     </path>
@@ -20,35 +24,63 @@
         <nav x-show="open" x-collapse :class="{'flex space-y-6 pt-6': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex lg:py-0 md:justify-end md:flex-row"">
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">home.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#9c9c9c"
+                     class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">about me.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#9c9c9c"
+                     class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">works.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#9c9c9c"
+                     class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">blog.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#9c9c9c"
+                     class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
             <a href="#" class="flex justify-between items-center">
                 <span class="font-['Inter'] font-medium text-gray-text">contact.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c9c9c" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#9c9c9c"
+                     class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                 </svg>
             </a>
-            <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="transform rounded-full bg-[#772af4] px-8 py-2 font-['Inter'] text-2xl font-medium text-white text-center">ttson.cs@gmail.com
+            <a href="mailto:ttson.cs@gmail.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="transform rounded-full bg-[#772af4] px-8 py-2 font-['Inter'] text-2xl font-medium text-white text-center">ttson.cs@gmail.com
             </a>
         </nav>
     </div>
