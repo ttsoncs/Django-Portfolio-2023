@@ -53,6 +53,7 @@ module.exports = {
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
         'custom-purple': '#772af4',
+        'custom-purple-light': '#D1B6FB',
       },
     },
   },
