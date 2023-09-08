@@ -1,7 +1,8 @@
 <header class="bg-custom-black sticky top-0 z-50 w-screen">
-    <div x-data="{ open: false, scrolledFromTop: false }"
+    <div x-data="{ open: false }"
+         @resize.window="open = (window.innerWidth >= 768) ? true : false"
          class="bg-custom-black relative mx-auto flex w-full max-w-6xl flex-col p-6 md:flex-row md:items-center md:justify-between md:border-none"
-         :class="{'border-b border-b-gray-border rounded-3xl': open}">
+         :class="{'border-b border-b-gray-border rounded-b-3xl': open}">
         <div class="flex flex-row items-center justify-between md:border-none md:pb-0 lg:justify-start"
              :class="{'border-b border-b-gray-border pb-6': open}">
             <a href="" class="flex items-center space-x-2.5">
@@ -23,6 +24,10 @@
             </button>
         </div>
         <nav :class="{'flex pt-6 transform transition ease-out duration-300': open, 'hidden': !open}"
+             x-show="open"
+             x-collapse
+             x-cloak
+             x-collapse
              class="hidden flex-grow flex-col space-y-6 md:flex md:flex-row md:justify-end md:pt-0 lg:py-0">
             <ul class="list-none space-y-6 md:inline-flex md:items-center md:space-x-3 md:space-y-0">
                 <li>

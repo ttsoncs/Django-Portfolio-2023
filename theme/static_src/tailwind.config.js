@@ -44,7 +44,6 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: { 8: "repeat(8, minmax(0, 1fr))",
-                          13: "repeat(8, minmax(0, 1fr))"
       },
       colors: {
         'custom-black': '#0b0c0c',

@@ -1,0 +1,34 @@
+{% load static %}
+<section id="about" class="grid max-w-2xl grid-cols-2 grid-rows-3 gap-10 mx-auto mt-16">
+  <div class="flex flex-col items-center row-span-1 space-y-4 col-span-full">
+    <svg width="56px" height="56px" viewBox="0 0 24 24" stroke-width="0.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#9c9c9c">
+      <path d="M11.7 1.173a.6.6 0 01.6 0l8.926 5.154a.6.6 0 01.3.52v10.307a.6.6 0 01-.3.52L12.3 22.826a.6.6 0 01-.6 0l-8.926-5.154a.6.6 0 01-.3-.52V6.847a.6.6 0 01.3-.52L11.7 1.174z" stroke="#9c9c9c" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M17 15H7l5-8 5 8z" stroke="#9c9c9c" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M2.5 6.5L12 7M2.5 6.5L7 15M21.5 6.5L17 15M21.5 6.5L12 7V1M21.5 17.5L17 15M2.5 17.5L7 15M7 15l5 8 5-8" stroke="#9c9c9c" stroke-width="0.5" stroke-linejoin="round"></path>
+    </svg>
+    <p class="font-['Inter'] text-sm font-medium tracking-wide text-[#9c9c9c]">ABOUT ME SECTION</p>
+    <div class="text-center font-['Inter'] text-5xl font-medium text-white">Who Am I?</div>
+  </div>
+  <div class="col-span-1 row-span-2 flex flex-col items-center justify-around rounded-3xl border-t border-[#292929] bg-[#141516] p-2">
+    <img src="{% static 'images/avatar.webp' %}" alt="" class="w-72 rounded-xl bg-[#0b0c0c]" />
+    <p class="font-['Caveat'] text-base text-[#848484]">I have talents that can't be put on resumes :))</p>
+  </div>
+  <div class="flex flex-col justify-between col-span-1 row-span-2">
+    <div class="flex items-center pb-3 space-x-2">
+      <p class="font-['Inter'] text-2xl font-medium text-white">Trinh The Son</p>
+      <svg width="24px" height="24px" stroke-width="1" viewBox="0 0 24 24" fill="#1da1f2" xmlns="http://www.w3.org/2000/svg" color="#000000">
+        <path d="M11.528 1.6a.6.6 0 01.944 0l1.809 2.3a.6.6 0 00.635.207l2.815-.798a.6.6 0 01.764.554l.11 2.925a.6.6 0 00.393.54l2.747 1.01a.6.6 0 01.292.897l-1.63 2.431a.6.6 0 000 .668l1.63 2.431a.6.6 0 01-.292.897l-2.747 1.01a.6.6 0 00-.392.54l-.111 2.925a.6.6 0 01-.764.554l-2.815-.798a.6.6 0 00-.636.206L12.473 22.4a.6.6 0 01-.944 0L9.72 20.1a.6.6 0 00-.635-.207l-2.815.798a.6.6 0 01-.764-.554l-.11-2.925a.6.6 0 00-.393-.54l-2.747-1.01a.6.6 0 01-.292-.897l1.63-2.431a.6.6 0 000-.668l-1.63-2.431a.6.6 0 01.292-.897l2.747-1.01a.6.6 0 00.392-.54l.111-2.925a.6.6 0 01.764-.554l2.815.798A.6.6 0 009.72 3.9L11.53 1.6z" stroke="#1da1f2" stroke-width="1"></path>
+        <path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <p class="text-justify font-['Wotfard'] text-lg text-[#858585]">
+      Hello! I'm Son, a 4th-year Computer Science major at the University of Science, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span id="n1">Javascript</span>, <span id="n2">Python</span>, and <span id="n3">Node.js</span>! I enjoy creating visually appealing and user-friendly applications.
+    </p>
+    <a href="{% static 'public/TrinhTheSon_Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="text-justify font-['Wotfard'] text-lg leading-relaxed text-[#772af4] underline">View my resume</a>
+    <div class="w-[95%]">
+      <p class="text-end font-['Grestelan'] text-3xl text-[#9c9c9c]">
+        <span id="n4">Son</span>
+      </p>
+    </div>
+  </div>
+</section>
