@@ -5,11 +5,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            {% block title %}Trinh The Son Portfolio{% endblock %}
+            {% block title %}Son Portfolio{% endblock %}
         </title>
         <link rel="shortcut icon"
               href="{% static 'images/avatar.webp' %}"
               type="image/png" />
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
         <script defer
                 src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
         <script defer
@@ -22,7 +23,7 @@
               rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/nathaly-couple" rel="stylesheet">
     </head>
-    <body class="bg-custom-black overflow-x-hidden !scroll-smooth">
+    <body class="bg-custom-black overflow-x-hidden !scroll-smooth" x-data>
         {% include 'navbar.html' %}
         {% include 'hero.html' %}
         {% include 'about.html' %}
