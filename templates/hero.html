@@ -1,10 +1,8 @@
 {% load static %}
 <section class="lg:grid-rows-8 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 max-md:mt-20 lg:mx-auto lg:grid-cols-6">
-  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
     <div class="flex justify-between">
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
-        <img src="{% static 'images/avatar.webp' %}" alt="" class="ring-offset-gray-bg h-14 w-14 rounded-full bg-gradient-to-r from-indigo-300 to-purple-400 ring-[3px] ring-blue-500 ring-offset-[3px] md:h-[4.5rem] md:w-[4.5rem]" />
-      </a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/avatar.webp' %}" alt="" class="ring-offset-gray-bg h-14 w-14 rounded-full bg-gradient-to-r from-indigo-300 to-purple-400 ring-[3px] ring-blue-500 ring-offset-[3px] md:h-[4.5rem] md:w-[4.5rem]" /></a>
       <svg class="h-10 w-10 md:h-12 md:w-12" viewBox="0 0 24 24" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
         <path d="M9.5 14.5L3 21M5 9.485l9.193 9.193 1.697-1.697-.393-3.787 5.51-4.673-5.85-5.85-4.674 5.51-3.786-.393L5 9.485z" stroke="#525252" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
@@ -12,10 +10,10 @@
     <p class="font-['Inter'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Hello and Welcome to My Portfolio!</p>
     <a href="#about" class="text-gray-text-light inline-block font-['Inter']">@ttson.cs</a>
   </div>
-  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
     <div class="flex h-full w-full items-center justify-between">
       <div>
-        <p class="text-gray-text-light font-['Inter'] text-2xl font-medium md:text-[1.75rem]"> Title</p>
+        <p class="text-gray-text-light font-['Inter'] text-2xl font-medium md:text-[1.75rem]">Title</p>
         <p class="animate-text font-['Inter'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
       </div>
       <svg class="h-10 w-10 md:h-12 md:w-12" viewBox="0 0 24 24" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
@@ -23,32 +21,31 @@
       </svg>
     </div>
   </div>
-  <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 hover:duration-500 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
-    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</div>
-  </a>
-  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
-    <div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</div>
-  </a>
-  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+  <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')"><div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</div></a>
+  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')"><div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</div></a>
+  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
     <div class="flex h-full w-full items-center justify-between">
       <div>
         <p class="text-gray-text-light font-['Inter'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
         <p class="animate-text font-['Inter'] text-2xl font-medium text-white md:text-[1.75rem]">HCMC, Vietnam</p>
       </div>
-      <?xml version="1.0" encoding="UTF-8"?>
       <svg class="h-10 w-10 md:h-12 md:w-12" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
         <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z" stroke="#525252" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
         <path d="M13 2.05S16 6 16 12c0 6-3 9.95-3 9.95M11 21.95S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5h18.74M2.63 8.5h18.74" stroke="#525252" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
     </div>
   </div>
-  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-5 pb-6 md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:px-8 lg:py-10 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-5 pb-6 md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:px-8 lg:py-10 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
     <div class="h-full w-full space-y-4 md:space-y-5 lg:space-y-8">
       <div class="flex justify-center">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="0.5" class="h-10 w-10 md:h-12 md:w-12" color="#525252">
           <defs>
             <style>
-              .cls-6374f8d9b67f094e4896c64c-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}
+              .cls-6374f8d9b67f094e4896c64c-1 {
+                fill: none;
+                stroke: currentColor;
+                stroke-miterlimit: 10;
+              }
             </style>
           </defs>
           <rect class="cls-6374f8d9b67f094e4896c64c-1" x="1.5" y="4.36" width="21" height="15.27"></rect>

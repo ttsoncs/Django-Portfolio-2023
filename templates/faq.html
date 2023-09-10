@@ -1,15 +1,16 @@
 {% load static %}
 <section class="mx-auto mt-12 max-w-2xl space-y-5 px-6">
-  <div class="flex w-full flex-col items-center space-y-2">
-    <svg class="h-10 w-10 md:h-14 md:w-14 opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')" viewBox="0 0 24 24" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-      <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" stroke="#525252" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M12 16a4 4 0 110-8 4 4 0 010 8zM12 2v6M12 16v6M2 12h6M16 12h6M4.929 4.929L9.172 9.17M14.828 14.829l4.243 4.242M4.929 19.071l4.243-4.242M14.828 9.171l4.243-4.242" stroke="#525252" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <div class="flex w-full flex-col items-center space-y-2 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+    <svg class="h-10 w-10 md:h-14 md:w-14" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" stroke="#525252" stroke-linecap="round" stroke-linejoin="round" d="m24 18.011l7.041 7.04L24 32.092l-7.041-7.041L24 18.011"/>
+    <path fill="none" stroke="#525252" stroke-linecap="round" stroke-linejoin="round" d="m21.898 9.452l15.599 15.599L24 38.548L10.503 25.051l7.034-7.033"/>
+    <path fill="none" stroke="#525252" stroke-linecap="round" stroke-linejoin="round" d="m21.898 3l22.051 22.051L24 45L4.051 25.051l7.034-7.033"/>
     </svg>
-    <p class="text-gray-text-light font-['Inter'] text-sm font-medium tracking-wide opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">F.A.Q SECTION</p>
-    <div class="text-center font-['Inter'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem] opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">Frequently Asked Questions</div>
+    <p class="text-gray-text-light font-['Inter'] text-sm font-medium tracking-wide">F.A.Q SECTION</p>
+    <div class="text-center font-['Inter'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Frequently Asked Questions</div>
   </div>
   <div class="space-y-4">
-    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
       <div class="border-gray-border hover:bg-gray-bg group rounded-2xl border" :class="{'bg-gray-bg': open, 'bg-custom-black': !open}" x-cloak>
         <button @click="open = !open" class="flex w-full items-center justify-between p-5">
           <span class="text-left font-['Inter'] text-base font-medium text-white">How can I contact you?</span>
@@ -19,13 +20,13 @@
           </div>
         </button>
         <div x-show="open" x-collapse x-cloak x-transition>
-          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-500 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
             You can reach me at ttson.cs@gmail.com. Feel free to contact me if you have any questions or want to connect, I will respond as soon as possible.
           </div>
         </div>
       </div>
     </div>
-    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
       <div class="border-gray-border hover:bg-gray-bg group rounded-2xl border" :class="{'bg-gray-bg': open, 'bg-custom-black': !open}" x-cloak>
         <button @click="open = !open" class="flex w-full items-center justify-between p-5">
           <span class="text-left font-['Inter'] text-base font-medium text-white">When do you expect to graduate?</span>
@@ -35,11 +36,11 @@
           </div>
         </button>
         <div x-show="open" x-collapse x-cloak x-transition>
-          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">I am on track to graduate in October 2024, representing the fulfillment of my academic journey and the start of new opportunities.</div>
+          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-500 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">I am on track to graduate in October 2024, representing the fulfillment of my academic journey and the start of new opportunities.</div>
         </div>
       </div>
     </div>
-    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-[2000ms] blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
+    <div x-data="{ open: false }" class="mx-auto w-full max-w-md opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">
       <div class="border-gray-border hover:bg-gray-bg group rounded-2xl border" :class="{'bg-gray-bg': open, 'bg-custom-black': !open}" x-cloak>
         <button @click="open = !open" class="flex w-full items-center justify-between p-5">
           <span class="text-left font-['Inter'] text-base font-medium text-white">Are you able to work full-time?</span>
@@ -49,7 +50,7 @@
           </div>
         </button>
         <div x-show="open" x-collapse x-cloak x-transition>
-          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">I am available for full-time work now. I am prepared and ready to apply my skills and knowledge in a professional setting.</div>
+          <div class="text-gray-text p-5 pt-0 font-['Inter'] text-sm animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text text-transparent opacity-0 transition duration-500 blur-sm" x-intersect="$el.classList.add('opacity-100', 'blur-none')">I am available for full-time work now. I am prepared and ready to apply my skills and knowledge in a professional setting.</div>
         </div>
       </div>
     </div>

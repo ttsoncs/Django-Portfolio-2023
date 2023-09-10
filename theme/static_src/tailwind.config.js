@@ -53,8 +53,7 @@ module.exports = {
         'gray-bg-hover': '#292929',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
-        'custom-purple': '#772af4',
-        'custom-purple-light': '#D1B6FB',
+        'custom-purple': '#772af4'
       },
       "animation": {
         "background-shine": "background-shine 2s linear infinite",
