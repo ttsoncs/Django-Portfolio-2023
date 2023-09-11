@@ -1,6 +1,6 @@
 {% load static %}
 <section class="lg:grid-rows-8 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 max-md:mt-20 lg:mx-auto lg:grid-cols-6">
-  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
     <div class="flex justify-between">
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/avatar.webp' %}" alt="" class="ring-offset-gray-bg h-14 w-14 rounded-full bg-gradient-to-r from-indigo-300 to-purple-400 ring-[3px] ring-blue-500 ring-offset-[3px] md:h-[4.5rem] md:w-[4.5rem]" /></a>
       <img src="{% static 'svg/pushpin_color.svg' %}" alt="" class="h-10 w-10 md:h-12 md:w-12">
@@ -8,7 +8,7 @@
     <p class="font-['Inter'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Hello and Welcome to My Portfolio!</p>
     <a href="#about" class="text-gray-text-light inline-block font-['Inter']">@ttson.cs</a>
   </div>
-  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full space-y-5 rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
     <div class="flex h-full w-full items-center justify-between">
       <div>
         <p class="text-gray-text-light font-['Inter'] text-2xl font-medium md:text-[1.75rem]">Title</p>
@@ -17,9 +17,9 @@
       <img src="{% static 'svg/cat_with_tears_of_joy_color.svg' %}" alt="" class="h-10 w-10 md:h-12 md:w-12">
     </div>
   </div>
-  <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"><div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</div></a>
-  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"><div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</div></a>
-  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"><div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</div></a>
+  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="border-gray-border bg-gray-bg hover:bg-gray-bg-hover col-span-1 flex items-center justify-center rounded-3xl border-t p-6 lg:col-span-1 lg:row-span-2 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"><div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Inter'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</div></a>
+  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-6 lg:col-span-2 lg:row-span-3 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
     <div class="flex h-full w-full items-center justify-between">
       <div>
         <p class="text-gray-text-light font-['Inter'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
@@ -28,7 +28,7 @@
       <img src="{% static 'svg/globe_with_meridians_color.svg' %}" alt="" class="h-10 w-10 md:h-12 md:w-12">
     </div>
   </div>
-  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-5 pb-6 md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:px-8 lg:py-10 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-5 pb-6 md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:px-8 lg:py-10 opacity-0 transition duration-1000 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
     <div class="h-full w-full space-y-4 md:space-y-5 lg:space-y-8">
       <div class="flex justify-center">
       <img src="{% static 'svg/open_mailbox_with_raised_flag_color.svg' %}" alt="" class="h-12 w-12 md:h-14 md:w-14">
