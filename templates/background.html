@@ -7,8 +7,8 @@
   </div>
   <div x-data="{ tabSelected: 1, tabId: $id('tabs'), tabButtonClicked(tabButton){ this.tabSelected = tabButton.id.replace(this.tabId + '-', ''); this.tabRepositionMarker(tabButton); }, tabRepositionMarker(tabButton){ this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px'; this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px'; this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px'; }, tabContentActive(tabContent){ return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', ''); }, tabButtonActive(tabContent){ const tabId = tabContent.id.split('-').slice(-1); return this.tabSelected == tabId; } }" x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);">
     <div x-ref="tabButtons" class="bg-gray-bg border-t-gray-border relative inline-grid w-full grid-cols-2 items-center justify-center rounded-full border-t p-1 opacity-0 blur-sm transition duration-1000" x-intersect="$el.classList.add('opacity-100', '!blur-none')">
-      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Inter'] font-medium transition-all">Education</button>
-      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Inter'] font-medium transition-all">Career</button>
+      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Inter'] font-medium transition-all hover:text-white duration-500">Education</button>
+      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Inter'] font-medium transition-all hover:text-white duration-500">Career</button>
       <div x-ref="tabMarker" class="absolute left-0 z-10 h-full w-1/2 duration-300 ease-out" x-cloak>
         <div class="bg-custom-black h-full w-full rounded-full shadow-sm"></div>
       </div>
@@ -20,7 +20,7 @@
           <div>
             <p class="font-['Inter'] text-base font-semibold text-white">Bachelor of Computer Science</p>
             <div class="space-y-0.5">
-              <p class="animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text font-['Inter'] text-sm text-transparent">University of Science</p>
+              <p class="animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text font-['Inter'] text-sm text-transparent">VNUHCM - University of Science</p>
               <p class="text-gray-text-light font-['Inter'] text-xs">Oct 2020 - May 2024 (Expected)</p>
             </div>
           </div>
