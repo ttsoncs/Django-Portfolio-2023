@@ -1,20 +1,9 @@
+{% load static %}
 <footer class="mx-auto mt-12 w-screen max-w-6xl space-y-6 px-6 pb-8">
   <div class="grid grid-cols-1 opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')">
     <div class="border-gray-border col-span-full flex flex-col items-center justify-between space-y-5 rounded-t-3xl border p-6 md:p-10 lg:flex-row lg:space-y-0">
       <div class="flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-10 lg:space-y-0">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="0.5" class="h-10 w-10 md:h-12 md:w-12" color="#525252">
-          <defs>
-            <style>
-              .cls-6374f8d9b67f094e4896c64c-1 {
-                fill: none;
-                stroke: currentColor;
-                stroke-miterlimit: 10;
-              }
-            </style>
-          </defs>
-          <rect class="cls-6374f8d9b67f094e4896c64c-1" x="1.5" y="4.36" width="21" height="15.27"></rect>
-          <polyline class="cls-6374f8d9b67f094e4896c64c-1" points="1.5 4.36 12 14.86 22.5 4.36"></polyline>
-        </svg>
+        <img src="{% static 'svg/e-mail_color.svg' %}" alt="" class="h-12 w-12 md:h-14 md:w-14" />
         <p class="text-center font-['Inter'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Wanna work together?</p>
       </div>
       <div class="flex flex-col items-center justify-center">
@@ -28,22 +17,8 @@
   </div>
   <div class="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-0">
     <div class="text-gray-text text-center font-['Inter'] text-sm opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')">© 2023 Trinh The Son. All rights reserved.</div>
-    <a href="" class="flex items-center space-x-2 px-6 py-3 animate-background-shine border-gray-border text-gray-text justify-center rounded-full border bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] group opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')">
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="h-5 w-5" color="#772af4">
-        <defs>
-          <style>
-            .cls-637b6ef7f95e86b59c579de9-1 {
-              fill: none;
-              stroke: currentColor;
-              stroke-miterlimit: 10;
-            }
-          </style>
-        </defs>
-        <path class="cls-637b6ef7f95e86b59c579de9-1" d="M16.77,14.86C12,16.77,12,12,7.23,14.86"></path>
-        <line class="cls-637b6ef7f95e86b59c579de9-1" x1="4.36" y1="9.14" x2="19.64" y2="9.14"></line>
-        <path class="cls-637b6ef7f95e86b59c579de9-1" d="M13,5.32V3.41a1.9,1.9,0,0,0-1.9-1.91H7.23"></path>
-        <polygon class="cls-637b6ef7f95e86b59c579de9-1" points="16.77 5.32 7.23 5.32 6.27 9.14 8.18 22.5 15.82 22.5 17.73 9.14 16.77 5.32"></polygon>
-      </svg>
+    <a href="" class="flex items-center space-x-1 px-6 py-3 animate-background-shine border-gray-border text-gray-text justify-center rounded-full border bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] group opacity-0 transition duration-1000 blur-sm" x-intersect="$el.classList.add('opacity-100', '!blur-none')">
+      <img src="{% static 'svg/cup_with_straw_color.svg' %}" alt="" class="h-5 w-5" />
       <p class="font-['Inter'] text-sm font-medium text-gray-text group-hover:text-white transition-colors duration-500">Buy Me a Coffee</p>
     </a>
   </div>
