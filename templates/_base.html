@@ -1,11 +1,11 @@
-{% load static tailwind_tags %}
+{% load static tailwind_tags compress %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Trinh The Son" />
-    <meta name="description" content="Welcome to my portfolio! Hello, I'm Son, a 4th-year Computer Science major at HCMUS, with a strong interest in full-stack development. Currently, the technologies I'm working with are JavaScript, Python, and Node.js" />
+    <meta name="description" content="Welcome to my portfolio! Hello, I'm Son, a 4th-year Computer Science major at HCMUS, with a strong interest in full-stack development." />
     <meta name="language" content="en" />
     <meta name="keywords" content="django, alpinejs, htmx, dark portfolio, web development, front-end development, back-end development" />
     <title>
@@ -19,8 +19,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/balleny" rel="stylesheet" />
     {% tailwind_css %}
+    {% compress css %}
     <link rel="stylesheet" href="{% static 'css/_base.css' %}" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" />
+    {% endcompress %}
     <link rel="preload" href="{% static 'fonts/Wotfard-Regular.woff2' %}" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="{% static 'fonts/Wotfard-Medium.woff2' %}" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="{% static 'fonts/Wotfard-Semibold.woff2' %}" as="font" type="font/woff2" crossorigin />
@@ -29,6 +31,7 @@
     {% include 'navbar.html' %}
     {% include 'hero.html' %}
     {% include 'about.html' %}
+    {% comment %} {% include 'tool.html' %} {% endcomment %}
     {% include 'background.html' %}
     {% include 'faq.html' %}
     {% include 'footer.html' %}

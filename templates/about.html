@@ -1,7 +1,7 @@
 {% load static %}
 <section class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-5 px-8 md:max-w-[45rem] md:grid-cols-2 md:gap-x-8" id="about">
   <div class="col-span-1 flex w-full flex-col items-center space-y-2 md:col-span-full opacity-0 transition duration-700 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="{% static 'svg/eyes_color.svg' %}" alt="eyes" class="h-10 w-10 md:h-14 md:w-14 animate-bounce" />
+    <img src="{% static 'svg/eyes_color.svg' %}" alt="eyes" class="h-10 w-10 md:h-12 md:w-12 animate-bounce" />
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">ABOUT ME SECTION</p>
     <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Who Am I?</div>
   </div>
@@ -20,7 +20,7 @@
     <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 transition duration-700 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
       Hello! I'm Son, a 4th-year Computer Science major at <span class="font-['Cubano'] bg-gradient-to-t from-[#FF416C] to-[#FF4B2B] bg-clip-text text-transparent">HCMUS</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="font-['Cubano'] bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text text-transparent">JavaScript</span>, <span class="font-['Cubano'] bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent">Python</span>, and <span class="font-['Cubano'] bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text text-transparent">Node.js</span>!
     </p>
-    <span><a href="{% static 'documents/TrinhTheSon_Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="animate-text-gradient !inline-block bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text font-['Wotfard'] text-lg text-transparent opacity-0 transition duration-700 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">View my resume</a></span>
+    <span><a href="{% static 'documents/TrinhTheSon_Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="animate-text-gradient !inline-block bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text font-['Cubano'] text-lg text-transparent opacity-0 transition duration-700 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">View my resume</a></span>
     <p class="text-gray-text pt-2 font-['balleny'] text-5xl opacity-0 transition duration-700 blur-sm" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
       <span id="n5">Son</span>
     </p>
