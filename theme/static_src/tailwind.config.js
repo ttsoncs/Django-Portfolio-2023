@@ -43,6 +43,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'cubano': ['Cubano', 'sans-serif']
+      },
       gridTemplateRows: {
         8: "repeat(8, minmax(0, 1fr))",
       },

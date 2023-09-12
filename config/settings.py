@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "theme",
     "django_browser_reload",
     "whitenoise.runserver_nostatic",
-    "portfolios",
+    "pages",
 ]
 
 MIDDLEWARE = [
