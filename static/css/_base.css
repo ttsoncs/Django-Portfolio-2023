@@ -17,20 +17,3 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
-
-@font-face {
-    font-family: 'Cubano';
-    src: url(../fonts/cubano-regular-webfont.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Wotfard';
-    font-weight: 400;
-    src: url(../fonts/wotfard-regular-webfont.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Wotfard';
-    font-weight: 500;
-    src: url(../fonts/wotfard-medium-webfont.woff2) format('woff2');
-}
