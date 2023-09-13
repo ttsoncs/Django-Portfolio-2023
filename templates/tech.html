@@ -1,23 +1,14 @@
 {% load static %}
 <section class="mx-auto mt-12 max-w-5xl space-y-5 px-6">
   <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="{% static 'svg/bullseye_color.svg' %}" loading="lazy" alt="bullseye" class="h-10 w-10 md:h-12 md:w-12" />
+    <img src="{% static 'svg/bullseye_color.svg' %}" alt="bullseye" class="h-10 w-10 md:h-12 md:w-12" />
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">TECHNOLOGIES SECTION</p>
     <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Technologies</div>
   </div>
   <div class="grid grid-cols-1 opacity-0 blur-sm transition duration-700" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <p class="border-gray-border bg-gray-bg text-gray-text-light col-span-full rounded-t-3xl border-l border-r border-t p-[0.375rem] text-center font-['Wotfard'] text-xs md:font-medium md:uppercase">Take a look at the technologies I incorporate.</p>
+    <p class="border-gray-border bg-gray-bg text-gray-text-light col-span-full rounded-t-3xl border-l border-r border-t p-[0.375rem] text-center font-['Wotfard'] text-xs md:font-medium md:uppercase">Uncover the tech toolkit shaping my creations.</p>
     <div class="border-gray-border col-span-full rounded-b-3xl border">
-      <div class="grid w-full grid-cols-2 place-items-center gap-2.5 p-4 md:grid-cols-3 lg:grid-cols-6">
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#1e88e5" d="M14.742 24.047a10.242 10.242 0 0 1-4.673.919a7.628 7.628 0 0 1-5.914-2.346A8.876 8.876 0 0 1 2 16.369a9.476 9.476 0 0 1 2.422-6.748a8.216 8.216 0 0 1 6.285-2.588a11.151 11.151 0 0 1 4.035.641v3.761A6.839 6.839 0 0 0 11 10.395a4.813 4.813 0 0 0-3.712 1.535a5.9 5.9 0 0 0-1.413 4.159A5.8 5.8 0 0 0 7.209 20.1a4.57 4.57 0 0 0 3.59 1.493a7.319 7.319 0 0 0 3.943-1.113Zm2.37-9.218v-2.344h2.344v2.344H21.8v2.343h-2.344v2.343h-2.344v-2.343H14.77v-2.344l2.342.001zm8.201 0v-2.344h2.344v2.344H30v2.343h-2.343v2.343h-2.344v-2.343h-2.342v-2.344l2.342.001z" />
-          </svg>
-          <div class="flex flex-col items-center justify-center">
-            <p class="text-gray-text font-['Wotfard'] text-xs font-medium">CPLUSPLUS</p>
-            <p class="font-['Wotfard'] text-lg font-medium text-white">Proficient</p>
-          </div>
-        </div>
+      <div class="grid w-full grid-cols-2 place-items-center gap-3 p-4 md:grid-cols-3 lg:grid-cols-6">
         <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
           <svg class="h-12 w-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
             <linearGradient id="deviconPython0" x1="70.252" x2="170.659" y1="1237.476" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse">
@@ -79,8 +70,15 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Familiar</p>
           </div>
         </div>
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+          <p class="w-12 h-12 text-white font-['Canratell'] font-bold flex justify-center items-center text-4xl"><<span class="text-[#3d72d7]">/</span>></p>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-gray-text font-['Wotfard'] text-xs font-medium">HTM<span class="text-[#3d72d7]">X</span></p>
+            <p class="font-['Wotfard'] text-lg font-medium text-white">Familiar</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <p class="text-gray-text-light animate-background-shine mx-auto max-w-md bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text px-2 text-center font-['Wotfard'] text-xs text-transparent opacity-0 blur-sm transition duration-700 md:font-medium" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Explore the technologies that enable me to craft remarkable web designs, combining technology and creativity seamlessly.</p>
+  <p class="text-gray-text-light max-w-md mx-auto text-center font-['Wotfard'] text-xs opacity-0 blur-sm transition duration-700 md:font-medium" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Exploring the tech toolkit behind my web development prowess, seamlessly merging innovation and technical mastery.</p>
 </section>

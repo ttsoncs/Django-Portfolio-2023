@@ -19,10 +19,7 @@
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
   </head>
   <body class="bg-custom-black overflow-x-hidden !scroll-smooth" x-data>
-    <div class="bg-custom-black fixed z-50 flex h-screen w-screen items-center justify-center" @load.window="$el.classList.add('hidden')">
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Unamused%20Face.png" alt="Unamused Face" class="h-20 w-20 md:h-32 md:w-32" />
-    </div>
-    {% include 'navbar.html' %} {% include 'hero.html' %} {% include 'about.html' %} {% include 'tech.html' %} {% include 'background.html' %} {% include 'faq.html' %} {% include 'footer.html' %} {% comment %}
+    {% include "preloader.html" %} {% include 'navbar.html' %} {% include 'hero.html' %} {% include 'about.html' %} {% include 'tech.html' %} {% include 'background.html' %} {% include 'faq.html' %} {% include 'footer.html' %} {% comment %}
     <script type="module" src="{% static 'js/_base.js' %}"></script>
     {% endcomment %}
   </body>

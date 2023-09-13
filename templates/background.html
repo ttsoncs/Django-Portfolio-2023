@@ -1,38 +1,82 @@
 {% load static %}
 <section class="mx-auto mt-12 max-w-lg space-y-5 px-6">
-  <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="{% static 'svg/sparkles_color.svg' %}" loading="lazy" alt="sparkles" class="h-10 w-10 md:h-12 md:w-12" />
+  <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <img src="{% static 'svg/sparkles_color.svg' %}"
+         alt="sparkles"
+         class="h-10 w-10 md:h-12 md:w-12" />
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">BACKGROUND SECTION</p>
-    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Education & Career</div>
+    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">
+      Education & Career
+    </div>
   </div>
-  <div x-data="{ tabSelected: 1, tabId: $id('tabs'), tabButtonClicked(tabButton){ this.tabSelected = tabButton.id.replace(this.tabId + '-', ''); this.tabRepositionMarker(tabButton); }, tabRepositionMarker(tabButton){ this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px'; this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px'; this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px'; }, tabContentActive(tabContent){ return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', ''); }, tabButtonActive(tabContent){ const tabId = tabContent.id.split('-').slice(-1); return this.tabSelected == tabId; } }" x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);">
-    <div x-ref="tabButtons" class="bg-gray-bg border-t-gray-border relative inline-grid w-full grid-cols-2 items-center justify-center rounded-full border-t p-1 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Wotfard'] font-medium transition-all duration-500 hover:text-white">Education</button>
-      <button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }" class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Wotfard'] font-medium transition-all duration-500 hover:text-white">Career</button>
-      <div x-ref="tabMarker" class="absolute left-0 h-full w-1/2 duration-300 ease-out" x-cloak>
+  <div x-data="{ tabSelected: 1, tabId: $id('tabs'), tabButtonClicked(tabButton){ this.tabSelected = tabButton.id.replace(this.tabId + '-', ''); this.tabRepositionMarker(tabButton); }, tabRepositionMarker(tabButton){ this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px'; this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px'; this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px'; }, tabContentActive(tabContent){ return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', ''); }, tabButtonActive(tabContent){ const tabId = tabContent.id.split('-').slice(-1); return this.tabSelected == tabId; } }"
+       x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);">
+    <div x-ref="tabButtons"
+         class="bg-gray-bg border-t-gray-border relative inline-grid w-full grid-cols-2 items-center justify-center rounded-full border-t p-1 opacity-0 blur-sm transition duration-700"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+      <button :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              type="button"
+              :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }"
+              class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Wotfard'] font-medium transition-all duration-500 hover:text-white">
+        Education
+      </button>
+      <button :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              type="button"
+              :class="{ 'bg-custom-black text-white animate-background-shine bg-[linear-gradient(110deg,#0b0c0c,45%,#1e2631,55%,#0b0c0c)] bg-[length:200%_100%] transition-colors' : tabButtonActive($el) }"
+              class="text-gray-text relative z-20 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full p-2 font-['Wotfard'] font-medium transition-all duration-500 hover:text-white">
+        Career
+      </button>
+      <div x-ref="tabMarker"
+           class="absolute left-0 h-full w-1/2 duration-300 ease-out"
+           x-cloak>
         <div class="bg-custom-black mx-auto h-full w-1/2 rounded-full shadow-sm"></div>
       </div>
     </div>
-    <div class="content border-t-gray-border bg-gray-bg relative mt-4 flex w-full items-center justify-center rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-      <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative w-full opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')" x-cloak>
+    <div class="content border-t-gray-border bg-gray-bg relative mt-4 flex w-full items-center justify-center rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+      <div :id="$id(tabId + '-content')"
+           x-show="tabContentActive($el)"
+           class="relative w-full opacity-0 blur-sm transition duration-700"
+           x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+           x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"
+           x-cloak>
         <div class="flex justify-start space-x-2.5">
-          <img src="{% static 'svg/graduation_cap_color.svg' %}" alt="graduation cap" class="h-5 w-5" />
+          <img src="{% static 'svg/graduation_cap_color.svg' %}"
+               alt="graduation cap"
+               class="h-5 w-5" />
           <div>
             <p class="font-['Wotfard'] text-base font-medium text-white">Bachelor of Computer Science</p>
             <div class="space-y-0.5">
-              <p class="animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent">VNUHCM - University of Science</p>
+              <p class="font-['Wotfard'] text-sm text-gray-text">
+                VNUHCM - University of Science
+              </p>
               <p class="text-gray-text-light font-['Wotfard'] text-xs">Oct 2020 - Oct 2024 (Expected)</p>
             </div>
           </div>
         </div>
       </div>
-      <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative w-full opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')" x-cloak>
+      <div :id="$id(tabId + '-content')"
+           x-show="tabContentActive($el)"
+           class="relative w-full opacity-0 blur-sm transition duration-700"
+           x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+           x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"
+           x-cloak>
         <div class="flex justify-start space-x-2.5">
-          <img src="{% static 'svg/briefcase_color.svg' %}" alt="briefcase" class="h-5 w-5" />
+          <img src="{% static 'svg/briefcase_color.svg' %}"
+               alt="briefcase"
+               class="h-5 w-5" />
           <div>
             <p class="font-['Wotfard'] text-base font-medium text-white">Programming Teacher</p>
             <div class="space-y-0.5">
-              <p class="animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent">Algorithmics</p>
+              <p class="font-['Wotfard'] text-sm text-gray-text">
+                Algorithmics
+              </p>
               <p class="text-gray-text-light font-['Wotfard'] text-xs">Aug 2023 - Now</p>
             </div>
           </div>
