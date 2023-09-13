@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{% static 'css/_base.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
   </head>
-  <body class="bg-custom-black overflow-x-hidden !scroll-smooth" x-data>
+  <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data>
     {% include "preloader.html" %} {% include 'navbar.html' %} {% include 'hero.html' %} {% include 'about.html' %} {% include 'tech.html' %} {% include 'background.html' %} {% include 'faq.html' %} {% include 'footer.html' %} {% comment %}
     <script type="module" src="{% static 'js/_base.js' %}"></script>
     {% endcomment %}

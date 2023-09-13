@@ -1,29 +1,41 @@
 {% load static %}
 <section class="mx-auto mt-12 max-w-5xl space-y-5 px-6">
-  <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="{% static 'svg/bullseye_color.svg' %}" alt="bullseye" class="h-10 w-10 md:h-12 md:w-12" />
+  <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <img src="{% static 'assets/bullseye_color.svg' %}"
+         alt="bullseye"
+         class="h-10 w-10 md:h-12 md:w-12" />
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">TECHNOLOGIES SECTION</p>
-    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Technologies</div>
+    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">
+      Technologies
+    </div>
   </div>
-  <div class="grid grid-cols-1 opacity-0 blur-sm transition duration-700" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <p class="border-gray-border bg-gray-bg text-gray-text-light col-span-full rounded-t-3xl border-l border-r border-t p-[0.375rem] text-center font-['Wotfard'] text-xs md:font-medium md:uppercase">Uncover the tech toolkit shaping my creations.</p>
+  <div class="grid grid-cols-1 opacity-0 blur-sm transition duration-700"
+       x-intersect="$el.classList.add('opacity-100', '!blur-none')"
+       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <p class="border-gray-border bg-gray-bg text-gray-text-light col-span-full rounded-t-3xl border-l border-r border-t p-[0.375rem] text-center font-['Wotfard'] text-xs md:font-medium md:uppercase">
+      Uncover my tech toolkit.
+    </p>
     <div class="border-gray-border col-span-full rounded-b-3xl border">
       <div class="grid w-full grid-cols-2 place-items-center gap-3 p-4 md:grid-cols-3 lg:grid-cols-6">
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <svg class="h-12 w-12"
+               viewBox="0 0 128 128"
+               xmlns="http://www.w3.org/2000/svg">
             <linearGradient id="deviconPython0" x1="70.252" x2="170.659" y1="1237.476" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#5A9FD4" />
-              <stop offset="1" stop-color="#306998" />
+            <stop offset="0" stop-color="#5A9FD4" />
+            <stop offset="1" stop-color="#306998" />
             </linearGradient>
             <linearGradient id="deviconPython1" x1="209.474" x2="173.62" y1="1098.811" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#FFD43B" />
-              <stop offset="1" stop-color="#FFE873" />
+            <stop offset="0" stop-color="#FFD43B" />
+            <stop offset="1" stop-color="#FFE873" />
             </linearGradient>
             <path fill="url(#deviconPython0)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007c-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521c-2.268 9.405-2.368 15.275 0 25.096c1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837c-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721c0 2.593-2.083 4.69-4.634 4.69c-2.56 0-4.633-2.097-4.633-4.69c-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)" />
             <path fill="url(#deviconPython1)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547c7.816 2.297 15.312 2.713 24.665 0c6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519c2.578-7.735 2.467-15.174 0-25.096c-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692c0 2.602-2.074 4.719-4.634 4.719c-2.55 0-4.633-2.117-4.633-4.719c0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)" />
             <radialGradient id="deviconPython2" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498" />
-              <stop offset="1" stop-color="#7F7F7F" stop-opacity="0" />
+            <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498" />
+            <stop offset="1" stop-color="#7F7F7F" stop-opacity="0" />
             </radialGradient>
             <path fill="url(#deviconPython2)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416c-18.276 0-33.092-2.873-33.092-6.416c0-3.544 14.815-6.417 33.092-6.417c18.275 0 33.091 2.872 33.091 6.417z" opacity=".444" />
           </svg>
@@ -32,8 +44,10 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Intermediate</p>
           </div>
         </div>
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <svg class="h-12 w-12"
+               viewBox="0 0 32 32"
+               xmlns="http://www.w3.org/2000/svg">
             <path fill="#44b78b" d="M14.135 4H18.1v18.169a26.218 26.218 0 0 1-5.143.535c-4.842-.005-7.362-2.168-7.362-6.322c0-4 2.673-6.6 6.816-6.6a6.448 6.448 0 0 1 1.724.2V4Zm0 9.142a3.992 3.992 0 0 0-1.337-.2c-2 0-3.163 1.223-3.163 3.366c0 2.087 1.107 3.239 3.138 3.239a9.355 9.355 0 0 0 1.362-.1v-6.3Z" />
             <path fill="#44b78b" d="M24.4 10.059v9.1c0 3.133-.235 4.639-.923 5.938A6.316 6.316 0 0 1 20.237 28l-3.678-1.733a5.708 5.708 0 0 0 3.141-2.629c.566-1.121.745-2.42.745-5.837v-7.742ZM20.441 4.02h3.964v4.028h-3.964z" />
           </svg>
@@ -42,8 +56,10 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Intermediate</p>
           </div>
         </div>
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <svg class="h-12 w-12"
+               viewBox="0 0 128 128"
+               xmlns="http://www.w3.org/2000/svg">
             <path fill="#77c1d2" fill-rule="evenodd" d="M98.444 35.562L126 62.997L98.444 90.432L70.889 62.997z" clip-rule="evenodd" />
             <path fill="#2d3441" fill-rule="evenodd" d="m29.556 35.562l57.126 56.876H31.571L2 62.997z" clip-rule="evenodd" />
           </svg>
@@ -52,8 +68,10 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Intermediate</p>
           </div>
         </div>
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <svg class="h-12 w-12"
+               viewBox="0 0 128 128"
+               xmlns="http://www.w3.org/2000/svg">
             <path fill="#38bdf8" d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597c6.398-8.531 13.867-11.73 22.398-9.597c4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602c-6.399 8.536-13.867 11.735-22.399 9.602c-4.87-1.215-8.347-4.746-12.207-8.66c-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66c6.274 6.367 13.536 13.738 29.395 13.738c17.066 0 27.73-8.53 32-25.597c-6.399 8.531-13.867 11.73-22.399 9.597c-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0" />
           </svg>
           <div class="flex flex-col items-center justify-center">
@@ -61,8 +79,10 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Familiar</p>
           </div>
         </div>
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <svg class="h-12 w-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <svg class="h-12 w-12"
+               viewBox="0 0 32 32"
+               xmlns="http://www.w3.org/2000/svg">
             <path fill="#f5de19" d="M18.774 19.7a3.727 3.727 0 0 0 3.376 2.078c1.418 0 2.324-.709 2.324-1.688c0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156c0-2.567 1.956-4.52 5.012-4.52A5.058 5.058 0 0 1 26.9 10.52l-2.665 1.711a2.327 2.327 0 0 0-2.2-1.467a1.489 1.489 0 0 0-1.638 1.467c0 1.027.636 1.442 2.1 2.078l.856.366c2.908 1.247 4.549 2.518 4.549 5.376c0 3.081-2.42 4.769-5.671 4.769a6.575 6.575 0 0 1-6.236-3.5ZM6.686 20c.538.954 1.027 1.76 2.2 1.76c1.124 0 1.834-.44 1.834-2.15V7.975h3.422v11.683c0 3.543-2.078 5.156-5.11 5.156A5.312 5.312 0 0 1 3.9 21.688Z" />
           </svg>
           <div class="flex flex-col items-center justify-center">
@@ -70,15 +90,23 @@
             <p class="font-['Wotfard'] text-lg font-medium text-white">Familiar</p>
           </div>
         </div>
-        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-          <p class="w-12 h-12 text-white font-['Canratell'] font-bold flex justify-center items-center text-4xl"><<span class="text-[#3d72d7]">/</span>></p>
+        <div class="bg-gray-bg border-t-gray-border col-span-1 flex w-full flex-col items-center justify-center space-y-4 rounded-2xl border-t p-5">
+          <p class="w-12 h-12 text-white font-['Canratell'] font-bold flex justify-center items-center text-4xl">
+            <<span class="text-[#3d72d7]">/</span>>
+          </p>
           <div class="flex flex-col items-center justify-center">
-            <p class="text-gray-text font-['Wotfard'] text-xs font-medium">HTM<span class="text-[#3d72d7]">X</span></p>
+            <p class="text-gray-text font-['Wotfard'] text-xs font-medium">
+              HTM<span class="text-[#3d72d7]">X</span>
+            </p>
             <p class="font-['Wotfard'] text-lg font-medium text-white">Familiar</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <p class="text-gray-text-light max-w-md mx-auto text-center font-['Wotfard'] text-xs opacity-0 blur-sm transition duration-700 md:font-medium" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Exploring the tech toolkit behind my web development prowess, seamlessly merging innovation and technical mastery.</p>
+  <p class="text-gray-text-light max-w-md mx-auto text-center font-['Wotfard'] text-xs opacity-0 blur-sm transition duration-700 md:font-medium"
+     x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+     x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    Exploring the tech toolkit behind my web development prowess, seamlessly merging innovation and technical mastery.
+  </p>
 </section>
