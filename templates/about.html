@@ -1,59 +1,37 @@
 {% load static %}
-<section class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-5 px-8 md:max-w-[45rem] md:grid-cols-2 md:gap-x-8"
-         id="about">
-  <div class="col-span-1 flex w-full flex-col items-center space-y-2 md:col-span-full opacity-0 transition duration-700 blur-sm"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
-       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png"
-         alt="Eyes"
-         loading="lazy"
-         class="h-10 w-10 md:h-12 md:w-12" />
-    {% comment %} <img src="{% static 'svg/eyes_color.svg' %}" loading="lazy" alt="eyes" class="h-10 w-10 md:h-12 md:w-12 animate-bounce" /> {% endcomment %}
+<section class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-5 px-8 md:max-w-[45rem] md:grid-cols-2 md:gap-x-8" id="about">
+  <div class="col-span-1 flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700 md:col-span-full" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" loading="lazy" class="h-10 w-10 md:h-12 md:w-12" />
+    {% comment %} <img src="{% static 'svg/eyes_color.svg' %}" loading="lazy" alt="eyes" class="h-10 w-10 animate-bounce md:h-12 md:w-12" /> {% endcomment %}
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">ABOUT ME SECTION</p>
-    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">
-      Who Am I?
-    </div>
+    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Who Am I?</div>
   </div>
-  <div class="border-gray-border bg-gray-bg col-span-1 flex flex-col items-center justify-between space-y-2 rounded-3xl border-t p-3 md:col-span-1 opacity-0 transition duration-700 blur-sm"
-       x-intersect="$el.classList.add('opacity-100', '!blur-none')"
-       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <img src="{% static 'images/avatar.webp' %}"
-         loading="lazy"
-         alt="avatar"
-         class="bg-custom-black rounded-xl"
-         style="background-image: radial-gradient(#525252 0.85px, #0b0c0c 0.85px);
+  <div class="border-gray-border bg-gray-bg col-span-1 flex flex-col items-center justify-between space-y-2 rounded-3xl border-t p-3 opacity-0 blur-sm transition duration-700 md:col-span-1" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <img
+      src="{% static 'images/avatar.webp' %}"
+      loading="lazy"
+      alt="avatar"
+      class="bg-custom-black rounded-xl"
+      style="background-image: radial-gradient(#525252 0.85px, #0b0c0c 0.85px);
                 background-size: 17px 17px;
-                background-position: center" />
-    <p class="text-gray-text-light items-end font-['Wotfard'] text-sm">c5604942bf52de58d923d856627ae639</p>
+                background-position: center"
+    />
+    <p class="text-gray-text-light animate-background-shine items-end bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent">c5604942bf52de58d923d856627ae639</p>
   </div>
   <div class="col-span-1 flex flex-col justify-between space-y-3 md:col-span-1">
-    <div class="mt-3 flex items-center space-x-1.5 md:mt-0 opacity-0 transition duration-700 blur-sm"
-         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
-         x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <div class="mt-3 flex items-center space-x-1.5 opacity-0 blur-sm transition duration-700 md:mt-0" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
       <p class="font-['Wotfard'] text-2xl font-medium text-white">Trinh The Son</p>
-      <svg class="h-5 w-5"
-           viewBox="0 0 2048 2048"
-           xmlns="http://www.w3.org/2000/svg">
-        <path fill="#0072ff" d="m1845 1024l124 155q18 23 28 50t10 57q0 30-9 57t-26 49t-41 38t-52 24l-191 53q2 51 5 103t4 104q0 36-13 67t-37 54t-55 37t-68 14q-31 0-61-11l-185-70l-109 165q-24 37-62 57t-83 21q-44 0-82-20t-63-58l-109-165l-185 70q-30 11-61 11q-36 0-67-13t-55-37t-37-55t-14-67q0-52 3-104t6-103l-191-53q-29-8-52-24t-40-38t-26-49t-10-57q0-29 10-56t28-51l124-155L79 869q-38-47-38-107q0-30 9-57t26-49t40-38t53-24l191-53q-2-51-5-103t-4-104q0-36 13-67t37-54t55-37t68-14q31 0 61 11l185 70L879 78q24-37 62-57t83-21q44 0 82 20t63 58l109 165l185-70q30-11 61-11q36 0 67 13t55 37t37 55t14 67q0 52-3 104t-6 103l191 53q28 8 52 24t40 38t26 49t10 57q0 60-38 107l-124 155zm-949 369l569-568l-114-114l-455 456l-199-200l-114 114l313 312z" />
+      <svg class="h-5 w-5" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#1da1f2" d="m1845 1024l124 155q18 23 28 50t10 57q0 30-9 57t-26 49t-41 38t-52 24l-191 53q2 51 5 103t4 104q0 36-13 67t-37 54t-55 37t-68 14q-31 0-61-11l-185-70l-109 165q-24 37-62 57t-83 21q-44 0-82-20t-63-58l-109-165l-185 70q-30 11-61 11q-36 0-67-13t-55-37t-37-55t-14-67q0-52 3-104t6-103l-191-53q-29-8-52-24t-40-38t-26-49t-10-57q0-29 10-56t28-51l124-155L79 869q-38-47-38-107q0-30 9-57t26-49t40-38t53-24l191-53q-2-51-5-103t-4-104q0-36 13-67t37-54t55-37t68-14q31 0 61 11l185 70L879 78q24-37 62-57t83-21q44 0 82 20t63 58l109 165l185-70q30-11 61-11q36 0 67 13t55 37t37 55t14 67q0 52-3 104t-6 103l191 53q28 8 52 24t40 38t26 49t10 57q0 60-38 107l-124 155zm-949 369l569-568l-114-114l-455 456l-199-200l-114 114l313 312z" />
       </svg>
     </div>
-    <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 transition duration-700 blur-sm"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
-       x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-      Hello! I'm Son, a 4th-year Computer Science major at <span class="font-['Cubano'] bg-gradient-to-t from-[#FF416C] to-[#FF4B2B] bg-clip-text text-transparent">hcmus</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="font-['Cubano'] bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text text-transparent">JavaScript</span>, <span class="font-['Cubano'] bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent">Python</span>, and <span class="font-['Cubano'] bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text text-transparent">Node.js</span>!
-    </p>
-  <span class="flex items-center space-x-3"><a href="{% static 'documents/TrinhTheSon_Resume.pdf' %}"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="animate-text-gradient !inline-block bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text font-['Cubano'] text-lg text-transparent opacity-0 transition duration-700 blur-sm"
-   x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
-   x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">View my resume</a>
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Left%20Light%20Skin%20Tone.png"
-       alt="Backhand Index Pointing Left Light Skin Tone"
-       class="w-5 h-5" />
-</span>
-<p class="text-gray-text pt-2 font-['Balleny'] text-5xl opacity-0 transition duration-700 blur-sm"
-   x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
-   x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Son</p>
-</div>
+    <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Hello! I'm Son, a 4th-year Computer Science major at <span class="bg-gradient-to-t from-[#f64f59] to-[#FF4B2B] bg-clip-text font-['Cubano'] text-transparent">Hcmus</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text font-['Cubano'] text-transparent">JavaScript</span>, <span class="bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text font-['Cubano'] text-transparent">Python</span>, and <span class="bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text font-['Cubano'] text-transparent">Django</span>. Let's connect and make great things together!</p>
+    {% comment %}
+    <span class="flex items-center space-x-3"
+      ><a href="{% static 'documents/TrinhTheSon_Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="animate-text-gradient !inline-block bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text font-['Cubano'] text-lg text-transparent opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">View my resume</a>
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Left%20Light%20Skin%20Tone.png" alt="Backhand Index Pointing Left Light Skin Tone" class="h-5 w-5" />
+    </span>
+    {% endcomment %}
+    <p class="text-gray-text pt-2 font-['Balleny'] text-5xl opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Son</p>
+  </div>
 </section>
