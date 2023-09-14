@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
   </head>
   <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data>
-    {% include "preloader.html" %} {% include 'navbar.html' %} {% include 'hero.html' %} {% include 'about.html' %} {% include "project.html" %} {% include 'tech.html' %} {% include 'background.html' %} {% include 'faq.html' %} {% include 'footer.html' %} {% comment %}
-    <script type="module" src="{% static 'js/_base.js' %}"></script>
-    {% endcomment %}
+    {% include "preloader.html" %} 
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include 'faq.html' %}
+    <div class="h-0 w-0 mt-16"></div>
+    {% include 'footer.html' %} 
   </body>
 </html>
