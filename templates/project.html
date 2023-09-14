@@ -1,0 +1,25 @@
+{% load static %}
+<section class="mx-auto mt-12 max-w-6xl space-y-5 px-6">
+  <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <img src="{% static 'assets/Rocket.png' %}" alt="Rocket" class="h-10 w-10 md:h-12 md:w-12" />
+    <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">PORTFOLIO SECTION</p>
+    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Project Showcase</div>
+  </div>
+  <div class="grid grid-cols-1 opacity-0 blur-sm transition duration-700 lg:grid-cols-2" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <div class="bg-gray-bg border-t-gray-border col-span-1 space-y-3 rounded-2xl border-t p-3 opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+      <a href="https://github.com/ttsoncs/Django-Portfolio-2023" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-2">
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-2.5">
+            <span class="font-['Wotfard'] font-medium text-white md:text-xl">
+                Personal Portfolio
+            </span>
+            <span class="animate-ping block h-0.5 w-0.5 rounded-full ring-2 ring-green-400 bg-green-600"></span>
+          </div>
+          <span class="text-gray-text-light font-['Wotfard'] text-xs md:text-sm">Build with Django, Alpine.js, Tailwind, SQLite3</span>
+        </div>
+        <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="md:w-8 md:h-8 w-5 h-5">
+      </a>
+      <img src="{% static "images/project1.webp" %}" alt="" class="rounded-xl">
+    </div>
+  </div>
+</section>
