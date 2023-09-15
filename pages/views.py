@@ -5,27 +5,27 @@ from .models import FAQ
 
 
 class HomePageView(ListView):
-    template_name = "home.html"
+    template_name = "pages/home.html"
     model = FAQ
 
 
 class AboutMePageView(ListView):
-    template_name = "about_me.html"
+    template_name = "pages/about_me.html"
     model = FAQ
 
 
 class WorksPageView(ListView):
-    template_name = "works.html"
+    template_name = "pages/works.html"
     model = FAQ
 
 
 class BlogPageView(ListView):
-    template_name = "blog.html"
+    template_name = "pages/blog.html"
     model = FAQ
 
 
 class ContactPageView(ListView):
-    template_name = "contact.html"
+    template_name = "pages/contact.html"
     model = FAQ
 
 
