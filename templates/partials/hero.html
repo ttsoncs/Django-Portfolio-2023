@@ -55,17 +55,18 @@
     GitHub
   </div>
 </a>
-<div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-6 opacity-0 blur-sm transition duration-700 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3"
+<div class="border-gray-border relative overflow-hidden bg-gray-bg col-span-full rounded-3xl border-t p-6 opacity-0 blur-sm transition duration-700 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3"
      x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
      x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-  <div class="flex h-full w-full items-center justify-between">
+  <div class="flex h-full w-full items-center justify-between overflow-hidden">
     <div>
       <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
-      <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">HCMC, Vietnam</p>
+      <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Vietnam. GMT+7</p>
     </div>
-    <img src="{% static 'assets/globe_with_meridians_color.svg' %}"
+      {% include "partials/cobe.html" %}
+    {% comment %} <img src="{% static 'assets/globe_with_meridians_color.svg' %}"
          alt="globe with meridians"
-         class="h-10 w-10 md:h-12 md:w-12" />
+         class="h-10 w-10 md:h-12 md:w-12" /> {% endcomment %}
   </div>
 </div>
 <div class="border-gray-border bg-gray-bg col-span-full rounded-3xl border-t p-5 pb-6 opacity-0 blur-sm transition duration-700 md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:py-10"
@@ -89,3 +90,4 @@
   </div>
 </div>
 </section>
+
