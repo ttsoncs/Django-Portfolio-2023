@@ -3,7 +3,7 @@
 <header class="fixed md:sticky top-0 z-20 w-screen lg:bg-custom-black">
   <div x-data="{ open: false }" @resize.window="open = (window.innerWidth >= 768) ? true : false" x-init="open = (window.innerWidth >= 768) ? true : false" class="flex flex-col w-full max-w-6xl p-6 mx-auto max-lg:backdrop-blur-[6px] bg-custom-black/90 lg:bg-custom-black md:flex-row md:items-center md:justify-between md:rounded-none md:border-none" :class="{'border-b border-b-gray-border rounded-b-3xl': open, 'border-none rounded-none': !open}">
     <div class="flex items-center justify-between md:mb-0 md:border-none md:pb-0 lg:justify-start" :class="{'pb-6 border-b border-b-gray-border mb-6': open, 'pb-0': !open}" x-cloak>
-      <a href="#top" class="flex items-center space-x-2.5">
+      <a href="{% url "home" %}" class="flex items-center space-x-2.5">
         <div class="flex items-end">
           <span class="text-custom-purple font-['Wotfard'] text-xl">.</span>
           <span class="font-['Wotfard'] text-2xl font-medium text-white">ts</span>

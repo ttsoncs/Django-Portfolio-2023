@@ -1,9 +1,9 @@
 {% load static %}
-<footer class="mx-auto  w-screen max-w-6xl space-y-6 px-6 pb-8">
+<footer class="mx-auto w-screen max-w-6xl space-y-6 px-6 pb-8">
   <div class="grid grid-cols-1 opacity-0 blur-sm transition duration-700"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
        x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
-    <div class="border-gray-border col-span-full flex flex-col items-center justify-between space-y-5 rounded-t-3xl border p-6 md:p-10 lg:flex-row lg:space-y-0">
+    <div class="border-gray-border col-span-full flex flex-col items-center justify-between space-y-5 rounded-t-3xl border p-6 md:p-10 lg:flex-row lg:space-y-0 bg-custom-black">
       <div class="flex flex-col items-center justify-center lg:flex-row lg:space-x-10">
         <img src="{% static 'assets/e-mail_color.svg' %}"
              alt="email"
