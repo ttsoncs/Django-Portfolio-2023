@@ -750,6 +750,10 @@ select {
   z-index: -10;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -762,12 +766,12 @@ select {
   z-index: 50;
 }
 
-.-z-20 {
-  z-index: -20;
+.z-0 {
+  z-index: 0;
 }
 
-.-z-50 {
-  z-index: -50;
+.-z-20 {
+  z-index: -20;
 }
 
 .col-span-1 {
@@ -965,14 +969,6 @@ select {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .max-w-2xl {
@@ -1302,6 +1298,11 @@ select {
   border-color: rgb(33 36 39 / var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 .border-b-gray-border {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(33 36 39 / var(--tw-border-opacity));
@@ -1484,6 +1485,16 @@ select {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-1 {
@@ -1696,14 +1707,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-white\/80 {
-  color: rgb(255 255 255 / 0.8);
-}
-
-.text-white\/50 {
-  color: rgb(255 255 255 / 0.5);
 }
 
 .antialiased {

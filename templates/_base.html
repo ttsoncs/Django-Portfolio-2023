@@ -9,22 +9,24 @@
     <meta name="language" content="en" />
     <meta name="keywords" content="django, alpinejs, htmx, dark portfolio, web development, front-end development, back-end development" />
     <link rel="shortcut icon" href="{% static 'images/avatar.webp' %}" type="image/png" />
-    <title>{% block title %} Trinh The Son Portfolio {% endblock %}</title>
+    <title>{% block title %} {% endblock %}Trinh The Son Portfolio</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    <script src="https://codepen.io/DonKarlssonSan/pen/jBWaad.js"></script>
     <link href="https://fonts.cdnfonts.com/css/balleny" rel="stylesheet" />
     {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
   </head>
-  <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data>
-    {% include 'partials/preloader.html' %} 
+  <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data style="background-attachment: fixed;">
+    {% include 'partials/preloader.html' %}
     {% include 'partials/navbar.html' %}
     {% block content %}
     {% endblock content %}
     {% include 'partials/faq.html' %}
     <div class="h-0 w-0 mt-16 lg:mt-20"></div>
     {% include 'partials/footer.html' %} 
+    <script src="{% static "js/main.js" %}"></script>
   </body>
 </html>

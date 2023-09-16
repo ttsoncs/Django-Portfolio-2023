@@ -4,29 +4,49 @@ from django.views.generic import ListView
 from .models import FAQ
 
 
-class HomePageView(ListView):
+class HomePageView(TemplateView):
     template_name = "pages/home.html"
-    model = FAQ
+
+    def get_context_data(self, **kwargs):
+        context = super(HomePageView, self).get_context_data(**kwargs)
+        context["faq_list"] = FAQ.objects.all()
+        return context
 
 
-class AboutMePageView(ListView):
+class AboutMePageView(TemplateView):
     template_name = "pages/about_me.html"
-    model = FAQ
+
+    def get_context_data(self, **kwargs):
+        context = super(AboutMePageView, self).get_context_data(**kwargs)
+        context["faq_list"] = FAQ.objects.all()
+        return context
 
 
-class WorksPageView(ListView):
+class WorksPageView(TemplateView):
     template_name = "pages/works.html"
-    model = FAQ
+
+    def get_context_data(self, **kwargs):
+        context = super(WorksPageView, self).get_context_data(**kwargs)
+        context["faq_list"] = FAQ.objects.all()
+        return context
 
 
-class BlogPageView(ListView):
+class BlogPageView(TemplateView):
     template_name = "pages/blog.html"
-    model = FAQ
+
+    def get_context_data(self, **kwargs):
+        context = super(BlogPageView, self).get_context_data(**kwargs)
+        context["faq_list"] = FAQ.objects.all()
+        return context
 
 
-class ContactPageView(ListView):
+class ContactPageView(TemplateView):
     template_name = "pages/contact.html"
-    model = FAQ
+
+    def get_context_data(self, **kwargs):
+        context = super(ContactPageView, self).get_context_data(**kwargs)
+        context["faq_list"] = FAQ.objects.all()
+        return context
 
 
 class RobotsTxtView(TemplateView):
