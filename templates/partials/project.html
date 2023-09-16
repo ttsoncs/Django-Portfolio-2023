@@ -1,5 +1,5 @@
 {% load static %}
-<section class="mx-auto  max-w-6xl space-y-5 px-6">
+<section class="mx-auto max-w-6xl space-y-5 px-6">
   <div class="flex w-full flex-col items-center space-y-2 opacity-0 blur-sm transition duration-700"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
        x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
@@ -56,4 +56,9 @@
       </div>
     </div>
   </div>
+  {% comment %} <div class="mx-auto flex justify-center bg-custom-black opacity-0 blur-sm transition duration-700"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <a href="{% url "works" %}" class="text-white mx-auto py-2 px-6 border border-gray-border rounded-full font-['Wotfard'] font-medium mt-1 md:mt-4 text-center max-lg:w-full hover:bg-gray-bg-hover duration-500 transition-colors">See All</a>
+  </div> {% endcomment %}
 </section>

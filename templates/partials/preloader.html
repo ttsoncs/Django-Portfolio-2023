@@ -1,9 +1,10 @@
 {% load static %}
-<div class="bg-custom-black fixed z-50 flex h-screen w-screen items-center justify-center"
+<div class="bg-custom-black fixed z-50 flex flex-col h-screen w-screen items-center justify-center"
      @load.window="$el.classList.add('hidden')">
      <img rel="preload"
           fetchpriority="high"
           src="{% static 'assets/Unamused-Face.png' %}"
           alt="Unamused Face"
           class="h-20 w-20 md:h-32 md:w-32" />
+     <img rel="preload" fetchpriority="high" src="{% static "assets/fade-stagger-circles.svg" %}" alt="fade stagger circles" class="w-10 h-10">
 </div>
