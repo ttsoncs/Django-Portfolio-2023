@@ -1,6 +1,5 @@
 {% load static %}
-<div id="top" class="w-0 h-0"></div>
-<header class="fixed md:sticky top-0 z-20 w-screen lg:bg-custom-black">
+<header class="fixed top-0 left-0 z-20 w-screen md:sticky">
   <div x-data="{ open: false }" @resize.window="open = (window.innerWidth >= 768) ? true : false" x-init="open = (window.innerWidth >= 768) ? true : false" class="flex flex-col w-full max-w-6xl p-6 mx-auto max-lg:backdrop-blur-[6px] bg-custom-black/90 lg:bg-custom-black md:flex-row md:items-center md:justify-between md:rounded-none md:border-none" :class="{'border-b border-b-gray-border rounded-b-3xl': open, 'border-none rounded-none': !open}">
     <div class="flex items-center justify-between md:mb-0 md:border-none md:pb-0 lg:justify-start" :class="{'pb-6 border-b border-b-gray-border mb-6': open, 'pb-0': !open}" x-cloak>
       <a href="{% url "home" %}" class="flex items-center space-x-2.5">
@@ -22,10 +21,6 @@
           <span class="text-gray-text font-['Wotfard'] text-base font-medium md:text-sm md:text-white">home.</span>
           <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
         </a>
-        {% comment %} <a href="{% url "about" %}" class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-          <span class="text-gray-text font-['Wotfard'] text-base font-medium md:text-sm md:text-white">about me.</span>
-          <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
-        </a> {% endcomment %}
         <a href="{% url "works" %}" class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
           <span class="text-gray-text font-['Wotfard'] text-base font-medium md:text-sm md:text-white">works.</span>
           <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
@@ -44,4 +39,3 @@
   </div>
   {% include 'partials/fab.html' %}
 </header>
-{% comment %} class="inline transform rounded-full bg-custom-purple px-8 py-2 text-center font-['Wotfard'] text-2xl font-medium text-white md:hidden">ttson.cs@gmail.com</a> {% endcomment %}
