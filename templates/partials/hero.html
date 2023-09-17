@@ -1,48 +1,95 @@
 {% load static %}
 <section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 lg:grid-rows-8 md:grid-row-6 md:grid-cols-4 lg:mx-auto lg:grid-cols-6">
-  <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-4 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+  <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 rounded-3xl border-gray-border bg-gray-bg col-span-full blur-sm md:col-span-2 md:row-span-4 lg:col-span-2 lg:row-span-full lg:space-y-7 lg:p-8"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex justify-between">
-      <a href="https://www.youtube.com/watch?v=6Edc6xxV93M" target="_blank" rel="noopener noreferrer">
-        <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[3px] ring-[#0072ff] ring-offset-[3px] md:h-[4.5rem] md:w-[4.5rem]" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlc3VsdD0idHVyYnVsZW5jZSI+PC9mZVR1cmJ1bGVuY2U+CiAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMjAgMCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgZWRnZU1vZGU9ImR1cGxpY2F0ZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPgogIDxmZUJsZW5kIG1vZGU9ImNvbG9yLWRvZGdlIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImJsdXIiIHJlc3VsdD0iYmxlbmQiPjwvZmVCbGVuZD4KICAKPC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNzAwIiBmaWxsPSJ1cmwoI2ZmZmx1eC1ncmFkaWVudCkiIGZpbHRlcj0idXJsKCNmZmZsdXgtZmlsdGVyKSI+PC9yZWN0Pjwvc3ZnPg==); background-size: cover;" />
+      <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
+         target="_blank"
+         rel="noopener noreferrer">
+        <img src="{% static 'images/avatar.webp' %}"
+             alt="avatar"
+             class="ring-offset-gray-bg h-14 w-14 rounded-full ring-2 md:ring-[3px] ring-[#0072ff] ring-offset-[3px] md:h-[4.5rem] md:w-[4.5rem] object-cover"
+             style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIxNzIiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+); background-size: cover;">
       </a>
-      <img src="{% static 'assets/pushpin_color.svg' %}" alt="pushpin" class="w-10 h-10 md:h-12 md:w-12" />
+      <img src="{% static 'assets/pushpin_color.svg' %}"
+           alt="pushpin"
+           class="w-10 h-10 md:h-12 md:w-12" />
     </div>
-    <p class="max-w-xs font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Hello and Welcome to My Portfolio!</p>
+    <div class="pt-5 space-y-5 md:space-y-6">
+      <div class="relative font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-gray-text-light md:text-[2.5rem]">
+        <div class="absolute gif" id="g1">
+          <p>Hello</p>
+        </div>
+        <div class="absolute gif" id="g2">
+          <p>Xin chào</p>
+        </div>
+        <div class="absolute gif" id="g3">
+          <p>こんにちは</p>
+        </div>
+        <div class="absolute gif" id="g4">
+          <p>你好</p>
+        </div>
+      </div>
+      <p class="font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
+        Welcome to My Portfolio!
+      </p>
+    </div>
     <p class="text-gray-text-light inline-block font-['Wotfard']">@ttson.cs</p>
   </div>
-  <div class="p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-3" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+  <div class="p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-3"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full">
       <div>
         <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
       </div>
-      <img src="{% static "assets/Fire.png" %}" alt="Clown Face" class="w-10 h-10 md:h-12 md:w-12" /> 
+      <img src="{% static "assets/Fire.png" %}" alt="Clown Face" class="w-10 h-10 md:h-12 md:w-12" />
     </div>
   </div>
   {% comment %} href="https://linkedin.com/in/ttsoncs" {% endcomment %}
-  <a target="_blank" rel="noopener noreferrer" class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-3xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</div>
+  <a target="_blank"
+     rel="noopener noreferrer"
+     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-3xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
+     x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">
+      LinkedIn
+    </div>
   </a>
-  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-3xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</div>
+  <a href="https://github.com/ttsoncs/"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-3xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
+     x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+    <div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">
+      GitHub
+    </div>
   </a>
-  <div class="relative p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+  <div class="relative p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full overflow-hidden">
       <div>
         <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Vietnam. GMT+7</p>
       </div>
-      {% include "partials/cobe.html" %} 
+      {% include "partials/cobe.html" %}
     </div>
   </div>
-  <div class="p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:py-10" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+  <div class="p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:py-10"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="w-full h-full space-y-5 lg:space-y-8">
       <div class="flex justify-center">
-        <img src="{% static 'assets/open_mailbox_with_raised_flag_color.svg' %}" alt="open mailbox with raised flag" class="w-12 h-12 md:h-14 md:w-14" />
+        <img src="{% static 'assets/open_mailbox_with_raised_flag_color.svg' %}"
+             alt="open mailbox with raised flag"
+             class="w-12 h-12 md:h-14 md:w-14" />
       </div>
-      <p class="text-center font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Want to work together?</p>
+      <p class="text-center font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
+        Want to work together?
+      </p>
       <div class="flex flex-col items-center justify-center">
-        <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple hover:bg-gray-text-light rounded-full px-8 py-2 font-['Wotfard'] text-2xl font-medium text-white transition-colors duration-700 md:py-4 md:text-[1.75rem]">ttson.cs@gmail.com</a>
+        <a href="mailto:ttson.cs@gmail.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="bg-custom-purple hover:bg-gray-text-light rounded-full px-8 py-2 font-['Wotfard'] text-2xl font-medium text-white transition-colors duration-700 md:py-4 md:text-[1.75rem]">ttson.cs@gmail.com</a>
       </div>
     </div>
   </div>

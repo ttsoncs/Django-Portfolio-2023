@@ -12,6 +12,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
@@ -20,7 +23,6 @@
   <body class="overflow-x-hidden !scroll-smooth antialiased bg-custom-black" x-data>
     <div>
       <div class="fixed top-0 left-0 w-full h-full -z-10">
-        <canvas></canvas>
       </div>
       <div class="relative w-screen mx-auto">
         {% include 'partials/preloader.html' %}
