@@ -58,7 +58,11 @@ module.exports = {
       "animation": {
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
-        "border-width": "border-width 3s infinite alternate"
+        "border-width": "border-width 3s infinite alternate",
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+        marqueeY: 'marqueeY 5s linear infinite',
+        marquee2Y: 'marquee2Y 5s linear infinite',
       },
       "keyframes": {
         "background-shine": {
@@ -83,7 +87,23 @@ module.exports = {
             "width": "200px",
             "opacity": "1"
           }
-        }
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        marqueeY: {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+        marquee2Y: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0%)' },
+        },
       }
     },
   },
