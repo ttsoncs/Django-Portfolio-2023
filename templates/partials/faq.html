@@ -17,7 +17,7 @@
           </div>
         </button>
         <div x-show="open" x-collapse x-cloak x-transition>
-          <div class="text-gray-text animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text p-5 pt-0 font-['Wotfard'] text-sm text-transparent opacity-0 blur-sm transition duration-500" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">{{ faq.answer }}</div>
+          <div class="text-gray-text animate-background-shine bg-[linear-gradient(110deg,#9c9c9c,45%,#fff,55%,#9c9c9c)] bg-[length:250%_100%] bg-clip-text p-5 pt-0 font-['Wotfard'] text-sm text-transparent opacity-0 blur-sm transition duration-500" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">{{ faq.answer }}</div>
         </div>
       </div>
     </div>

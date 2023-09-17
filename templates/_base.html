@@ -12,9 +12,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
     {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
@@ -23,8 +23,9 @@
   <body class="overflow-x-hidden !scroll-smooth antialiased bg-custom-black" x-data>
     <div>
       <div class="fixed top-0 left-0 w-full h-full -z-10">
+        <div class="relative w-full h-full bg-custom-black"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#0b0c0c,transparent_100%)]"></div></div>
       </div>
-      <div class="relative w-screen mx-auto">
+      <div class="relative hidden w-screen mx-auto" @load.window="$el.classList.remove('hidden')">
         {% include 'partials/preloader.html' %}
         {% include 'partials/navbar.html' %}
         {% block content %}
