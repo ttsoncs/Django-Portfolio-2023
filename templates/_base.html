@@ -7,35 +7,34 @@
     <meta name="author" content="Trinh The Son" />
     <meta name="description" content="Welcome to my portfolio! Hello, I'm Son, a 4th-year Computer Science major at HCMUS, with a strong interest in full-stack development." />
     <meta name="language" content="en" />
-    <link rel="shortcut icon" href="{% static 'images/avatar.webp' %}" type="image/x-icon">
-    <title>{% block title %} {% endblock %}Trinh The Son Portfolio</title>
+    <link rel="shortcut icon" href="{% static 'images/avatar.webp' %}" type="image/x-icon" />
+    <title>{% block title %}{% endblock %} Trinh The Son Portfolio</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" />
     {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
     <link href="https://fonts.cdnfonts.com/css/balleny" rel="stylesheet" />
   </head>
-  <body class="overflow-x-hidden !scroll-smooth antialiased bg-custom-black" x-data>
+  <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data></body>
     <div>
       <div class="fixed top-0 left-0 w-full h-full -z-10">
-        <div class="relative w-full h-full bg-custom-black"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#0b0c0c,transparent_100%)]"></div></div>
+        <div class="relative w-full h-full bg-custom-black">
+          <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#0b0c0c,transparent_100%)]"></div>
+        </div>
       </div>
       <div class="relative w-screen mx-auto">
-              {% comment %} <p class="bg-yellow-500 [writing-mode:vertical-lr] text-5xl">Lorem, ipsum.</p> {% endcomment %}
         {% include 'partials/preloader.html' %}
-        <div class="hidden" @load.window="$el.classList.remove('hidden')">
-          {% include 'partials/navbar.html' %}
-          {% block content %}
-          {% endblock content %}
-          {% include 'partials/faq.html' %}
-          <div class="w-0 h-0 mt-16 lg:mt-20"></div>
-          {% include 'partials/footer.html' %}  
-        </div>
+        {% include 'partials/navbar.html' %}
+        {% block content %}
+        {% endblock content %}
+        {% include 'partials/faq.html' %}
+        <div class="w-0 h-0 mt-16 lg:mt-20"></div>
+        {% include 'partials/footer.html' %}
       </div>
     </div>
     <script src="{% static "js/main.js" %}"></script>
