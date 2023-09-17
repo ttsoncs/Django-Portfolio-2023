@@ -1,11 +1,11 @@
 {% load static %}
 <section class="mx-auto grid max-w-sm grid-cols-1 gap-5 px-8 md:max-w-[45rem] md:grid-cols-2 md:gap-x-8">
-  <div class="flex flex-col items-center w-full col-span-1 space-y-2 transition duration-700 opacity-0 blur-sm md:col-span-full" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <div class="flex flex-col items-center w-full col-span-1 space-y-2 transition duration-700 opacity-0 blur-sm md:col-span-full" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <img src="{% static 'assets/Eyes.png' %}" alt="eyes" class="w-10 h-10 md:h-12 md:w-12" />
     <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">ABOUT ME SECTION</p>
     <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">Who Am I?</div>
   </div>
-  <div class="flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-3xl blur-sm md:col-span-1" x-intersect="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+  <div class="flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-3xl blur-sm md:col-span-1" x-intersect="$el.classList.add('opacity-100', '!blur-none')">
     <img
       src="{% static 'images/avatar.webp' %}"
       alt="avatar"
@@ -17,17 +17,17 @@
     <p class="text-gray-text-light animate-background-shine items-end bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent">59c8d663e5947d42a8be6fba8a8ed510</p>
   </div>
   <div class="flex flex-col justify-between col-span-1 space-y-3 md:col-span-1">
-    <div class="mt-3 flex items-center space-x-1.5 opacity-0 blur-sm transition duration-700 md:mt-0" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">
+    <div class="mt-3 flex items-center space-x-1.5 opacity-0 blur-sm transition duration-700 md:mt-0" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
       <p class="font-['Wotfard'] text-2xl font-medium text-white">Trinh The Son</p>
       <img src="{% static 'assets/verified.svg' %}" alt="eyes" class="w-5 h-5" />
     </div>
-    <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Hello! I'm Son, a 4th-year Computer Science major at <span class="bg-gradient-to-t from-[#f64f59] to-[#FF4B2B] bg-clip-text font-['Cubano'] text-transparent">Hcmus</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text font-['Cubano'] text-transparent">JavaScript</span>, <span class="bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text font-['Cubano'] text-transparent">Python</span>, and <span class="bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text font-['Cubano'] text-transparent">Django</span>. Let's connect and make great things together!</p>
+    <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">Hello! I'm Son, a 4th-year Computer Science major at <span class="bg-gradient-to-t from-[#f64f59] to-[#FF4B2B] bg-clip-text font-['Cubano'] text-transparent">Hcmus</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text font-['Cubano'] text-transparent">JavaScript</span>, <span class="bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text font-['Cubano'] text-transparent">Python</span>, and <span class="bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text font-['Cubano'] text-transparent">Django</span>. Let's connect and make great things together!</p>
     {% comment %}
     <span class="flex items-center space-x-3"
       ><a href="{% static 'documents/TrinhTheSon_Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="animate-text-gradient !inline-block bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text font-['Cubano'] text-lg text-transparent opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">View my resume</a>
       <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Left%20Light%20Skin%20Tone.png" alt="Backhand Index Pointing Left Light Skin Tone" class="w-5 h-5" />
     </span>
     {% endcomment %}
-    <p class="text-gray-text pt-2 font-['Balleny'] text-5xl opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')">Son</p>
+    <p class="text-gray-text pt-2 font-['Balleny'] text-5xl opacity-0 blur-sm transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">Son</p>
   </div>
 </section>
