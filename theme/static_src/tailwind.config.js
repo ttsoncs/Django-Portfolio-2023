@@ -47,7 +47,7 @@ module.exports = {
         8: "repeat(8, minmax(0, 1fr))",
       },
       colors: {
-        'custom-black': '#000',
+        'custom-black': '#0a0a0b',
         'gray-border': '#212427',
         'gray-bg': '#121212',
         'gray-bg-hover': '#292929',

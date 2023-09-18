@@ -1,6 +1,6 @@
 {% load static %}
-<section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-2 px-6 lg:grid-rows-8 md:grid-row-6 md:grid-cols-4 lg:mx-auto lg:grid-cols-6">
-  <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:col-span-2 md:row-span-4 md:space-y-7 lg:col-span-2 lg:row-span-full lg:space-y-5 lg:p-8"
+<section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-2 px-6 md:gap-3 lg:grid-rows-8 md:grid-row-6 md:grid-cols-4 lg:mx-auto lg:grid-cols-6">
+  <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-2xl blur-sm md:col-span-2 md:row-span-4 md:space-y-7 lg:col-span-2 lg:row-span-full lg:space-y-5 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center space-x-5">
       <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
@@ -9,9 +9,7 @@
         <img src="{% static 'images/avatar.webp' %}"
              alt="avatar"
              class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.5rem] md:w-[4.5rem] md:ring-[3px]"
-             style="background-image: url(data:image/svg+xml;
-                    base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyNzMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+);
-                    background-size: cover" />
+             style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyODkiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+); background-size: cover;" />
       </a>
       <div class="flex flex-col">
         <div class="flex space-x-1.5 items-center">
@@ -55,7 +53,7 @@
     </div>
     <p class="text-gray-text-light inline-block font-['Wotfard']">@ttsoncs</p>
   </div>
-  <div class="p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-3"
+  <div class="p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-2xl blur-sm md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-3"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full">
       <div>
@@ -68,7 +66,7 @@
   {% comment %} href="https://linkedin.com/in/ttsoncs" {% endcomment %}
   <a target="_blank"
      rel="noopener noreferrer"
-     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
+     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-2xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
      x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">
       LinkedIn
@@ -77,13 +75,13 @@
   <a href="https://github.com/ttsoncs/"
      target="_blank"
      rel="noopener noreferrer"
-     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
+     class="flex items-center justify-center col-span-1 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg hover:bg-gray-bg-hover rounded-2xl blur-sm md:col-span-1 lg:col-span-1 lg:row-span-2"
      x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">
       GitHub
     </div>
   </a>
-  <div class="relative p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3"
+  <div class="relative p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-2xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-3"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full overflow-hidden">
       <div>
@@ -93,7 +91,7 @@
       {% include "partials/cobe.html" %}
     </div>
   </div>
-  <div class="p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:py-10"
+  <div class="p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-2xl blur-sm md:p-8 md:pb-10 lg:col-span-2 lg:col-start-5 lg:row-span-full lg:py-10"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="w-full h-full space-y-5 lg:space-y-8">
       <div class="flex justify-center">
@@ -112,7 +110,7 @@
       </div>
     </div>
   </div>
-  <div class="relative flex p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:col-span-full lg:col-span-full lg:row-span-2"
+  <div class="relative flex p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-2xl blur-sm md:col-span-full lg:col-span-full lg:row-span-2"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
     <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
@@ -133,57 +131,6 @@
   </div>
   <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-xl blur-sm md:col-span-2 md:row-span-4 md:space-y-7 lg:col-span-2 lg:row-span-full lg:space-y-5 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="flex items-center space-x-5">
-      <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
-         target="_blank"
-         rel="noopener noreferrer">
-        <img src="{% static 'images/avatar.webp' %}"
-             alt="avatar"
-             class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.5rem] md:w-[4.5rem] md:ring-[3px]"
-             style="background-image: url(data:image/svg+xml;
-                    base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyNzMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+);
-                    background-size: cover" />
-      </a>
-      <div class="flex flex-col">
-        <div class="flex space-x-1.5 items-center">
-          <span class="font-['Wotfard'] font-medium text-gray-text md:text-xl text-lg">Trinh The Son</span>
-          <img src="{% static 'assets/verified.svg' %}"
-               alt="eyes"
-               class="w-3.5 h-3.5" />
-        </div>
-        <div class="relative flex space-x-3 md:space-x-4">
-          <div class="absolute left-0 top-[45%] md:top-[41%] w-1 h-1 ml-0.5 md:h-1.5 md:w-1.5 bg-green-600 rounded-full ring-2 ring-green-900">
-          </div>
-          <span class="font-['Wotfard'] text-sm md:text-base animate-background-shine bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text text-transparent">Available for hire</span>
-        </div>
-      </div>
-      {% comment %} <img src="{% static 'assets/pushpin_color.svg' %}" alt="pushpin" class="w-10 h-10 md:h-12 md:w-12" /> {% endcomment %}
-    </div>
-    <div class="pt-5 space-y-5 md:space-y-6">
-      <div class="relative lg:pt-3">
-        <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
-             id="g1">
-          <p>Hello.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
-             id="g2">
-          <p>Xin chào.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Noto_sans_jp'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
-             id="g3">
-          <p class="md:pb-2">こんにちは.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Noto_sans_sc'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
-             id="g4">
-          <p class="md:pb-2">你好.</p>
-        </div>
-      </div>
-      <p class="font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
-        <span class="hidden max-sm:inline-block">WC</span>
-        <span class="hidden sm:inline">Welcome</span>
-        to My Portfolio!
-      </p>
-    </div>
-    <p class="text-gray-text-light inline-block font-['Wotfard']">@ttsoncs</p>
+    
   </div>
 </section>
