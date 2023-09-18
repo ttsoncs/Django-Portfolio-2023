@@ -41,6 +41,7 @@
            x-show="tabContentActive($el)"
            class="relative w-full transition duration-700 opacity-0 blur-sm"
            x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+           x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"
            x-cloak>
         <div class="flex justify-start space-x-2.5">
           <img src="{% static 'assets/graduation_cap_color.svg' %}"
@@ -59,6 +60,7 @@
            x-show="tabContentActive($el)"
            class="relative w-full transition duration-700 opacity-0 blur-sm"
            x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+           x-intersect:leave="$el.classList.remove('opacity-100', '!blur-none')"
            x-cloak>
         <div class="flex justify-start space-x-2.5">
           <img src="{% static 'assets/briefcase_color.svg' %}"

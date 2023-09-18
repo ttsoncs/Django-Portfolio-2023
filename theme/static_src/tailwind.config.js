@@ -45,12 +45,13 @@ module.exports = {
     extend: {
       gridTemplateRows: {
         8: "repeat(8, minmax(0, 1fr))",
+          13: "repeat(13, minmax(0, 1fr))",
       },
       colors: {
         'custom-black': '#0a0a0b',
         'gray-border': '#212427',
         'gray-bg': '#121212',
-        'gray-bg-hover': '#292929',
+        'gray-bg-hover': '#1a1a1a',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
         'custom-purple': '#772af4'
