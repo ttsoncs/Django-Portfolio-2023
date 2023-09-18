@@ -23,7 +23,7 @@
   <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data></body>
     <div>
       <div class="fixed top-0 left-0 w-full h-full -z-10">
-        <div class="relative w-full h-full bg-custom-black">
+        <div class="relative hidden w-full h-full bg-custom-black" @load.window="$el.classList.remove('hidden')">
           <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#0b0c0c,transparent_100%)]"></div>
         </div>
       </div>
@@ -32,9 +32,6 @@
         {% include 'partials/navbar.html' %}
         {% block content %}
         {% endblock content %}
-        {% include 'partials/faq.html' %}
-        <div class="w-0 h-0 mt-16 lg:mt-20"></div>
-        {% include 'partials/footer.html' %}
       </div>
     </div>
     <script src="{% static "js/main.js" %}"></script>

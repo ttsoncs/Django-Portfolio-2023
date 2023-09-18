@@ -7,11 +7,6 @@ from .models import FAQ
 class HomePageView(TemplateView):
     template_name = "pages/home.html"
 
-    def get_context_data(self, **kwargs):
-        context = super(HomePageView, self).get_context_data(**kwargs)
-        context["faq_list"] = FAQ.objects.all()
-        return context
-
 
 class AboutMePageView(TemplateView):
     template_name = "pages/about_me.html"
