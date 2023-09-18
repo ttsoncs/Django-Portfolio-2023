@@ -47,9 +47,9 @@ module.exports = {
         8: "repeat(8, minmax(0, 1fr))",
       },
       colors: {
-        'custom-black': '#0b0c0c',
+        'custom-black': '#000',
         'gray-border': '#212427',
-        'gray-bg': '#141516',
+        'gray-bg': '#121212',
         'gray-bg-hover': '#292929',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
@@ -61,8 +61,6 @@ module.exports = {
         "border-width": "border-width 3s infinite alternate",
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
-        marqueeY: 'marqueeY 5s linear infinite',
-        marquee2Y: 'marquee2Y 5s linear infinite',
       },
       "keyframes": {
         "background-shine": {
@@ -95,14 +93,6 @@ module.exports = {
         marquee2: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
-        },
-        marqueeY: {
-          '0%': { transform: 'translateY(0%)' },
-          '100%': { transform: 'translateY(-100%)' },
-        },
-        marquee2Y: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(0%)' },
         },
       }
     },
