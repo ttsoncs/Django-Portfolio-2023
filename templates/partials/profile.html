@@ -10,11 +10,18 @@
       Who Am I?
     </div>
   </div>
-  <div class="flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-2xl blur-sm md:col-span-1"
+  <div class="mt-16 md:mt-0 row-start-1 md:row-start-auto relative flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-3xl blur-sm md:col-span-1"
        x-intersect="$el.classList.add('opacity-100', '!blur-none')">
+    <div class="absolute w-10 h-full -top-[96%] bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
+    <div class="absolute w-14 h-2 -top-[0.5%] -z-10 bg-gradient-to-t from-[#434343] to-custom-black rounded-full">
+    </div>
     <img src="{% static 'images/avatar.webp' %}"
          alt="avatar"
-         class="bg-custom-black rounded-xl" />
+         class="rounded-xl"
+         style="background-image: radial-gradient(#4f4f4f2e 0.85px, #0a0a0b 0.85px);
+                background-size: 17px 17px;
+                background-position: center"
+          />
     <p class="text-gray-text-light animate-background-shine items-end bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent">
       59c8d663e5947d42a8be6fba8a8ed510
     </p>
