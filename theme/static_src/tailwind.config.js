@@ -44,8 +44,15 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        8: "repeat(8, minmax(0, 1fr))",
-          13: "repeat(13, minmax(0, 1fr))",
+        18: "repeat(18, minmax(0, 1fr))",
+        26: "repeat(26, minmax(0, 1fr))",
+        40: "repeat(40, minmax(0, 1fr))",
+      },
+      gridRow: {
+        'span-8': 'span 8 / span 8',
+      },
+      gridRowStart: {
+        '9': '9',
       },
       colors: {
         'custom-black': '#0a0a0b',
