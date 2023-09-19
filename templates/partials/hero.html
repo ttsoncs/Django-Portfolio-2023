@@ -61,7 +61,7 @@
         <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
       </div>
-      <img src="{% static "assets/Fire.png" %}" alt="Clown Face" class="w-10 h-10 md:h-12 md:w-12" />
+      <img src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
     </div>
   </div>
   <a target="_blank"
@@ -91,22 +91,28 @@
       {% include "partials/cobe.html" %}
     </div>
   </div>
-  <div class="row-span-6 p-8 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+  <div class="row-span-6 p-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8 lg:p-8"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+       style="background-size: cover;
+       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGdyYWRpZW50VHJhbnNmb3JtPSJyb3RhdGUoMjcwKSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSIgaWQ9InNzc3F1aWdnbHktZ3JhZCI+PHN0b3Agc3RvcC1jb2xvcj0iaHNsKDI2NSwgNTUlLCAzMCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjY1LCA1NSUsIDYwJSkiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZT0idXJsKCNzc3NxdWlnZ2x5LWdyYWQpIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTUsNTMuNDk2NTUzNDIxMDIwNTEpIj48cGF0aCBkPSJNMTAsMTBDMzUuNjk0NDQ0NDQ0NDQ0NDQsMTEuNDU4MzMzMzMzMzMzMzM0LDc5Ljg2MTExMTExMTExMTExLDIxLjU4MzMzMzMzMzMzMzMzMiwxMzMuMzMzMzMzMzMzMzMzMzQsMTdDMTg2LjgwNTU1NTU1NTU1NTU3LDEyLjQxNjY2NjY2NjY2NjY2OCwyMTEuMTExMTExMTExMTExMTQsLTEyLjYyNSwyNjYuNjY2NjY2NjY2NjY2NywtMTJDMzIyLjIyMjIyMjIyMjIyMjIzLC0xMS4zNzUsMzQ0LjQ0NDQ0NDQ0NDQ0NDQ2LDE4LjU0MTY2NjY2NjY2NjY2OCw0MDAsMjBDNDU1LjU1NTU1NTU1NTU1NTU0LDIxLjQ1ODMzMzMzMzMzMzMzMiw0NzcuNzc3Nzc3Nzc3Nzc3OCwtNy43MDgzMzMzMzMzMzMzMzMsNTMzLjMzMzMzMzMzMzMzMzQsLTVDNTg4Ljg4ODg4ODg4ODg4ODksLTIuMjkxNjY2NjY2NjY2NjY3LDYxMS4xMTExMTExMTExMTEyLDMyLjE2NjY2NjY2NjY2NjY2NCw2NjYuNjY2NjY2NjY2NjY2NywzM0M3MjIuMjIyMjIyMjIyMjIyMywzMy44MzMzMzMzMzMzMzMzMzYsNzcyLjIyMjIyMjIyMjIyMjMsNi4wODMzMzMzMzMzMzMzMzQsODAwLC0xIj48L3BhdGg+PHBhdGggZD0iTTEwLDEwQzM1LjY5NDQ0NDQ0NDQ0NDQ0LDExLjQ1ODMzMzMzMzMzMzMzNCw3OS44NjExMTExMTExMTExMSwyMS41ODMzMzMzMzMzMzMzMzIsMTMzLjMzMzMzMzMzMzMzMzM0LDE3QzE4Ni44MDU1NTU1NTU1NTU1NywxMi40MTY2NjY2NjY2NjY2NjgsMjExLjExMTExMTExMTExMTE0LC0xMi42MjUsMjY2LjY2NjY2NjY2NjY2NjcsLTEyQzMyMi4yMjIyMjIyMjIyMjIyMywtMTEuMzc1LDM0NC40NDQ0NDQ0NDQ0NDQ0NiwxOC41NDE2NjY2NjY2NjY2NjgsNDAwLDIwQzQ1NS41NTU1NTU1NTU1NTU1NCwyMS40NTgzMzMzMzMzMzMzMzIsNDc3Ljc3Nzc3Nzc3Nzc3NzgsLTcuNzA4MzMzMzMzMzMzMzMzLDUzMy4zMzMzMzMzMzMzMzM0LC01QzU4OC44ODg4ODg4ODg4ODg5LC0yLjI5MTY2NjY2NjY2NjY2Nyw2MTEuMTExMTExMTExMTExMiwzMi4xNjY2NjY2NjY2NjY2NjQsNjY2LjY2NjY2NjY2NjY2NjcsMzNDNzIyLjIyMjIyMjIyMjIyMjMsMzMuODMzMzMzMzMzMzMzMzM2LDc3Mi4yMjIyMjIyMjIyMjIzLDYuMDgzMzMzMzMzMzMzMzM0LDgwMCwtMSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDY3MikiPjwvcGF0aD48cGF0aCBkPSJNMTAsMTBDMzUuNjk0NDQ0NDQ0NDQ0NDQsMTEuNDU4MzMzMzMzMzMzMzM0LDc5Ljg2MTExMTExMTExMTExLDIxLjU4MzMzMzMzMzMzMzMzMiwxMzMuMzMzMzMzMzMzMzMzMzQsMTdDMTg2LjgwNTU1NTU1NTU1NTU3LDEyLjQxNjY2NjY2NjY2NjY2OCwyMTEuMTExMTExMTExMTExMTQsLTEyLjYyNSwyNjYuNjY2NjY2NjY2NjY2NywtMTJDMzIyLjIyMjIyMjIyMjIyMjIzLC0xMS4zNzUsMzQ0LjQ0NDQ0NDQ0NDQ0NDQ2LDE4LjU0MTY2NjY2NjY2NjY2OCw0MDAsMjBDNDU1LjU1NTU1NTU1NTU1NTU0LDIxLjQ1ODMzMzMzMzMzMzMzMiw0NzcuNzc3Nzc3Nzc3Nzc3OCwtNy43MDgzMzMzMzMzMzMzMzMsNTMzLjMzMzMzMzMzMzMzMzQsLTVDNTg4Ljg4ODg4ODg4ODg4ODksLTIuMjkxNjY2NjY2NjY2NjY3LDYxMS4xMTExMTExMTExMTEyLDMyLjE2NjY2NjY2NjY2NjY2NCw2NjYuNjY2NjY2NjY2NjY2NywzM0M3MjIuMjIyMjIyMjIyMjIyMywzMy44MzMzMzMzMzMzMzMzMzYsNzcyLjIyMjIyMjIyMjIyMjMsNi4wODMzMzMzMzMzMzMzMzQsODAwLC0xIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsNTg4KSI+PC9wYXRoPjxwYXRoIGQ9Ik0xMCwxMEMzNS42OTQ0NDQ0NDQ0NDQ0NCwxMS40NTgzMzMzMzMzMzMzMzQsNzkuODYxMTExMTExMTExMTEsMjEuNTgzMzMzMzMzMzMzMzMyLDEzMy4zMzMzMzMzMzMzMzMzNCwxN0MxODYuODA1NTU1NTU1NTU1NTcsMTIuNDE2NjY2NjY2NjY2NjY4LDIxMS4xMTExMTExMTExMTExNCwtMTIuNjI1LDI2Ni42NjY2NjY2NjY2NjY3LC0xMkMzMjIuMjIyMjIyMjIyMjIyMjMsLTExLjM3NSwzNDQuNDQ0NDQ0NDQ0NDQ0NDYsMTguNTQxNjY2NjY2NjY2NjY4LDQwMCwyMEM0NTUuNTU1NTU1NTU1NTU1NTQsMjEuNDU4MzMzMzMzMzMzMzMyLDQ3Ny43Nzc3Nzc3Nzc3Nzc4LC03LjcwODMzMzMzMzMzMzMzMyw1MzMuMzMzMzMzMzMzMzMzNCwtNUM1ODguODg4ODg4ODg4ODg4OSwtMi4yOTE2NjY2NjY2NjY2NjcsNjExLjExMTExMTExMTExMTIsMzIuMTY2NjY2NjY2NjY2NjY0LDY2Ni42NjY2NjY2NjY2NjY3LDMzQzcyMi4yMjIyMjIyMjIyMjIzLDMzLjgzMzMzMzMzMzMzMzMzNiw3NzIuMjIyMjIyMjIyMjIyMyw2LjA4MzMzMzMzMzMzMzMzNCw4MDAsLTEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCw1MDQpIj48L3BhdGg+PHBhdGggZD0iTTEwLDEwQzM1LjY5NDQ0NDQ0NDQ0NDQ0LDExLjQ1ODMzMzMzMzMzMzMzNCw3OS44NjExMTExMTExMTExMSwyMS41ODMzMzMzMzMzMzMzMzIsMTMzLjMzMzMzMzMzMzMzMzM0LDE3QzE4Ni44MDU1NTU1NTU1NTU1NywxMi40MTY2NjY2NjY2NjY2NjgsMjExLjExMTExMTExMTExMTE0LC0xMi42MjUsMjY2LjY2NjY2NjY2NjY2NjcsLTEyQzMyMi4yMjIyMjIyMjIyMjIyMywtMTEuMzc1LDM0NC40NDQ0NDQ0NDQ0NDQ0NiwxOC41NDE2NjY2NjY2NjY2NjgsNDAwLDIwQzQ1NS41NTU1NTU1NTU1NTU1NCwyMS40NTgzMzMzMzMzMzMzMzIsNDc3Ljc3Nzc3Nzc3Nzc3NzgsLTcuNzA4MzMzMzMzMzMzMzMzLDUzMy4zMzMzMzMzMzMzMzM0LC01QzU4OC44ODg4ODg4ODg4ODg5LC0yLjI5MTY2NjY2NjY2NjY2Nyw2MTEuMTExMTExMTExMTExMiwzMi4xNjY2NjY2NjY2NjY2NjQsNjY2LjY2NjY2NjY2NjY2NjcsMzNDNzIyLjIyMjIyMjIyMjIyMjMsMzMuODMzMzMzMzMzMzMzMzM2LDc3Mi4yMjIyMjIyMjIyMjIzLDYuMDgzMzMzMzMzMzMzMzM0LDgwMCwtMSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDQyMCkiPjwvcGF0aD48cGF0aCBkPSJNMTAsMTBDMzUuNjk0NDQ0NDQ0NDQ0NDQsMTEuNDU4MzMzMzMzMzMzMzM0LDc5Ljg2MTExMTExMTExMTExLDIxLjU4MzMzMzMzMzMzMzMzMiwxMzMuMzMzMzMzMzMzMzMzMzQsMTdDMTg2LjgwNTU1NTU1NTU1NTU3LDEyLjQxNjY2NjY2NjY2NjY2OCwyMTEuMTExMTExMTExMTExMTQsLTEyLjYyNSwyNjYuNjY2NjY2NjY2NjY2NywtMTJDMzIyLjIyMjIyMjIyMjIyMjIzLC0xMS4zNzUsMzQ0LjQ0NDQ0NDQ0NDQ0NDQ2LDE4LjU0MTY2NjY2NjY2NjY2OCw0MDAsMjBDNDU1LjU1NTU1NTU1NTU1NTU0LDIxLjQ1ODMzMzMzMzMzMzMzMiw0NzcuNzc3Nzc3Nzc3Nzc3OCwtNy43MDgzMzMzMzMzMzMzMzMsNTMzLjMzMzMzMzMzMzMzMzQsLTVDNTg4Ljg4ODg4ODg4ODg4ODksLTIuMjkxNjY2NjY2NjY2NjY3LDYxMS4xMTExMTExMTExMTEyLDMyLjE2NjY2NjY2NjY2NjY2NCw2NjYuNjY2NjY2NjY2NjY2NywzM0M3MjIuMjIyMjIyMjIyMjIyMywzMy44MzMzMzMzMzMzMzMzMzYsNzcyLjIyMjIyMjIyMjIyMjMsNi4wODMzMzMzMzMzMzMzMzQsODAwLC0xIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMzM2KSI+PC9wYXRoPjxwYXRoIGQ9Ik0xMCwxMEMzNS42OTQ0NDQ0NDQ0NDQ0NCwxMS40NTgzMzMzMzMzMzMzMzQsNzkuODYxMTExMTExMTExMTEsMjEuNTgzMzMzMzMzMzMzMzMyLDEzMy4zMzMzMzMzMzMzMzMzNCwxN0MxODYuODA1NTU1NTU1NTU1NTcsMTIuNDE2NjY2NjY2NjY2NjY4LDIxMS4xMTExMTExMTExMTExNCwtMTIuNjI1LDI2Ni42NjY2NjY2NjY2NjY3LC0xMkMzMjIuMjIyMjIyMjIyMjIyMjMsLTExLjM3NSwzNDQuNDQ0NDQ0NDQ0NDQ0NDYsMTguNTQxNjY2NjY2NjY2NjY4LDQwMCwyMEM0NTUuNTU1NTU1NTU1NTU1NTQsMjEuNDU4MzMzMzMzMzMzMzMyLDQ3Ny43Nzc3Nzc3Nzc3Nzc4LC03LjcwODMzMzMzMzMzMzMzMyw1MzMuMzMzMzMzMzMzMzMzNCwtNUM1ODguODg4ODg4ODg4ODg4OSwtMi4yOTE2NjY2NjY2NjY2NjcsNjExLjExMTExMTExMTExMTIsMzIuMTY2NjY2NjY2NjY2NjY0LDY2Ni42NjY2NjY2NjY2NjY3LDMzQzcyMi4yMjIyMjIyMjIyMjIzLDMzLjgzMzMzMzMzMzMzMzMzNiw3NzIuMjIyMjIyMjIyMjIyMyw2LjA4MzMzMzMzMzMzMzMzNCw4MDAsLTEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwyNTIpIj48L3BhdGg+PHBhdGggZD0iTTEwLDEwQzM1LjY5NDQ0NDQ0NDQ0NDQ0LDExLjQ1ODMzMzMzMzMzMzMzNCw3OS44NjExMTExMTExMTExMSwyMS41ODMzMzMzMzMzMzMzMzIsMTMzLjMzMzMzMzMzMzMzMzM0LDE3QzE4Ni44MDU1NTU1NTU1NTU1NywxMi40MTY2NjY2NjY2NjY2NjgsMjExLjExMTExMTExMTExMTE0LC0xMi42MjUsMjY2LjY2NjY2NjY2NjY2NjcsLTEyQzMyMi4yMjIyMjIyMjIyMjIyMywtMTEuMzc1LDM0NC40NDQ0NDQ0NDQ0NDQ0NiwxOC41NDE2NjY2NjY2NjY2NjgsNDAwLDIwQzQ1NS41NTU1NTU1NTU1NTU1NCwyMS40NTgzMzMzMzMzMzMzMzIsNDc3Ljc3Nzc3Nzc3Nzc3NzgsLTcuNzA4MzMzMzMzMzMzMzMzLDUzMy4zMzMzMzMzMzMzMzM0LC01QzU4OC44ODg4ODg4ODg4ODg5LC0yLjI5MTY2NjY2NjY2NjY2Nyw2MTEuMTExMTExMTExMTExMiwzMi4xNjY2NjY2NjY2NjY2NjQsNjY2LjY2NjY2NjY2NjY2NjcsMzNDNzIyLjIyMjIyMjIyMjIyMjMsMzMuODMzMzMzMzMzMzMzMzM2LDc3Mi4yMjIyMjIyMjIyMjIzLDYuMDgzMzMzMzMzMzMzMzM0LDgwMCwtMSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDE2OCkiPjwvcGF0aD48cGF0aCBkPSJNMTAsMTBDMzUuNjk0NDQ0NDQ0NDQ0NDQsMTEuNDU4MzMzMzMzMzMzMzM0LDc5Ljg2MTExMTExMTExMTExLDIxLjU4MzMzMzMzMzMzMzMzMiwxMzMuMzMzMzMzMzMzMzMzMzQsMTdDMTg2LjgwNTU1NTU1NTU1NTU3LDEyLjQxNjY2NjY2NjY2NjY2OCwyMTEuMTExMTExMTExMTExMTQsLTEyLjYyNSwyNjYuNjY2NjY2NjY2NjY2NywtMTJDMzIyLjIyMjIyMjIyMjIyMjIzLC0xMS4zNzUsMzQ0LjQ0NDQ0NDQ0NDQ0NDQ2LDE4LjU0MTY2NjY2NjY2NjY2OCw0MDAsMjBDNDU1LjU1NTU1NTU1NTU1NTU0LDIxLjQ1ODMzMzMzMzMzMzMzMiw0NzcuNzc3Nzc3Nzc3Nzc3OCwtNy43MDgzMzMzMzMzMzMzMzMsNTMzLjMzMzMzMzMzMzMzMzQsLTVDNTg4Ljg4ODg4ODg4ODg4ODksLTIuMjkxNjY2NjY2NjY2NjY3LDYxMS4xMTExMTExMTExMTEyLDMyLjE2NjY2NjY2NjY2NjY2NCw2NjYuNjY2NjY2NjY2NjY2NywzM0M3MjIuMjIyMjIyMjIyMjIyMywzMy44MzMzMzMzMzMzMzMzMzYsNzcyLjIyMjIyMjIyMjIyMjMsNi4wODMzMzMzMzMzMzMzMzQsODAwLC0xIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsODQpIj48L3BhdGg+PC9nPjwvc3ZnPg==)"
+       >
     <div class="flex flex-col justify-between w-full h-full">
-      <div class="flex justify-center">
-        <img src="{% static 'assets/open_mailbox_with_raised_flag_color.svg' %}"
-             alt="open mailbox with raised flag"
-             class="w-12 h-12 md:h-14 md:w-14" />
+      <div class="relative max-w-md">
+        <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+        <div>
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Have a question or want to discuss something?</span>
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">
+            Drop me a message!
+          </span>
+        </div>
       </div>
-      <p class="text-center font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem] md:max-w-xs mx-auto">
-        Shoot Me a Message
-      </p>
       <div class="flex flex-col items-center justify-center">
         <a href="mailto:ttson.cs@gmail.com"
            target="_blank"
            rel="noopener noreferrer"
-           class="bg-custom-purple hover:bg-gray-text-light rounded-full lg:px-7 text-center px-8 py-2 font-['Wotfard'] text-2xl font-medium text-white transition-colors duration-700 md:py-4 md:text-[1.55rem]">ttson.cs@gmail.com
+           class="flex justify-between items-center w-full bg-custom-purple hover:bg-gray-text-light rounded-full text-center px-7 py-2 font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-4 md:text-[1.75rem] group">
+           <span class="transition duration-700 group-hover:translate-x-3">Let's talk</span>
+           <img src="{% static "assets/arrow2.svg" %}" alt="arrow" class="w-5 h-5 text-white transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
         </a>
       </div>
     </div>
@@ -135,21 +141,20 @@
        style="background-size: cover;
               background-position: center;
               background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCIgb3BhY2l0eT0iMC41MyI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjI3Ny41IiByeT0iMjc3LjUiIGN4PSI3MDAuNzE4MzkzNTIzNzg3OSIgY3k9IjcwNi40MjEwNDQ4NDQ2MjU4IiBmaWxsPSJoc2woMjg2LCAxMDAlLCA2OCUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)">
-              <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
-                <div class="relative max-w-md">
+    <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+      <div class="relative max-w-md">
         <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
         <div>
-          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.875rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>I have my resume ready for you to review.</span>
-          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.875rem] font-medium text-gray-text text-2xl">
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>I have my resume ready for you to review.</span>
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">
             Would you be interested in taking a look?
           </span>
         </div>
       </div>
-      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="flex items-center justify-center w-10 h-10 transition-colors duration-700 rounded-full bg-gray-border md:h-12 md:w-12 hover:bg-gray-text-light">
-        <img src="{% static "assets/arrow-up.svg" %}" alt="arrow up" class="w-2/3 text-white h-2/3">
+      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="absolute bottom-0 flex items-center justify-center w-10 h-10 transition-colors duration-700 rounded-full bg-gray-border md:h-12 md:w-12 hover:bg-gray-text-light">
+        <img src="{% static "assets/arrow-up.svg" %}" alt="arrow up" class="w-5 h-5 text-white md:h-6 md:w-6"/>
       </a>
     </div>
-    <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#12121212_1px,transparent_1px),linear-gradient(to_bottom,#12121212_1px,transparent_1px)] bg-[size:14px_14px]"></div>
   </div>
   <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">

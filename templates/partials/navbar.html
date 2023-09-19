@@ -40,32 +40,32 @@
                        x-data="{path: '{{ request.path }}'}">
                         <a href="{% url 'home' %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm md:text-white"
-                                    :class="{'!text-custom-purple': path === '/'}">home.</span>
+                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
+                                    :class="{'text-white': path === '/'}">home.</span>
                               <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
                         </a>
                         <a href="{% url "about" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm md:text-white"
-                                    :class="{'!text-custom-purple': path === '/about/'}">about me.</span>
+                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
+                                    :class="{'text-white': path === '/about/'}">about me.</span>
                               <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
                         </a>
                         <a href="{% url "works" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm md:text-white"
-                                    :class="{'!text-custom-purple': path === '/works/'}">works.</span>
+                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
+                                    :class="{'text-white': path === '/works/'}">works.</span>
                               <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
                         </a>
                         <a href="{% url "blog" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm md:text-white"
-                                    :class="{'!text-custom-purple': path === '/blog/'}">blog.</span>
+                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
+                                    :class="{'text-white': path === '/blog/'}">blog.</span>
                               <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
                         </a>
                         <a href="{% url "contact" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
-                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm md:text-white"
-                                    :class="{'!text-custom-purple': path === '/contact/'}">contact.</span>
+                              <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
+                                    :class="{'text-white': path === '/contact/'}">contact.</span>
                               <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
                         </a>
                         <a href="mailto:ttson.cs@gmail.com"
