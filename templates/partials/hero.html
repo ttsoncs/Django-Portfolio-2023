@@ -1,55 +1,57 @@
 {% load static %}
 <section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 mx-auto grid-rows-40 lg:grid-rows-18 md:grid-rows-26 md:grid-cols-4 lg:grid-cols-6">
-  <div class="relative row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 md:space-y-7 lg:col-span-2 lg:row-span-8 lg:space-y-5 lg:p-8"
+  <div class="relative row-span-6 p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="flex items-center space-x-5">
-      <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
-         target="_blank"
-         rel="noopener noreferrer">
-        <img src="{% static 'images/avatar.webp' %}"
-             alt="avatar"
-             class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.5rem] md:w-[4.5rem] md:ring-[3px]"
-             style="background-size: cover;
-             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyODkiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+)">
-      </a>
-      <div class="flex flex-col -space-y-0.5">
-        <div class="flex space-x-1.5 items-center">
-          <span class="font-['Wotfard'] font-medium text-gray-text md:text-xl text-lg">Trinh The Son</span>
-          <img src="{% static 'assets/verified.svg' %}"
-               alt="eyes"
-               class="w-3.5 h-3.5 md:h-4 md:w-4" />
-        </div>
-        <p class="text-gray-text-light text-sm md:text-base font-['Wotfard']">@ttsoncs</p>
-      </div>
-    </div>
-    <div class="pt-5 space-y-5 md:space-y-6">
-      <div class="relative lg:pt-3">
-        <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
-             id="g1">
-          <p>Hello.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
-             id="g2">
-          <p>Xin chào.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Noto_sans_jp'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
-             id="g3">
-          <p class="md:pb-2">こんにちは.</p>
-        </div>
-        <div class="gif text-gray-text-light absolute font-['Noto_sans_sc'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
-             id="g4">
-          <p class="md:pb-2">你好.</p>
+    <div class="flex flex-col justify-between w-full h-full">
+      <div class="flex items-center space-x-5">
+        <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img src="{% static 'images/avatar.webp' %}"
+               alt="avatar"
+               class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.5rem] md:w-[4.5rem] md:ring-[3px]"
+               style="background-size: cover;
+                      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyODkiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+)">
+        </a>
+        <div class="flex flex-col -space-y-0.5">
+          <div class="flex space-x-1.5 items-center">
+            <span class="font-['Wotfard'] font-medium text-gray-text md:text-xl text-lg">Trinh The Son</span>
+            <img src="{% static 'assets/verified.svg' %}"
+                 alt="verified"
+                 class="w-3.5 h-3.5 md:h-4 md:w-4" />
+          </div>
+          <p class="text-gray-text-light text-sm md:text-base font-['Wotfard']">@ttsoncs</p>
         </div>
       </div>
-      <p class="font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
-        <span class="hidden max-sm:inline-block">WC</span>
-        <span class="hidden sm:inline">Welcome</span>
-        to My Portfolio!
-      </p>
-    </div>
-    <div class="relative flex px-3 py-1 space-x-4 border border-green-600 rounded-full w-min">
-      <div class="absolute top-[42%] md:top-[45%] w-1.5 h-1.5 ml-0.5 bg-green-600 rounded-full ring-2 ring-green-900"></div>
-      <span class="font-['Wotfard'] text-sm md:text-base animate-background-shine bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text text-transparent whitespace-nowrap">Work wanted</span>
+      <div class="pt-5 space-y-5 md:space-y-6">
+        <div class="relative lg:pt-3">
+          <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
+               id="g1">
+            <p>Hello.</p>
+          </div>
+          <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]"
+               id="g2">
+            <p>Xin chào.</p>
+          </div>
+          <div class="gif text-gray-text-light absolute font-['Noto_sans_jp'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
+               id="g3">
+            <p class="md:pb-2">こんにちは.</p>
+          </div>
+          <div class="gif text-gray-text-light absolute font-['Noto_sans_sc'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]"
+               id="g4">
+            <p class="md:pb-2">你好.</p>
+          </div>
+        </div>
+        <p class="font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
+          <span class="inline sm:hidden">WC</span>
+          <span class="hidden sm:inline">Welcome</span>
+          to My Portfolio!
+        </p>
+      </div>
+      <div class="relative flex px-3 py-1 space-x-4 border border-green-600 rounded-full w-min">
+        <div class="absolute top-[42%] md:top-[45%] w-1.5 h-1.5 ml-0.5 bg-green-600 rounded-full ring-2 ring-green-900"></div>
+        <span class="font-['Wotfard'] text-sm md:text-base animate-background-shine bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text text-transparent whitespace-nowrap">Work wanted</span>
+      </div>
     </div>
   </div>
   <div class="row-span-3 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
@@ -89,9 +91,9 @@
       {% include "partials/cobe.html" %}
     </div>
   </div>
-  <div class="row-span-6 p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:p-8 md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8"
+  <div class="row-span-6 p-8 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="w-full h-full space-y-6 lg:space-y-10">
+    <div class="flex flex-col justify-between w-full h-full">
       <div class="flex justify-center">
         <img src="{% static 'assets/open_mailbox_with_raised_flag_color.svg' %}"
              alt="open mailbox with raised flag"
@@ -104,7 +106,7 @@
         <a href="mailto:ttson.cs@gmail.com"
            target="_blank"
            rel="noopener noreferrer"
-           class="bg-custom-purple hover:bg-gray-text-light rounded-full md:w-full lg:px-0 text-center px-8 py-2 font-['Wotfard'] text-2xl font-medium text-white transition-colors duration-700 md:py-4 md:text-[1.55rem]">ttson.cs@gmail.com
+           class="bg-custom-purple hover:bg-gray-text-light rounded-full lg:px-7 text-center px-8 py-2 font-['Wotfard'] text-2xl font-medium text-white transition-colors duration-700 md:py-4 md:text-[1.55rem]">ttson.cs@gmail.com
         </a>
       </div>
     </div>
@@ -128,10 +130,13 @@
       </div>
     </div>
   </div>
-  <div class="row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 md:col-start-3 md:row-start-9 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')" style="background-size: cover; background-position: center;background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCIgb3BhY2l0eT0iMC41MyI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjI3Ny41IiByeT0iMjc3LjUiIGN4PSI3MDAuNzE4MzkzNTIzNzg3OSIgY3k9IjcwNi40MjEwNDQ4NDQ2MjU4IiBmaWxsPSJoc2woMjg2LCAxMDAlLCA2OCUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)">
-    <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
-      <div class="relative max-w-md">
+  <div class="row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 md:col-start-3 md:row-start-9 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+       style="background-size: cover;
+              background-position: center;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCIgb3BhY2l0eT0iMC41MyI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjI3Ny41IiByeT0iMjc3LjUiIGN4PSI3MDAuNzE4MzkzNTIzNzg3OSIgY3k9IjcwNi40MjEwNDQ4NDQ2MjU4IiBmaWxsPSJoc2woMjg2LCAxMDAlLCA2OCUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)">
+              <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+                <div class="relative max-w-md">
         <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
         <div>
           <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.875rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>I have my resume ready for you to review.</span>
@@ -144,6 +149,7 @@
         <img src="{% static "assets/arrow-up.svg" %}" alt="arrow up" class="w-2/3 text-white h-2/3">
       </a>
     </div>
+    <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#12121212_1px,transparent_1px),linear-gradient(to_bottom,#12121212_1px,transparent_1px)] bg-[size:14px_14px]"></div>
   </div>
   <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
@@ -151,14 +157,6 @@
       <div>
         <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Portfolio</p>
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Selected Works</p>
-      </div>
-      <div class="space-y-4">
-        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
-          <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Django Realtime Chat</p>
-        </div>
-        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
-          <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Personal Portfolio</p>
-        </div>
       </div>
     </div>
   </div>
@@ -168,14 +166,6 @@
       <div>
         <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Blog</p>
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Insights & Articles</p>
-      </div>
-      <div class="space-y-4">
-        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
-          <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Django Realtime Chat</p>
-        </div>
-        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
-          <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Personal Portfolio</p>
-        </div>
       </div>
     </div>
   </div>
