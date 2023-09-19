@@ -721,6 +721,10 @@ select {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-top-\[0\.5\%\] {
   top: -0.5%;
 }
@@ -841,6 +845,14 @@ select {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .block {
@@ -1042,6 +1054,10 @@ select {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-2xl {
@@ -1811,6 +1827,15 @@ select {
   line-height: 1rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[1\.65rem\] {
+  font-size: 1.65rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2030,6 +2055,10 @@ select {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:sticky {
+    position: sticky;
+  }
+
   .max-sm\:inline-block {
     display: inline-block;
   }
@@ -2038,6 +2067,10 @@ select {
 @media (min-width: 640px) {
   .sm\:inline {
     display: inline;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 }
 
@@ -2096,6 +2129,10 @@ select {
 
   .md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .md\:inline {
+    display: inline;
   }
 
   .md\:flex {
@@ -2217,6 +2254,11 @@ select {
   .md\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -2341,6 +2383,23 @@ select {
     line-height: 1.75rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-\[1\.865rem\] {
+    font-size: 1.865rem;
+  }
+
+  .md\:text-\[1\.875rem\] {
+    font-size: 1.875rem;
+  }
+
   .md\:font-medium {
     font-weight: 500;
   }
@@ -2349,9 +2408,21 @@ select {
     text-transform: uppercase;
   }
 
+  .md\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .md\:leading-loose {
+    line-height: 2;
+  }
+
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .md\:text-\[1\.rem\] {
+    color: 1.rem;
   }
 
   .md\:ring-\[3px\] {

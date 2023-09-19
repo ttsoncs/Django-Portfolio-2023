@@ -1,6 +1,6 @@
 {% load static %}
-<section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 grid-rows-40 px-6 mx-auto gap-3 lg:grid-rows-18 md:grid-rows-26 md:grid-cols-4 lg:grid-cols-6">
-  <div class="relative p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full row-span-6 rounded-3xl blur-sm md:col-span-2 md:row-span-8 md:space-y-7 lg:col-span-2 lg:row-span-8 lg:space-y-5 lg:p-8"
+<section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 mx-auto grid-rows-40 lg:grid-rows-18 md:grid-rows-26 md:grid-cols-4 lg:grid-cols-6">
+  <div class="relative row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 md:space-y-7 lg:col-span-2 lg:row-span-8 lg:space-y-5 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center space-x-5">
       <a href="https://www.youtube.com/watch?v=6Edc6xxV93M"
@@ -48,10 +48,10 @@
     </div>
     <div class="relative flex px-3 py-1 space-x-4 border border-green-600 rounded-full w-min">
       <div class="absolute top-[42%] md:top-[45%] w-1.5 h-1.5 ml-0.5 bg-green-600 rounded-full ring-2 ring-green-900"></div>
-      <span class="font-['Wotfard'] text-sm md:text-base animate-background-shine bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text text-transparent whitespace-nowrap">Available</span>
+      <span class="font-['Wotfard'] text-sm md:text-base animate-background-shine bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text text-transparent whitespace-nowrap">Open To Work</span>
     </div>
   </div>
-  <div class="p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full row-span-3 rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
+  <div class="row-span-3 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full">
       <div>
@@ -78,7 +78,7 @@
       GitHub
     </div>
   </a>
-  <div class="relative p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full row-span-3 rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
+  <div class="relative row-span-3 p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex items-center justify-between w-full h-full overflow-hidden">
       <div>
@@ -88,7 +88,7 @@
       {% include "partials/cobe.html" %}
     </div>
   </div>
-  <div class="p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full row-span-6 rounded-3xl blur-sm md:p-8 md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8"
+  <div class="row-span-6 p-5 pb-6 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:p-8 md:col-span-2 md:row-span-8 lg:col-span-2 lg:col-start-5 lg:row-start-1 lg:row-span-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="w-full h-full space-y-6 lg:space-y-10">
       <div class="flex justify-center">
@@ -108,7 +108,7 @@
       </div>
     </div>
   </div>
-  <div class="relative flex p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full row-span-2 rounded-3xl blur-sm md:col-span-full md:row-span-2 lg:col-span-full lg:row-span-2"
+  <div class="relative flex row-span-2 p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-full md:row-span-2 lg:col-span-full lg:row-span-2"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
     <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
@@ -127,24 +127,24 @@
       </div>
     </div>
   </div>
-  <div class="md:col-start-3 md:row-start-9 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full row-span-6 space-y-5 rounded-3xl border-t p-6 opacity-0 blur-sm transition duration-700 md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+  <div class="row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 md:col-start-3 md:row-start-9 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10 relative">
+    <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
       <div class="relative max-w-md">
-        <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="h-6 w-6 absolute top-0 left-0 text-gray-text">
+        <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6 text-gray-text">
         <div>
-          <span class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">&emsp;&ensp;I have my resume ready for you to review.</span>
-          <span class="animate-text font-['Wotfard'] text-2xl font-medium text-gray-text md:text-[1.75rem]">
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.875rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>I have my resume ready for you to review.</span>
+          <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.875rem] font-medium text-gray-text text-2xl">
           Would you be interested in taking a look?
         </span>
         </div>
       </div>
-      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="rounded-full bg-gray-border h-8 w-8 md:h-10 md:w-10 flex justify-center items-center hover:bg-gray-text-light duration-700 transition-colors">
-        <img src="{% static "assets/arrow-up.svg" %}" alt="" class="h-2/3 w-2/3 text-white">
+      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="flex items-center justify-center w-10 h-10 transition-colors duration-700 rounded-full bg-gray-border md:h-12 md:w-12 hover:bg-gray-text-light">
+        <img src="{% static "assets/arrow-up.svg" %}" alt="arrow up" class="w-2/3 text-white h-2/3">
       </a>
     </div>
   </div>
-  <div class="border-gray-border bg-gray-bg relative col-span-full row-span-6 space-y-5 rounded-3xl border-t p-6 opacity-0 blur-sm transition duration-700 md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+  <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
       <div>
@@ -152,16 +152,16 @@
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Selected Works</p>
       </div>
       <div class="space-y-4">
-        <div class="border-gray-border flex items-center justify-between rounded-2xl border p-4">
+        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
           <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Django Realtime Chat</p>
         </div>
-        <div class="border-gray-border flex items-center justify-between rounded-2xl border p-4">
+        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
           <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Personal Portfolio</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="border-gray-border bg-gray-bg relative col-span-full row-span-6 space-y-5 rounded-3xl border-t p-6 opacity-0 blur-sm transition duration-700 md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+  <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
        x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
     <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
       <div>
@@ -169,10 +169,10 @@
         <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Insights & Articles</p>
       </div>
       <div class="space-y-4">
-        <div class="border-gray-border flex items-center justify-between rounded-2xl border p-4">
+        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
           <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Django Realtime Chat</p>
         </div>
-        <div class="border-gray-border flex items-center justify-between rounded-2xl border p-4">
+        <div class="flex items-center justify-between p-4 border border-gray-border rounded-2xl">
           <p class="font-['Wotfard'] md:text-xl font-medium text-gray-text">Personal Portfolio</p>
         </div>
       </div>
