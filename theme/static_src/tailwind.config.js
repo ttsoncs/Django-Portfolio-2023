@@ -61,7 +61,7 @@ module.exports = {
         'gray-bg-hover': '#1a1a1a',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
-        'custom-purple': '#772af4'
+        'custom-red': '#ed0000'
       },
       "animation": {
         "background-shine": "background-shine 2s linear infinite",
@@ -69,7 +69,7 @@ module.exports = {
         "border-width": "border-width 3s infinite alternate",
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
-        spin: 'spin 10s linear infinite',
+        spin: 'spin 15s linear infinite',
       },
       "keyframes": {
         "background-shine": {

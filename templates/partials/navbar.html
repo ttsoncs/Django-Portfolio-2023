@@ -11,9 +11,17 @@
                  x-cloak>
                   <a href="{% url "home" %}" class="flex items-center space-x-2.5">
                         <div class="relative flex space-x-5">
-                              <img src="{% static "assets/asterisk.svg" %}" alt="asterisk" class="absolute w-5 h-5 left-0 top-[25%] animate-spin">
-                              {% comment %} <span class="text-custom-purple font-['Wotfard'] text-xl">.</span> {% endcomment %}
-                              <span class="font-['Wotfard'] text-2xl font-medium text-white">tson</span>
+                              <svg class="absolute w-5 h-5 left-0 top-[25%] animate-spin text-[#ed0000]"
+                                   aria-hidden="true"
+                                   fill="#ed0000"
+                                   stroke="currentColor"
+                                   stroke-width="1"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 13h-6.6l4.7 4.7l-1.4 1.4l-4.7-4.7V21h-2v-6.7L6.3 19l-1.4-1.4L9.4 13H3v-2h6.6L4.9 6.3l1.4-1.4L11 9.6V3h2v6.4l4.6-4.6L19 6.3L14.3 11H21v2Z" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                              </svg>
+                              <span class="font-['Wotfard'] text-2xl font-medium text-white">ttson</span>
                         </div>
                         <span class="border-gray-border bg-gray-bg text-gray-text rounded-lg border-r border-t px-[0.625rem] py-1 font-['Wotfard'] text-xs">Portfolio</span>
                   </a>
@@ -42,36 +50,81 @@
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
                               <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
                                     :class="{'text-white': path === '/'}">home.</span>
-                              <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
+                              <svg class="inline w-5 h-5 text-gray-text md:hidden"
+                                   :class="{'text-white': path === '/'}"
+                                   aria-hidden="true"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
                         </a>
                         <a href="{% url "about" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
                               <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
                                     :class="{'text-white': path === '/about/'}">about me.</span>
-                              <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
+                              <svg class="inline w-5 h-5 text-gray-text md:hidden"
+                                   :class="{'text-white': path === '/about/'}"
+                                   aria-hidden="true"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
                         </a>
                         <a href="{% url "works" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
                               <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
                                     :class="{'text-white': path === '/works/'}">works.</span>
-                              <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
+                              <svg class="inline w-5 h-5 text-gray-text md:hidden"
+                                   :class="{'text-white': path === '/works/'}"
+                                   aria-hidden="true"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
                         </a>
                         <a href="{% url "blog" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
                               <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
                                     :class="{'text-white': path === '/blog/'}">blog.</span>
-                              <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
+                              <svg class="inline w-5 h-5 text-gray-text md:hidden"
+                                   :class="{'text-white': path === '/blog/'}"
+                                   aria-hidden="true"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
                         </a>
                         <a href="{% url "contact" %}"
                            class="md:border-gray-border md:bg-gray-bg md:hover:bg-gray-bg-hover flex items-center justify-between duration-500 md:rounded-3xl md:border-t md:px-4 md:py-[0.375rem] transition-colors">
                               <span class="text-gray-text font-['Wotfard'] text-lg font-medium md:text-sm"
                                     :class="{'text-white': path === '/contact/'}">contact.</span>
-                              <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="inline w-5 h-5 md:hidden">
+                              <svg class="inline w-5 h-5 text-gray-text md:hidden"
+                                   :class="{'text-white': path === '/contact/'}"
+                                   aria-hidden="true"
+                                   fill="none"
+                                   stroke="currentColor"
+                                   stroke-width="2"
+                                   viewBox="0 0 24 24"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
                         </a>
                         <a href="mailto:ttson.cs@gmail.com"
                            target="_blank"
                            rel="noopener noreferrer"
-                           class="animate-background-shine border-custom-purple text-gray-text inline-flex w-full items-center justify-center rounded-full border bg-[linear-gradient(110deg,#0a0a0b,45%,#1e2631,55%,#0a0a0b)] bg-[length:200%_100%] px-8 py-2 font-['Wotfard'] text-2xl font-medium md:hidden hover:text-white transition-colors duration-500">ttson.cs@gmail.com</a>
+                           class="animate-background-shine border-custom-red text-gray-text inline-flex w-full items-center justify-center rounded-full border bg-[linear-gradient(110deg,#0a0a0b,45%,#1e2631,55%,#0a0a0b)] bg-[length:200%_100%] px-8 py-2 font-['Wotfard'] text-2xl font-medium md:hidden hover:text-white transition-colors duration-500">ttson.cs@gmail.com</a>
                   </div>
             </nav>
       </div>
