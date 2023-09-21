@@ -75,8 +75,8 @@ module.exports = {
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
         "border-width": "border-width 3s infinite alternate",
-        marquee: 'marquee 15s linear infinite',
-        marquee2: 'marquee2 15s linear infinite',
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
         spin: 'spin 15s linear infinite',
       },
       "keyframes": {
