@@ -1,6 +1,6 @@
 {% load static %}
 <section class="relative grid max-w-sm grid-cols-1 px-8 mx-auto">
-  <div class="relative flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border border-t opacity-0 mt-28 border-gray-border bg-gray-bg rounded-3xl blur-sm"
+  <div class="relative flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t opacity-0 mt-28 border-gray-border bg-gray-bg rounded-3xl blur-sm"
        x-intersect="$el.classList.add('opacity-100', '!blur-none')">
     <div class="absolute w-12 h-full -top-[95.5%] bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
     <div class="absolute w-16 h-2 top-[1%] -z-10 bg-gradient-to-t from-[#434343] to-custom-black rounded-full"></div>
@@ -14,6 +14,8 @@
     </div>
     <img src="{% static 'images/avatar.webp' %}"
          alt="avatar"
-         class="w-full rounded-2xl bg-custom-black" />
+         class="w-full rounded-2xl bg-custom-black"
+         style="background-size: cover; background-position: center; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCIgd2lkdGg9IjgwMCIgaGVpZ2h0PSI4MDAiPjxkZWZzPjxwYXR0ZXJuIGlkPSJtbW1vdGlmLXBhdHRlcm4iIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0idHJhbnNsYXRlKC04IDIwKSBzY2FsZSgxKSByb3RhdGUoNDUpIHNrZXdYKDApIHNrZXdZKDApIj4KICAgIDxyZWN0IHdpZHRoPSIxMS4zNjM4IiBoZWlnaHQ9IjExLjM2MzgiIHRyYW5zZm9ybT0ibWF0cml4KDAuODcyMDA4IDAuNDg5NDkyIC0wLjg3MjAwOCAwLjQ4OTQ5MiAyMCAxMS40Mzc1KSIgZmlsbD0iIzE0MTUxNiI+PC9yZWN0PgogICAgPHJlY3Qgd2lkdGg9IjExLjM2MzgiIGhlaWdodD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoMC44NzIwMDggMC40ODk0OTIgMCAxIDEwLjA5MDMgMTcpIiBmaWxsPSIjM2EzYjNjIj48L3JlY3Q+CiAgICA8cmVjdCB3aWR0aD0iMTEuMzYzOCIgaGVpZ2h0PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjg3MjAwOCAtMC40ODk0OTIgMCAxIDE5Ljk5OTUgMjIuNTYyNSkiIGZpbGw9IiMwMDAwMDAiPjwvcmVjdD4KPC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNtbW1vdGlmLXBhdHRlcm4pIj48L3JlY3Q+PC9zdmc+)"
+          />
   </div>
 </section>

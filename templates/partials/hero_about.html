@@ -1,0 +1,121 @@
+{% load static %}
+<section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 mx-auto grid-rows-38 lg:grid-rows-16 md:grid-rows-24 md:grid-cols-4 lg:grid-cols-6">
+    <div class="row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         style="background-size: cover;
+                background-position: center;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgMjQwMCA4MDAiIG9wYWNpdHk9IjAuMTkiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0ic3NzdXJmLWdyYWQiPjxzdG9wIHN0b3AtY29sb3I9ImhzbCgyNjUsIDU1JSwgMzAlKSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAlIj48L3N0b3A+PHN0b3Agc3RvcC1jb2xvcj0iaHNsKDI2NSwgNTUlLCA2MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGZpbGw9InVybCgjc3NzdXJmLWdyYWQpIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDEwLjgyODI0NzA3MDMxMjUsLTIzNS40ODY5NjEzNjQ3NDYxKSI+PHBhdGggZD0iTS0xMCwxMEMzMy43NSwxMi41LDExNC41ODMzMzMzMzMzMzMzNCwzMC4xMjUsMjAwLDIyQzI4NS40MTY2NjY2NjY2NjY2MywxMy44NzUsMzE2LjY2NjY2NjY2NjY2NjYzLC0zMC4yNSw0MDAsLTI5QzQ4My4zMzMzMzMzMzMzMzMzNywtMjcuNzUsNTE2LjY2NjY2NjY2NjY2NjYsMjcuNTgzMzMzMzMzMzMzMzMyLDYwMCwyOEM2ODMuMzMzMzMzMzMzMzMzNCwyOC40MTY2NjY2NjY2NjY2NjgsNzE2LjY2NjY2NjY2NjY2NjYsLTMxLjE2NjY2NjY2NjY2NjY2OCw4MDAsLTI3Qzg4My4zMzMzMzMzMzMzMzM0LC0yMi44MzMzMzMzMzMzMzMzMzIsOTE2LjY2NjY2NjY2NjY2NjYsNDEuOTU4MzMzMzMzMzMzMzM2LDEwMDAsNDhDMTA4My4zMzMzMzMzMzMzMzMzLDU0LjA0MTY2NjY2NjY2NjY2NCwxMTE2LjY2NjY2NjY2NjY2NjcsNS4zMzMzMzMzMzMzMzMzMzMsMTIwMCwyQzEyODMuMzMzMzMzMzMzMzMzMywtMS4zMzMzMzMzMzMzMzMzMzMsMTMxNi42NjY2NjY2NjY2NjY3LDM0LjA4MzMzMzMzMzMzMzMzNiwxNDAwLDMyQzE0ODMuMzMzMzMzMzMzMzMzMywyOS45MTY2NjY2NjY2NjY2NjgsMTUxNi42NjY2NjY2NjY2NjY3LC05LjA0MTY2NjY2NjY2NjY2NiwxNjAwLC04QzE2ODMuMzMzMzMzMzMzMzMzMywtNi45NTgzMzMzMzMzMzMzMzMsMTcxNi42NjY2NjY2NjY2NjY3LDM1Ljc1LDE4MDAsMzdDMTg4My4zMzMzMzMzMzMzMzMzLDM4LjI1LDE5MTYuNjY2NjY2NjY2NjY2NywtMS4zNzUsMjAwMCwtMkMyMDgzLjMzMzMzMzMzMzMzMzUsLTIuNjI1LDIxMTguNzUsMzEuNSwyMjAwLDM0QzIyODEuMjUsMzYuNSwyMjk2LjI1LC02Ni4yNSwyMzkwLDEwQzI0ODMuNzUsODYuMjUsMzI1Mi4wODMzMzMzMzMzMzM1LDIxNC41ODMzMzMzMzMzMzMzMSwyNjUwLDQwMEMyMDQ3LjkxNjY2NjY2NjY2NjUsNTg1LjQxNjY2NjY2NjY2NjcsMTU2LjI1LDc5NS44MzMzMzMzMzMzMzM0LC01MDAsOTAwIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMTUwKSIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPjxwYXRoIGQ9Ik0tMTAsMTBDMzMuNzUsMTIuNSwxMTQuNTgzMzMzMzMzMzMzMzQsMzAuMTI1LDIwMCwyMkMyODUuNDE2NjY2NjY2NjY2NjMsMTMuODc1LDMxNi42NjY2NjY2NjY2NjY2MywtMzAuMjUsNDAwLC0yOUM0ODMuMzMzMzMzMzMzMzMzMzcsLTI3Ljc1LDUxNi42NjY2NjY2NjY2NjY2LDI3LjU4MzMzMzMzMzMzMzMzMiw2MDAsMjhDNjgzLjMzMzMzMzMzMzMzMzQsMjguNDE2NjY2NjY2NjY2NjY4LDcxNi42NjY2NjY2NjY2NjY2LC0zMS4xNjY2NjY2NjY2NjY2NjgsODAwLC0yN0M4ODMuMzMzMzMzMzMzMzMzNCwtMjIuODMzMzMzMzMzMzMzMzMyLDkxNi42NjY2NjY2NjY2NjY2LDQxLjk1ODMzMzMzMzMzMzMzNiwxMDAwLDQ4QzEwODMuMzMzMzMzMzMzMzMzMyw1NC4wNDE2NjY2NjY2NjY2NjQsMTExNi42NjY2NjY2NjY2NjY3LDUuMzMzMzMzMzMzMzMzMzMzLDEyMDAsMkMxMjgzLjMzMzMzMzMzMzMzMzMsLTEuMzMzMzMzMzMzMzMzMzMzLDEzMTYuNjY2NjY2NjY2NjY2NywzNC4wODMzMzMzMzMzMzMzMzYsMTQwMCwzMkMxNDgzLjMzMzMzMzMzMzMzMzMsMjkuOTE2NjY2NjY2NjY2NjY4LDE1MTYuNjY2NjY2NjY2NjY2NywtOS4wNDE2NjY2NjY2NjY2NjYsMTYwMCwtOEMxNjgzLjMzMzMzMzMzMzMzMzMsLTYuOTU4MzMzMzMzMzMzMzMzLDE3MTYuNjY2NjY2NjY2NjY2NywzNS43NSwxODAwLDM3QzE4ODMuMzMzMzMzMzMzMzMzMywzOC4yNSwxOTE2LjY2NjY2NjY2NjY2NjcsLTEuMzc1LDIwMDAsLTJDMjA4My4zMzMzMzMzMzMzMzM1LC0yLjYyNSwyMTE4Ljc1LDMxLjUsMjIwMCwzNEMyMjgxLjI1LDM2LjUsMjI5Ni4yNSwtNjYuMjUsMjM5MCwxMEMyNDgzLjc1LDg2LjI1LDMyNTIuMDgzMzMzMzMzMzMzNSwyMTQuNTgzMzMzMzMzMzMzMzEsMjY1MCw0MDBDMjA0Ny45MTY2NjY2NjY2NjY1LDU4NS40MTY2NjY2NjY2NjY3LDE1Ni4yNSw3OTUuODMzMzMzMzMzMzMzNCwtNTAwLDkwMCIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDMwMCkiIG9wYWNpdHk9IjAuMjEiPjwvcGF0aD48cGF0aCBkPSJNLTEwLDEwQzMzLjc1LDEyLjUsMTE0LjU4MzMzMzMzMzMzMzM0LDMwLjEyNSwyMDAsMjJDMjg1LjQxNjY2NjY2NjY2NjYzLDEzLjg3NSwzMTYuNjY2NjY2NjY2NjY2NjMsLTMwLjI1LDQwMCwtMjlDNDgzLjMzMzMzMzMzMzMzMzM3LC0yNy43NSw1MTYuNjY2NjY2NjY2NjY2NiwyNy41ODMzMzMzMzMzMzMzMzIsNjAwLDI4QzY4My4zMzMzMzMzMzMzMzM0LDI4LjQxNjY2NjY2NjY2NjY2OCw3MTYuNjY2NjY2NjY2NjY2NiwtMzEuMTY2NjY2NjY2NjY2NjY4LDgwMCwtMjdDODgzLjMzMzMzMzMzMzMzMzQsLTIyLjgzMzMzMzMzMzMzMzMzMiw5MTYuNjY2NjY2NjY2NjY2Niw0MS45NTgzMzMzMzMzMzMzMzYsMTAwMCw0OEMxMDgzLjMzMzMzMzMzMzMzMzMsNTQuMDQxNjY2NjY2NjY2NjY0LDExMTYuNjY2NjY2NjY2NjY2Nyw1LjMzMzMzMzMzMzMzMzMzMywxMjAwLDJDMTI4My4zMzMzMzMzMzMzMzMzLC0xLjMzMzMzMzMzMzMzMzMzMywxMzE2LjY2NjY2NjY2NjY2NjcsMzQuMDgzMzMzMzMzMzMzMzM2LDE0MDAsMzJDMTQ4My4zMzMzMzMzMzMzMzMzLDI5LjkxNjY2NjY2NjY2NjY2OCwxNTE2LjY2NjY2NjY2NjY2NjcsLTkuMDQxNjY2NjY2NjY2NjY2LDE2MDAsLThDMTY4My4zMzMzMzMzMzMzMzMzLC02Ljk1ODMzMzMzMzMzMzMzMywxNzE2LjY2NjY2NjY2NjY2NjcsMzUuNzUsMTgwMCwzN0MxODgzLjMzMzMzMzMzMzMzMzMsMzguMjUsMTkxNi42NjY2NjY2NjY2NjY3LC0xLjM3NSwyMDAwLC0yQzIwODMuMzMzMzMzMzMzMzMzNSwtMi42MjUsMjExOC43NSwzMS41LDIyMDAsMzRDMjI4MS4yNSwzNi41LDIyOTYuMjUsLTY2LjI1LDIzOTAsMTBDMjQ4My43NSw4Ni4yNSwzMjUyLjA4MzMzMzMzMzMzMzUsMjE0LjU4MzMzMzMzMzMzMzMxLDI2NTAsNDAwQzIwNDcuOTE2NjY2NjY2NjY2NSw1ODUuNDE2NjY2NjY2NjY2NywxNTYuMjUsNzk1LjgzMzMzMzMzMzMzMzQsLTUwMCw5MDAiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCw0NTApIiBvcGFjaXR5PSIwLjM3Ij48L3BhdGg+PHBhdGggZD0iTS0xMCwxMEMzMy43NSwxMi41LDExNC41ODMzMzMzMzMzMzMzNCwzMC4xMjUsMjAwLDIyQzI4NS40MTY2NjY2NjY2NjY2MywxMy44NzUsMzE2LjY2NjY2NjY2NjY2NjYzLC0zMC4yNSw0MDAsLTI5QzQ4My4zMzMzMzMzMzMzMzMzNywtMjcuNzUsNTE2LjY2NjY2NjY2NjY2NjYsMjcuNTgzMzMzMzMzMzMzMzMyLDYwMCwyOEM2ODMuMzMzMzMzMzMzMzMzNCwyOC40MTY2NjY2NjY2NjY2NjgsNzE2LjY2NjY2NjY2NjY2NjYsLTMxLjE2NjY2NjY2NjY2NjY2OCw4MDAsLTI3Qzg4My4zMzMzMzMzMzMzMzM0LC0yMi44MzMzMzMzMzMzMzMzMzIsOTE2LjY2NjY2NjY2NjY2NjYsNDEuOTU4MzMzMzMzMzMzMzM2LDEwMDAsNDhDMTA4My4zMzMzMzMzMzMzMzMzLDU0LjA0MTY2NjY2NjY2NjY2NCwxMTE2LjY2NjY2NjY2NjY2NjcsNS4zMzMzMzMzMzMzMzMzMzMsMTIwMCwyQzEyODMuMzMzMzMzMzMzMzMzMywtMS4zMzMzMzMzMzMzMzMzMzMsMTMxNi42NjY2NjY2NjY2NjY3LDM0LjA4MzMzMzMzMzMzMzMzNiwxNDAwLDMyQzE0ODMuMzMzMzMzMzMzMzMzMywyOS45MTY2NjY2NjY2NjY2NjgsMTUxNi42NjY2NjY2NjY2NjY3LC05LjA0MTY2NjY2NjY2NjY2NiwxNjAwLC04QzE2ODMuMzMzMzMzMzMzMzMzMywtNi45NTgzMzMzMzMzMzMzMzMsMTcxNi42NjY2NjY2NjY2NjY3LDM1Ljc1LDE4MDAsMzdDMTg4My4zMzMzMzMzMzMzMzMzLDM4LjI1LDE5MTYuNjY2NjY2NjY2NjY2NywtMS4zNzUsMjAwMCwtMkMyMDgzLjMzMzMzMzMzMzMzMzUsLTIuNjI1LDIxMTguNzUsMzEuNSwyMjAwLDM0QzIyODEuMjUsMzYuNSwyMjk2LjI1LC02Ni4yNSwyMzkwLDEwQzI0ODMuNzUsODYuMjUsMzI1Mi4wODMzMzMzMzMzMzM1LDIxNC41ODMzMzMzMzMzMzMzMSwyNjUwLDQwMEMyMDQ3LjkxNjY2NjY2NjY2NjUsNTg1LjQxNjY2NjY2NjY2NjcsMTU2LjI1LDc5NS44MzMzMzMzMzMzMzM0LC01MDAsOTAwIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsNjAwKSIgb3BhY2l0eT0iMC41MyI+PC9wYXRoPjxwYXRoIGQ9Ik0tMTAsMTBDMzMuNzUsMTIuNSwxMTQuNTgzMzMzMzMzMzMzMzQsMzAuMTI1LDIwMCwyMkMyODUuNDE2NjY2NjY2NjY2NjMsMTMuODc1LDMxNi42NjY2NjY2NjY2NjY2MywtMzAuMjUsNDAwLC0yOUM0ODMuMzMzMzMzMzMzMzMzMzcsLTI3Ljc1LDUxNi42NjY2NjY2NjY2NjY2LDI3LjU4MzMzMzMzMzMzMzMzMiw2MDAsMjhDNjgzLjMzMzMzMzMzMzMzMzQsMjguNDE2NjY2NjY2NjY2NjY4LDcxNi42NjY2NjY2NjY2NjY2LC0zMS4xNjY2NjY2NjY2NjY2NjgsODAwLC0yN0M4ODMuMzMzMzMzMzMzMzMzNCwtMjIuODMzMzMzMzMzMzMzMzMyLDkxNi42NjY2NjY2NjY2NjY2LDQxLjk1ODMzMzMzMzMzMzMzNiwxMDAwLDQ4QzEwODMuMzMzMzMzMzMzMzMzMyw1NC4wNDE2NjY2NjY2NjY2NjQsMTExNi42NjY2NjY2NjY2NjY3LDUuMzMzMzMzMzMzMzMzMzMzLDEyMDAsMkMxMjgzLjMzMzMzMzMzMzMzMzMsLTEuMzMzMzMzMzMzMzMzMzMzLDEzMTYuNjY2NjY2NjY2NjY2NywzNC4wODMzMzMzMzMzMzMzMzYsMTQwMCwzMkMxNDgzLjMzMzMzMzMzMzMzMzMsMjkuOTE2NjY2NjY2NjY2NjY4LDE1MTYuNjY2NjY2NjY2NjY2NywtOS4wNDE2NjY2NjY2NjY2NjYsMTYwMCwtOEMxNjgzLjMzMzMzMzMzMzMzMzMsLTYuOTU4MzMzMzMzMzMzMzMzLDE3MTYuNjY2NjY2NjY2NjY2NywzNS43NSwxODAwLDM3QzE4ODMuMzMzMzMzMzMzMzMzMywzOC4yNSwxOTE2LjY2NjY2NjY2NjY2NjcsLTEuMzc1LDIwMDAsLTJDMjA4My4zMzMzMzMzMzMzMzM1LC0yLjYyNSwyMTE4Ljc1LDMxLjUsMjIwMCwzNEMyMjgxLjI1LDM2LjUsMjI5Ni4yNSwtNjYuMjUsMjM5MCwxMEMyNDgzLjc1LDg2LjI1LDMyNTIuMDgzMzMzMzMzMzMzNSwyMTQuNTgzMzMzMzMzMzMzMzEsMjY1MCw0MDBDMjA0Ny45MTY2NjY2NjY2NjY1LDU4NS40MTY2NjY2NjY2NjY3LDE1Ni4yNSw3OTUuODMzMzMzMzMzMzMzNCwtNTAwLDkwMCIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDc1MCkiIG9wYWNpdHk9IjAuNjgiPjwvcGF0aD48cGF0aCBkPSJNLTEwLDEwQzMzLjc1LDEyLjUsMTE0LjU4MzMzMzMzMzMzMzM0LDMwLjEyNSwyMDAsMjJDMjg1LjQxNjY2NjY2NjY2NjYzLDEzLjg3NSwzMTYuNjY2NjY2NjY2NjY2NjMsLTMwLjI1LDQwMCwtMjlDNDgzLjMzMzMzMzMzMzMzMzM3LC0yNy43NSw1MTYuNjY2NjY2NjY2NjY2NiwyNy41ODMzMzMzMzMzMzMzMzIsNjAwLDI4QzY4My4zMzMzMzMzMzMzMzM0LDI4LjQxNjY2NjY2NjY2NjY2OCw3MTYuNjY2NjY2NjY2NjY2NiwtMzEuMTY2NjY2NjY2NjY2NjY4LDgwMCwtMjdDODgzLjMzMzMzMzMzMzMzMzQsLTIyLjgzMzMzMzMzMzMzMzMzMiw5MTYuNjY2NjY2NjY2NjY2Niw0MS45NTgzMzMzMzMzMzMzMzYsMTAwMCw0OEMxMDgzLjMzMzMzMzMzMzMzMzMsNTQuMDQxNjY2NjY2NjY2NjY0LDExMTYuNjY2NjY2NjY2NjY2Nyw1LjMzMzMzMzMzMzMzMzMzMywxMjAwLDJDMTI4My4zMzMzMzMzMzMzMzMzLC0xLjMzMzMzMzMzMzMzMzMzMywxMzE2LjY2NjY2NjY2NjY2NjcsMzQuMDgzMzMzMzMzMzMzMzM2LDE0MDAsMzJDMTQ4My4zMzMzMzMzMzMzMzMzLDI5LjkxNjY2NjY2NjY2NjY2OCwxNTE2LjY2NjY2NjY2NjY2NjcsLTkuMDQxNjY2NjY2NjY2NjY2LDE2MDAsLThDMTY4My4zMzMzMzMzMzMzMzMzLC02Ljk1ODMzMzMzMzMzMzMzMywxNzE2LjY2NjY2NjY2NjY2NjcsMzUuNzUsMTgwMCwzN0MxODgzLjMzMzMzMzMzMzMzMzMsMzguMjUsMTkxNi42NjY2NjY2NjY2NjY3LC0xLjM3NSwyMDAwLC0yQzIwODMuMzMzMzMzMzMzMzMzNSwtMi42MjUsMjExOC43NSwzMS41LDIyMDAsMzRDMjI4MS4yNSwzNi41LDIyOTYuMjUsLTY2LjI1LDIzOTAsMTBDMjQ4My43NSw4Ni4yNSwzMjUyLjA4MzMzMzMzMzMzMzUsMjE0LjU4MzMzMzMzMzMzMzMxLDI2NTAsNDAwQzIwNDcuOTE2NjY2NjY2NjY2NSw1ODUuNDE2NjY2NjY2NjY2NywxNTYuMjUsNzk1LjgzMzMzMzMzMzMzMzQsLTUwMCw5MDAiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCw5MDApIiBvcGFjaXR5PSIwLjg0Ij48L3BhdGg+PHBhdGggZD0iTS0xMCwxMEMzMy43NSwxMi41LDExNC41ODMzMzMzMzMzMzMzNCwzMC4xMjUsMjAwLDIyQzI4NS40MTY2NjY2NjY2NjY2MywxMy44NzUsMzE2LjY2NjY2NjY2NjY2NjYzLC0zMC4yNSw0MDAsLTI5QzQ4My4zMzMzMzMzMzMzMzMzNywtMjcuNzUsNTE2LjY2NjY2NjY2NjY2NjYsMjcuNTgzMzMzMzMzMzMzMzMyLDYwMCwyOEM2ODMuMzMzMzMzMzMzMzMzNCwyOC40MTY2NjY2NjY2NjY2NjgsNzE2LjY2NjY2NjY2NjY2NjYsLTMxLjE2NjY2NjY2NjY2NjY2OCw4MDAsLTI3Qzg4My4zMzMzMzMzMzMzMzM0LC0yMi44MzMzMzMzMzMzMzMzMzIsOTE2LjY2NjY2NjY2NjY2NjYsNDEuOTU4MzMzMzMzMzMzMzM2LDEwMDAsNDhDMTA4My4zMzMzMzMzMzMzMzMzLDU0LjA0MTY2NjY2NjY2NjY2NCwxMTE2LjY2NjY2NjY2NjY2NjcsNS4zMzMzMzMzMzMzMzMzMzMsMTIwMCwyQzEyODMuMzMzMzMzMzMzMzMzMywtMS4zMzMzMzMzMzMzMzMzMzMsMTMxNi42NjY2NjY2NjY2NjY3LDM0LjA4MzMzMzMzMzMzMzMzNiwxNDAwLDMyQzE0ODMuMzMzMzMzMzMzMzMzMywyOS45MTY2NjY2NjY2NjY2NjgsMTUxNi42NjY2NjY2NjY2NjY3LC05LjA0MTY2NjY2NjY2NjY2NiwxNjAwLC04QzE2ODMuMzMzMzMzMzMzMzMzMywtNi45NTgzMzMzMzMzMzMzMzMsMTcxNi42NjY2NjY2NjY2NjY3LDM1Ljc1LDE4MDAsMzdDMTg4My4zMzMzMzMzMzMzMzMzLDM4LjI1LDE5MTYuNjY2NjY2NjY2NjY2NywtMS4zNzUsMjAwMCwtMkMyMDgzLjMzMzMzMzMzMzMzMzUsLTIuNjI1LDIxMTguNzUsMzEuNSwyMjAwLDM0QzIyODEuMjUsMzYuNSwyMjk2LjI1LC02Ni4yNSwyMzkwLDEwQzI0ODMuNzUsODYuMjUsMzI1Mi4wODMzMzMzMzMzMzM1LDIxNC41ODMzMzMzMzMzMzMzMSwyNjUwLDQwMEMyMDQ3LjkxNjY2NjY2NjY2NjUsNTg1LjQxNjY2NjY2NjY2NjcsMTU2LjI1LDc5NS44MzMzMzMzMzMzMzM0LC01MDAsOTAwIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMTA1MCkiIG9wYWNpdHk9IjEiPjwvcGF0aD48L2c+PC9zdmc+)">
+        <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+            <div class="relative max-w-md">
+                <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+                <div>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">
+                        Full-stack development is my focus.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-span-3 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+        <div class="flex items-center justify-between w-full h-full">
+            <div>
+                <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p>
+                <p class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent animate-text font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">University of Science</p>
+            </div>
+        </div>
+    </div>
+    <div class="relative flex row-span-2 p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+        <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
+        <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
+        <div class="relative flex w-full overflow-x-hidden">
+            <div class="animate-marquee whitespace-nowrap">
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Python</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">C++</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">JavaScript</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Django</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Express.js</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Alpine.js</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Tailwind</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">HTMX</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">SQLite3</span>
+            </div>
+            <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Python</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">C++</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">JavaScript</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Django</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Express.js</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Alpine.js</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">Tailwind</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">HTMX</span>
+                <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">SQLite3</span>
+            </div>
+        </div>
+    </div>
+    <div class="relative row-span-3 p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+        <div class="flex items-center justify-between w-full h-full overflow-hidden">
+            <div>
+                <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Workplace</p>
+                <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">NULL</p>
+            </div>
+            <img src="{% static "assets/graduation_cap_color.svg" %}" alt="graduation cap" class="w-10 h-10 md:h-12 md:w-12" />
+        </div>
+    </div>
+    <div class="row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 lg:col-start-5 lg:row-start-1 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         style="background-size: cover;
+                background-position: center;
+                background-image: url(data:image/svg+xml;
+                base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9IjU2MC40ODkwOTY4NDY1MTc0IiBjeT0iNjYwLjQ4OTgxMDkxOTg2NyIgZmlsbD0iaHNsKDM3LCA5OSUsIDY3JSkiPjwvZWxsaXBzZT48ZWxsaXBzZSByeD0iMTUwIiByeT0iMTUwIiBjeD0iNTc4LjQ0NzIwNDU4OTg0MzgiIGN5PSI1NjcuNjM5NDY1MzMyMDMxMiIgZmlsbD0iaHNsKDMxNiwgNzMlLCA1MiUpIj48L2VsbGlwc2U+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9Ijc3NC41NDY2MTY0OTkwMjMiIGN5PSI1NzMuNDkyMDQwNzk1NzYzIiBmaWxsPSJoc2woMTg1LCAxMDAlLCA1NyUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)">
+        <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+            <div class="relative max-w-md">
+                <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+                <div>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">
+                        Full-stack development is my focus.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 md:col-start-3 md:row-start-9 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')"
+         style="background-size: cover;
+                background-position: center;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9IjU2MC40ODkwOTY4NDY1MTc0IiBjeT0iNjYwLjQ4OTgxMDkxOTg2NyIgZmlsbD0iaHNsKDM3LCA5OSUsIDY3JSkiPjwvZWxsaXBzZT48ZWxsaXBzZSByeD0iMTUwIiByeT0iMTUwIiBjeD0iNTc4LjQ0NzIwNDU4OTg0MzgiIGN5PSI1NjcuNjM5NDY1MzMyMDMxMiIgZmlsbD0iaHNsKDMxNiwgNzMlLCA1MiUpIj48L2VsbGlwc2U+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9Ijc3NC41NDY2MTY0OTkwMjMiIGN5PSI1NzMuNDkyMDQwNzk1NzYzIiBmaWxsPSJoc2woMTg1LCAxMDAlLCA1NyUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)">
+        <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+            <div class="relative max-w-md">
+                <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+                <div>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>I am available for full-time work now.</span>
+                    <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">
+                        Prepared to contribute my skills and knowledge to a professional setting.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+        <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+            <div>
+                <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p>
+                <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Selected Works</p>
+            </div>
+        </div>
+    </div>
+    <div class="relative row-span-6 p-6 space-y-5 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
+        <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+            <div>
+                <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Workplace</p>
+                <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Insights & Articles</p>
+            </div>
+        </div>
+    </div>
+</section>
