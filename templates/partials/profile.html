@@ -1,16 +1,6 @@
 {% load static %}
-<section class="mx-auto grid max-w-sm grid-cols-1 gap-5 px-8 md:max-w-[45rem] md:grid-cols-2 md:gap-x-10">
-  <div class="flex flex-col items-center w-full col-span-1 space-y-2 transition duration-700 opacity-0 blur-sm md:col-span-full"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-    <img src="{% static 'assets/Eyes.png' %}"
-         alt="eyes"
-         class="w-10 h-10 md:h-12 md:w-12" />
-    <p class="text-gray-text-light font-['Wotfard'] text-sm font-medium tracking-wide">ABOUT ME SECTION</p>
-    <div class="text-center font-['Wotfard'] text-[1.75rem] font-medium tracking-tight text-white md:text-[2.5rem]">
-      Who Am I?
-    </div>
-  </div>
-  <div class="relative flex flex-col items-center justify-between col-span-1 row-start-1 p-3 space-y-2 transition duration-700 border-t opacity-0 mt-28 md:mt-0 md:row-start-auto border-gray-border bg-gray-bg rounded-3xl blur-sm md:col-span-1"
+<section class="relative grid max-w-sm grid-cols-1 px-8 mx-auto">
+  <div class="relative flex flex-col items-center justify-between col-span-1 p-3 space-y-2 transition duration-700 border border-t opacity-0 mt-28 border-gray-border bg-gray-bg rounded-3xl blur-sm"
        x-intersect="$el.classList.add('opacity-100', '!blur-none')">
     <div class="absolute w-12 h-full -top-[95.5%] bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
     <div class="absolute w-16 h-2 top-[1%] -z-10 bg-gradient-to-t from-[#434343] to-custom-black rounded-full"></div>
@@ -24,23 +14,6 @@
     </div>
     <img src="{% static 'images/avatar.webp' %}"
          alt="avatar"
-         class="w-full rounded-2xl bg-custom-black"
-         style="background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiIGlkPSJubm5lb24tZ3JhZCI+PHN0b3Agc3RvcC1jb2xvcj0iaHNsKDMzNSwgNzclLCA2MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzM1LCA3NyUsIDgwJSkiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJubm5lb24tZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTcgOCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0iU291cmNlR3JhcGhpYyIgZWRnZU1vZGU9Im5vbmUiIHJlc3VsdD0iYmx1ciI+PC9mZUdhdXNzaWFuQmx1cj48L2ZpbHRlcj48ZmlsdGVyIGlkPSJubm5lb24tZmlsdGVyMiIgeD0iLTEwMCUiIHk9Ii0xMDAlIiB3aWR0aD0iNDAwJSIgaGVpZ2h0PSI0MDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KCTxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEwIDE3IiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0idXJsKCNubm5lb24tZ3JhZCkiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik00MDAuMDAwMDMwNTE3NTc4MSA3MC4zMzM0NjU1NzYxNzE4OEw2ODUuNTAwMDQ4NzYwODQzOSAyMzUuMTY2NzM3NTk0MzE1NTJWNTY0LjgzMzI4MTYzMDYwMjlMNDAwLjAwMDAzMDUxNzU3ODEgNzI5LjY2NjU1MzY0ODc0NjVMMTE0LjUwMDAxMjI3NDMxMjMzIDU2NC44MzMyODE2MzA2MDI5VjIzNS4xNjY3Mzc1OTQzMTU1Mkw0MDAuMDAwMDMwNTE3NTc4MSA3MC4zMzM0NjU1NzYxNzE4OFogIiBmaWx0ZXI9InVybCgjbm5uZW9uLWZpbHRlcikiPjwvcGF0aD48cGF0aCBkPSJNNDEyLjAwMDAzMDUxNzU3ODEgNzAuMzMzNDY1NTc2MTcxODhMNjk3LjUwMDA0ODc2MDg0MzkgMjM1LjE2NjczNzU5NDMxNTUyVjU2NC44MzMyODE2MzA2MDI5TDQxMi4wMDAwMzA1MTc1NzgxIDcyOS42NjY1NTM2NDg3NDY1TDEyNi41MDAwMTIyNzQzMTIzMyA1NjQuODMzMjgxNjMwNjAyOVYyMzUuMTY2NzM3NTk0MzE1NTJMNDEyLjAwMDAzMDUxNzU3ODEgNzAuMzMzNDY1NTc2MTcxODhaICIgZmlsdGVyPSJ1cmwoI25ubmVvbi1maWx0ZXIyKSIgb3BhY2l0eT0iMC4yNSI+PC9wYXRoPjxwYXRoIGQ9Ik0zODguMDAwMDMwNTE3NTc4MSA3MC4zMzM0NjU1NzYxNzE4OEw2NzMuNTAwMDQ4NzYwODQzOSAyMzUuMTY2NzM3NTk0MzE1NTJWNTY0LjgzMzI4MTYzMDYwMjlMMzg4LjAwMDAzMDUxNzU3ODEgNzI5LjY2NjU1MzY0ODc0NjVMMTAyLjUwMDAxMjI3NDMxMjMzIDU2NC44MzMyODE2MzA2MDI5VjIzNS4xNjY3Mzc1OTQzMTU1MkwzODguMDAwMDMwNTE3NTc4MSA3MC4zMzM0NjU1NzYxNzE4OFogIiBmaWx0ZXI9InVybCgjbm5uZW9uLWZpbHRlcjIpIiBvcGFjaXR5PSIwLjI1Ij48L3BhdGg+PHBhdGggZD0iTTQwMC4wMDAwMzA1MTc1NzgxIDcwLjMzMzQ2NTU3NjE3MTg4TDY4NS41MDAwNDg3NjA4NDM5IDIzNS4xNjY3Mzc1OTQzMTU1MlY1NjQuODMzMjgxNjMwNjAyOUw0MDAuMDAwMDMwNTE3NTc4MSA3MjkuNjY2NTUzNjQ4NzQ2NUwxMTQuNTAwMDEyMjc0MzEyMzMgNTY0LjgzMzI4MTYzMDYwMjlWMjM1LjE2NjczNzU5NDMxNTUyTDQwMC4wMDAwMzA1MTc1NzgxIDcwLjMzMzQ2NTU3NjE3MTg4WiAiPjwvcGF0aD48L2c+PC9zdmc+)"
-          />
-  </div>
-  <div class="flex flex-col col-span-1 space-y-3 md:col-span-1">
-    <div class="mt-3 flex items-center space-x-1.5 opacity-0 blur-sm transition duration-700 md:mt-0"
-         x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-      <p class="font-['Wotfard'] text-2xl font-medium text-white">Trinh The Son</p>
-      <img src="{% static 'assets/verified.svg' %}"
-           alt="verified"
-           class="w-5 h-5" />
-    </div>
-    <p class="text-gray-text font-['Wotfard'] text-lg opacity-0 blur-sm transition duration-700"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-      Hello! I'm Son, a 4th-year Computer Science major at <span class="bg-gradient-to-t from-red-400 to-red-600 bg-clip-text font-['Cubano'] text-transparent">Hcmus</span>, with a strong interest in full-stack development. Currently, the technologies I'm working with are <span class="bg-gradient-to-t from-[#FDC830] to-[#F37335] bg-clip-text font-['Cubano'] text-transparent">JavaScript</span>, <span class="bg-gradient-to-t from-[#00c6ff] to-[#0072ff] bg-clip-text font-['Cubano'] text-transparent">Python</span>, and <span class="bg-gradient-to-t from-[#38ef7d] to-[#11998e] bg-clip-text font-['Cubano'] text-transparent">Django</span>. Let's connect and make great things together!
-    </p>
-    <p class="text-gray-text pt-2 font-['Balleny'] text-5xl opacity-0 blur-sm transition duration-700"
-       x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">Son</p>
+         class="w-full rounded-2xl bg-custom-black" />
   </div>
 </section>

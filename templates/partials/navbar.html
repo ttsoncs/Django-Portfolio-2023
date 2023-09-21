@@ -9,7 +9,7 @@
             <div class="flex items-center justify-between md:mb-0 md:border-none md:pb-0 lg:justify-start"
                  :class="{'pb-6 border-b border-b-gray-border mb-6': open, 'pb-0': !open}"
                  x-cloak>
-                  <a href="{% url "home" %}" class="flex items-center space-x-2.5">
+                  <a href="{% url "home" %}">
                         <div class="relative flex space-x-5">
                               <svg class="absolute w-5 h-5 left-0 top-[25%] animate-spin text-white"
                                    aria-hidden="true"
@@ -23,7 +23,6 @@
                               </svg>
                               <span class="font-['Wotfard'] text-2xl font-medium text-white">ttson</span>
                         </div>
-                        <span class="border-gray-border bg-gray-bg text-gray-text rounded-lg border-r border-t px-[0.625rem] py-1 font-['Wotfard'] text-xs">Portfolio</span>
                   </a>
                   <button @click="open = !open"
                           class="inline-flex h-8 w-8 items-center justify-center rounded-full p-[0.375rem] md:hidden"

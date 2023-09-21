@@ -44,14 +44,22 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        18: "repeat(18, minmax(0, 1fr))",
+        16: "repeat(16, minmax(0, 1fr))",
+        24: "repeat(24, minmax(0, 1fr))",
         26: "repeat(26, minmax(0, 1fr))",
-        40: "repeat(40, minmax(0, 1fr))",
+        38: "repeat(38, minmax(0, 1fr))",
+        74: "repeat(74, minmax(0, 1fr))",
       },
       gridRow: {
         'span-8': 'span 8 / span 8',
+        'span-9': 'span 9 / span 9',
+        'span-10': 'span 10 / span 10',
+        'span-11': 'span 11 / span 11',
+        'span-16': 'span 16 / span 16',
       },
       gridRowStart: {
+        '7': '7',
+        '8': '8',
         '9': '9',
       },
       colors: {
@@ -67,8 +75,8 @@ module.exports = {
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
         "border-width": "border-width 3s infinite alternate",
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 15s linear infinite',
+        marquee2: 'marquee2 15s linear infinite',
         spin: 'spin 15s linear infinite',
       },
       "keyframes": {
