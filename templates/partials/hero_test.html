@@ -1,7 +1,10 @@
 {% load static %}
-<section class="container mx-auto grid max-w-6xl md:grid-cols-2 lg:grid-cols-3 gap-3 px-6">
-  <div class="lg:aspect-[1/1] bg-gray-bg border-gray-border rounded-3xl border-t p-8">
+<section class="container mx-auto grid max-w-6xl grid-cols-1 gap-3 px-6 md:grid-cols-2 lg:grid-cols-3">
+  {% comment %} container 1 {% endcomment %}
+  <div class="bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8">
+    {% comment %} subcontainer 1 {% endcomment %}
     <div class="flex h-full w-full flex-col justify-between">
+      {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
         <a href="https://www.youtube.com/watch?v=JGJrmPd72Fg" target="_blank" rel="noopener noreferrer">
           <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]" style="background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyODkiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+)" />
@@ -14,39 +17,113 @@
           <p class="text-gray-text-light font-['Wotfard'] text-sm md:text-base">@ttsoncs</p>
         </div>
       </div>
-      <div class="space-y-6 pt-5">
+      {% comment %} hello text {% endcomment %}
+      <div class="space-y-5 pt-5 md:space-y-6">
         <div class="relative">
-          <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g1">
-            <p>Hello.</p>
-          </div>
-          <div class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g2">
-            <p>Xin chào.</p>
-          </div>
-          <div class="gif text-gray-text-light absolute font-['Noto_sans_jp'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]" id="g3">
-            <p class="md:pb-2">こんにちは.</p>
-          </div>
-          <div class="gif text-gray-text-light absolute font-['Noto_sans_sc'] text-[1.5rem] font-medium leading-tight md:text-[2.25rem]" id="g4">
-            <p class="md:pb-2">你好.</p>
-          </div>
+          <p class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g1">Hello.</p>
+          <p class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g2">Xin chào.</p>
+          <p class="gif text-gray-text-light absolute font-['Noto_sans_jp'] text-[1.5rem] font-medium leading-tight md:text-[2rem] md:pb-1" id="g3">こんにちは.</p>
+          <p class="gif text-gray-text-light absolute font-['Noto_sans_sc'] text-[1.5rem] font-medium leading-tight md:text-[2rem] md:pb-1" id="g4">你好.</p>
         </div>
-        <p class="font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">
-          <span class="inline sm:hidden">WC</span>
-          <span class="hidden sm:inline">Welcome</span>
-          to My Portfolio!
-        </p>
+        <div>
+          <h1 class="inline sm:hidden font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">WC to My Portfolio!</h1>
+          <h1 class="hidden sm:inline font-['Wotfard'] text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Welcome to My Portfolio!</h1>
+        </div>
       </div>
+      {% comment %} badge {% endcomment %}
       <div class="relative flex w-min space-x-4 rounded-full border border-green-600 px-3 py-1">
         <div class="absolute top-[42%] h-1.5 w-1.5 rounded-full bg-green-600 ring-2 ring-green-900 md:top-[45%]"></div>
         <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Work wanted</span>
       </div>
     </div>
   </div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
-  <div class="aspect-1 bg-gray-bg border-gray-border rounded-3xl border-t"></div>
+  <div class="h-[360px] grid grid-cols-2 gap-3">
+    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2">
+      <div class="flex items-center justify-between w-full h-full">
+        <div>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
+          <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
+        </div>
+        <img src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
+      </div>
+    </div>
+    <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1">
+      <div class="flex h-full w-full flex-col justify-center items-center">
+      {% comment %} linkedin {% endcomment %}
+        <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</h1>
+      {% comment %} link {% endcomment %}
+      </div>
+    </a>
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1">
+      <div class="flex h-full w-full flex-col justify-center items-center">
+      {% comment %} linkedin {% endcomment %}
+        <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</h1>
+      {% comment %} link {% endcomment %}
+      </div>
+    </a>
+    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2">
+      <div class="flex items-center justify-between w-full h-full overflow-hidden">
+        <div>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
+          <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Vietnam. GMT+7</p>
+        </div>
+        {% include "partials/cobe.html" %}
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8">
+    <div class="flex h-full w-full flex-col justify-between">
+      {% comment %} quotes {% endcomment %}
+      <div class="relative max-w-md">
+        <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+        <div>
+          <span class="font-['Wotfard'] text-2xl font-medium leading-tight text-white md:text-[1.75rem]">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Have a question or want to discuss something?</span>
+          <span class="text-gray-text font-['Wotfard'] text-2xl font-medium leading-tight md:text-[1.75rem]"> Drop me a message! </span>
+        </div>
+      </div>
+      {% comment %} mail {% endcomment %}
+      <div class="flex items-center justify-center">
+        <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple hover:bg-gray-text-light group flex w-full items-center justify-between rounded-full px-7 py-2 text-center font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-4 md:text-[1.75rem]">
+          <span class="transition duration-700 group-hover:translate-x-3">Let's talk</span>
+          <img src="{% static "assets/arrow2.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8" style="background: url('{% static "assets/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="relative flex h-full w-full flex-col justify-center items-center">
+      {% comment %} resume {% endcomment %}
+        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">RESUME.</h1>
+      {% comment %} link {% endcomment %}
+      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="!bg-green-500 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8" style="background: url('{% static "assets/box_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="relative flex h-full w-full flex-col justify-center items-center">
+      {% comment %} works {% endcomment %}
+      <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">WORKS.</h1>
+      {% comment %} link {% endcomment %}
+      <a target="_blank" rel="noopener noreferrer" href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </div>
+  </div>  
+  <div class="!bg-[#003e54] border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8" style="background: url('{% static "assets/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="relative flex h-full w-full flex-col justify-center items-center">
+      {% comment %} blog {% endcomment %}
+      <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">BLOG.</h1>
+      {% comment %} link {% endcomment %}
+      <a target="_blank" rel="noopener noreferrer" href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </div>
+  </div>  
 </section>
