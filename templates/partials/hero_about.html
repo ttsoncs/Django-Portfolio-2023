@@ -1,7 +1,11 @@
 {% load static %}
 <section class="relative z-10 grid w-screen max-w-6xl grid-cols-2 gap-3 px-6 mx-auto grid-rows-38 lg:grid-rows-16 md:grid-rows-24 md:grid-cols-4 lg:grid-cols-6">
     <div class="row-span-6 p-6 space-y-5 overflow-hidden transition duration-700 border-t opacity-0 lg:col-start-auto lg:row-start-auto border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-8 lg:col-span-2 lg:row-span-8 lg:p-8"
-         x-intersect.half="$el.classList.add('opacity-100', '!blur-none');">
+         x-intersect.half="$el.classList.add('opacity-100', '!blur-none');"
+         style="background-size: cover;
+              background-position: center;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgODAwIDgwMCI+PGRlZnM+PGZpbHRlciBpZD0iYmJibHVycnktZmlsdGVyIiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgcHJpbWl0aXZlVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgoJPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTMwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJTb3VyY2VHcmFwaGljIiBlZGdlTW9kZT0ibm9uZSIgcmVzdWx0PSJibHVyIj48L2ZlR2F1c3NpYW5CbHVyPjwvZmlsdGVyPjwvZGVmcz48ZyBmaWx0ZXI9InVybCgjYmJibHVycnktZmlsdGVyKSI+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9IjU2MC40ODkwOTY4NDY1MTc0IiBjeT0iNjYwLjQ4OTgxMDkxOTg2NyIgZmlsbD0iaHNsKDM3LCA5OSUsIDY3JSkiPjwvZWxsaXBzZT48ZWxsaXBzZSByeD0iMTUwIiByeT0iMTUwIiBjeD0iNTc4LjQ0NzIwNDU4OTg0MzgiIGN5PSI1NjcuNjM5NDY1MzMyMDMxMiIgZmlsbD0iaHNsKDMxNiwgNzMlLCA1MiUpIj48L2VsbGlwc2U+PGVsbGlwc2Ugcng9IjE1MCIgcnk9IjE1MCIgY3g9Ijc3NC41NDY2MTY0OTkwMjMiIGN5PSI1NzMuNDkyMDQwNzk1NzYzIiBmaWxsPSJoc2woMTg1LCAxMDAlLCA1NyUpIj48L2VsbGlwc2U+PC9nPjwvc3ZnPg==)"
+         >
                 <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
             <div class="relative max-w-md">
                 <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
@@ -25,7 +29,7 @@
     </div>
     <div class="relative flex row-span-2 p-6 px-1 transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2"
          x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
-        {% comment %} <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
+        <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
         <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
         <div class="relative flex w-full overflow-x-hidden">
             <div class="animate-marquee whitespace-nowrap">
@@ -50,7 +54,7 @@
                 <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">HTMX</span>
                 <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl font-medium">SQLite3</span>
             </div>
-        </div> {% endcomment %}
+        </div>
     </div>
     <div class="relative row-span-3 p-6 overflow-hidden transition duration-700 border-t opacity-0 border-gray-border bg-gray-bg col-span-full rounded-3xl blur-sm md:col-span-2 md:row-span-3 lg:col-span-2 lg:row-span-3"
          x-intersect.half="$el.classList.add('opacity-100', '!blur-none')">
