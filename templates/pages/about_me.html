@@ -1,16 +1,8 @@
 {% extends "_base.html" %}
 {% block title %}About Me - {% endblock %}
 {% block content %}
-    {% include 'partials/profile.html' %}
-    <div class="container max-w-6xl bg-custom-black/90 backdrop-blur-sm pt-6 rounded-t-3xl lg:border-l lg:border-r border-t border-gray-border mx-auto">
-        {% include 'partials/hero_about.html' %}
-        {% comment %} <div class="w-0 h-0 mt-16 lg:mt-20"></div> {% endcomment %}
-        {% comment %} {% include 'partials/background.html' %} {% endcomment %}
-        {% comment %} <div class="w-0 h-0 mt-16 lg:mt-20"></div> {% endcomment %}
-        {% comment %} {% include 'partials/tech.html' %} {% endcomment %}
-        {% comment %} <div class="w-0 h-0 mt-16 lg:mt-20"></div> {% endcomment %}
-        {% comment %} {% include 'partials/faq.html' %} {% endcomment %}
-        <div class="w-0 h-0 mt-10"></div>
-        {% include 'partials/footer.html' %}
-    </div>
+    <div class="w-0 h-0 md:mt-0 mt-40"></div>
+    {% include 'partials/hero_about.html' %}
+    <div class="w-0 h-0 mt-10"></div>
+    {% include 'partials/footer.html' %}
 {% endblock content %}

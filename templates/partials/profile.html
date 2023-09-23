@@ -1,19 +1,19 @@
-{% load static %}
-<section class="grid max-w-6xl grid-cols-1 px-8 mx-auto sticky top-0 h-screen place-items-center">
-  <div class="relative max-w-sm flex flex-col items-center h-fit justify-between col-span-1 p-3 space-y-2 transition duration-700 border-t border-gray-border bg-gray-bg rounded-3xl blur-sm -translate-y-full" x-intersect="$el.classList.add('!blur-none', '!-translate-y-0')">
-    <div class="absolute w-12 h-full -top-[96%] bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
-    <div class="absolute w-16 h-2 top-[1%] -z-10 bg-gradient-to-t from-[#434343] to-custom-black rounded-full"></div>
+{% comment %} {% load static %}
+<section class="sticky top-0 mx-auto grid h-screen max-w-6xl grid-cols-1 place-items-center px-8">
+  <div class="border-gray-border bg-gray-bg relative col-span-1 flex max-w-sm -translate-y-full flex-col items-center justify-between h-fit space-y-2 rounded-3xl border-t p-3 opacity-0 transition duration-700" x-intersect.half="$el.classList.add('opacity-100', '!translate-y-0')">
+    <div class="absolute -top-[96%] h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
+    <div class="to-custom-black absolute top-[1%] -z-10 h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
     <div class="w-full p-3 pb-1">
       <div class="relative flex w-full">
-        <span class="text-white font-['Wotfard'] text-3xl font-medium whitespace-normal bg-gray-bg pr-2">Trinh The</span>
-        <div class="absolute w-full h-px bg-white -z-10 top-1/2"></div>
+        <span class="bg-gray-bg whitespace-normal pr-2 font-['Wotfard'] text-3xl font-medium text-white">Trinh The</span>
+        <div class="absolute top-1/2 -z-10 h-px w-full bg-white"></div>
       </div>
-      <p class="text-white font-['Wotfard'] text-3xl font-medium">Son</p>
+      <p class="font-['Wotfard'] text-3xl font-medium text-white">Son</p>
       <p class="text-gray-text-light font-['Wotfard'] text-lg">Web Developer</p>
     </div>
     <div class="relative">
-      <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="w-full rounded-2xl bg-gray-bg-hover" />
-      <p class="text-gray-text-light font-['Balleny'] text-5xl absolute bottom-8 right-4 -rotate-[25deg]">Son</p>
+      <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="bg-gray-bg-hover w-full rounded-2xl" />
+      <p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl">Son</p>
     </div>
   </div>
-</section>
+</section> {% endcomment %}

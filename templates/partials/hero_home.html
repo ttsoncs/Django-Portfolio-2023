@@ -7,7 +7,7 @@
       {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
         <a href="https://www.youtube.com/watch?v=JGJrmPd72Fg" target="_blank" rel="noopener noreferrer">
-          <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]" style="background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE1MCwgMC41LCAwLjUpIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIiBpZD0iZmZmbHV4LWdyYWRpZW50Ij48c3RvcCBzdG9wLWNvbG9yPSJoc2woMzE1LCAxMDAlLCA3MiUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iZmZmbHV4LWZpbHRlciIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMDA1IDAuMDAzIiBudW1PY3RhdmVzPSIyIiBzZWVkPSIyODkiIHN0aXRjaFRpbGVzPSJzdGl0Y2giIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVzdWx0PSJ0dXJidWxlbmNlIj48L2ZlVHVyYnVsZW5jZT4KICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCAwIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGluPSJ0dXJidWxlbmNlIiBlZGdlTW9kZT0iZHVwbGljYXRlIiByZXN1bHQ9ImJsdXIiPjwvZmVHYXVzc2lhbkJsdXI+CiAgPGZlQmxlbmQgbW9kZT0iY29sb3ItZG9kZ2UiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iYmx1ciIgcmVzdWx0PSJibGVuZCI+PC9mZUJsZW5kPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9InVybCgjZmZmbHV4LWdyYWRpZW50KSIgZmlsdGVyPSJ1cmwoI2ZmZmx1eC1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+)" />
+          <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]" style=" background: url('{% static "assets/background.svg" %}'); background-size: cover; background-position: center;">
         </a>
         <div class="flex flex-col -space-y-0.5">
           <div class="flex items-center space-x-1.5">
@@ -131,7 +131,7 @@
       </a>
     </div>
   </div>
-  {% comment %} container 7 {% endcomment %}
+  {% comment %} containter 7 {% endcomment %}
   <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       {% comment %} credit {% endcomment %}
