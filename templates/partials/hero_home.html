@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="h-[360px] grid grid-cols-2 gap-3">
-    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2">
+    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2 border-t border-gray-border">
       <div class="flex items-center justify-between w-full h-full">
         <div>
           <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
@@ -47,21 +47,21 @@
         <img src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
       </div>
     </div>
-    <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1">
+    <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition-colors duration-500 hover:bg-gray-bg-hover">
       <div class="flex h-full w-full flex-col justify-center items-center">
       {% comment %} linkedin {% endcomment %}
         <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</h1>
       {% comment %} link {% endcomment %}
       </div>
     </a>
-    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1">
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition-colors duration-500 hover:bg-gray-bg-hover">
       <div class="flex h-full w-full flex-col justify-center items-center">
       {% comment %} linkedin {% endcomment %}
         <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</h1>
       {% comment %} link {% endcomment %}
       </div>
     </a>
-    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2">
+    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2 border-t border-gray-border">
       <div class="flex items-center justify-between w-full h-full overflow-hidden">
         <div>
           <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
@@ -71,7 +71,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8">
+  <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border">
     <div class="flex h-full w-full flex-col justify-between">
       {% comment %} quotes {% endcomment %}
       <div class="relative max-w-md">
@@ -125,5 +125,16 @@
         </svg>
       </a>
     </div>
-  </div>  
+  </div>
+  <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border" style="background: url('{% static "assets/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="flex h-full w-full flex-col justify-between">
+      {% comment %} credit {% endcomment %}
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">CREDIT.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is build with <a href="https://www.djangoproject.com/" class="text-custom-purple font-semibold">Django</a> and deploy on <a href="https://www.pythonanywhere.com" class="text-custom-purple font-semibold">PythonAnywhere</a>. The fonts used are <a href="https://www.atipofoundry.com/fonts/wotfard" class="text-custom-purple font-semibold">Wotfard</a> and <a href="https://fonts.google.com/noto/specimen/Noto+Sans" class="text-custom-purple font-semibold">Noto Sans</a>, and <a href="https://github.com/microsoft/fluentui-emoji" class="text-custom-purple font-semibold">Fluent Emoji</a> is utilized for emojis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
