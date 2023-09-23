@@ -17,7 +17,7 @@
         </div>
         {% comment %} image {% endcomment %}
         <div class="relative">
-          <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="bg-gray-bg-hover w-full rounded-2xl" />
+          <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="!bg-gray-bg-hover w-full rounded-2xl"/>
           <p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl">Son</p>
         </div>
       </div>
@@ -31,50 +31,54 @@
         <div class="relative max-w-md">
           <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
           <div>
-            <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
-            <span class="leading-tight animate-text font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">Full-stack development is my focus.</span>
+            <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
+            <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">Full-stack development is my focus.</span>
           </div>
         </div>
       </div>
     </div>
   </div>
   {% comment %} container 3 {% endcomment %}
-  <div class="h-[360px] grid grid-cols-2 gap-3">
-    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+  <div class="h-[360px] grid grid-cols-1 gap-3">
+    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex items-center justify-between w-full h-full">
         <div>
-          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
-          <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p>
+          <p class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">University of Science</p>
         </div>
-        <img src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
       </div>
     </div>
-    <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="flex h-full w-full flex-col justify-center items-center">
-      {% comment %} linkedin {% endcomment %}
-        <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</h1>
-      {% comment %} link {% endcomment %}
+    <div class="relative bg-gray-bg rounded-3xl h-[80px] border-t border-gray-border transition-opacity opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="h-full w-full">
+        <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
+        <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
+        <div class="relative flex items-center w-full h-full overflow-hidden">
+          <div class="animate-marquee whitespace-nowrap select-none">
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+          </div>
+          <div class="absolute left-0 animate-marquee2 whitespace-nowrap select-none">
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+          </div>
+        </div>
       </div>
-    </a>
-    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="flex h-full w-full flex-col justify-center items-center">
-      {% comment %} linkedin {% endcomment %}
-        <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</h1>
-      {% comment %} link {% endcomment %}
-      </div>
-    </a>
-    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+    </div>
+    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex items-center justify-between w-full h-full overflow-hidden">
         <div>
-          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Based In</p>
-          <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Vietnam. GMT+7</p>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Workplace</p>
+          <p class="font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">NULL</p>
         </div>
-        {% include "partials/cobe.html" %}
       </div>
     </div>
   </div>
   {% comment %} container 4 {% endcomment %}
-  <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border opacity-0 transition-opacity duration-700 md:col-start-2 md:row-start-2" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} spotify {% endcomment %}
@@ -84,7 +88,7 @@
           <div class="flex items-center justify-between">
             <div>
               <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">Remember This</a>
-              <p class="animate-text font-['Wotfard'] text-xl font-medium text-gray-text">NF</p>
+              <p class="font-['Wotfard'] text-xl font-medium text-gray-text">NF</p>
             </div>
             <img src="{% static "assets/heart.svg"%}" alt="heart" class="w-8 h-8">
           </div>
