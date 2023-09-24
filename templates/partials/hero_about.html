@@ -7,7 +7,7 @@
         {% comment %} title {% endcomment %}
         <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
         <div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
-        <div class="w-full p-3">
+        <div class="w-full p-2 pb-4">
           <div class="relative flex w-full">
             <span class="relative z-10 bg-gray-bg whitespace-normal pr-2 font-['Wotfard'] text-3xl font-medium text-white">Trinh The</span>
             <div class="absolute top-1/2 h-px w-full bg-white"></div>
@@ -18,13 +18,13 @@
         {% comment %} image {% endcomment %}
         <div class="relative">
           <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="!bg-gray-bg-hover w-full rounded-2xl"/>
-          <p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl">Son</p>
+          <p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl select-none">Son</p>
         </div>
       </div>
     </div>
   </div>
   {% comment %} container 2 {% endcomment %}
-  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 lg:col-start-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} text {% endcomment %}
@@ -39,7 +39,7 @@
     </div>
   </div>
   {% comment %} container 3 {% endcomment %}
-  <div class="h-[360px] grid grid-cols-1 gap-3">
+  {% comment %} <div class="h-[360px] grid grid-cols-1 gap-3">
     <div class="bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex items-center justify-between w-full h-full">
         <div>
@@ -54,16 +54,14 @@
         <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
         <div class="relative flex items-center w-full h-full overflow-hidden">
           <div class="animate-marquee whitespace-nowrap select-none">
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
           </div>
           <div class="absolute left-0 animate-marquee2 whitespace-nowrap select-none">
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
-            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Real simple, all pratice.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
           </div>
         </div>
       </div>
@@ -76,9 +74,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+    <div class="flex h-full w-full flex-col justify-between">
+      {% comment %} credit {% endcomment %}
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">STACK.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">Currently, I work with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="text-white font-semibold">Django</a> for backend development, and  <a target="_blank" rel="noopener noreferrer" href="https://alpinejs.dev/" class="text-white font-semibold">Alpine.js</a> for frontend interactivity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% comment %} container 5 {% endcomment %}
+  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} spotify {% endcomment %}
@@ -96,4 +106,19 @@
       </div>
     </div>
   </div>
+  {% comment %} container 6 7 8 {% endcomment %}
+  {% for faq in faq_list %}
+    <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex h-full w-full flex-col justify-between">
+        {% comment %} credit {% endcomment %}
+        <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+          <div>
+            <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">FAQ.</h1>
+            <p class="font-['Wotfard'] text-lg text-white md:text-lg font-medium">{{faq.id}}. {{ faq.question }}</p>
+            <p class="font-['Wotfard'] text-lg text-gray-text md:text-lg">{{ faq.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </section>
