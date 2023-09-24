@@ -5,7 +5,7 @@
     <div class="flex h-full w-full flex-col justify-center">
       <div class="bg-gray-bg rounded-3xl p-4 pt-10 relative flex flex-col items-center border-t border-gray-border max-w-xs mx-auto transition duration-1000 -translate-y-3/4" x-intersect.half="$el.classList.add('!-translate-y-0')">
         {% comment %} title {% endcomment %}
-        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
+        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient " d></div>
         <div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
         <div class="w-full p-2 pb-4">
           <div class="relative flex w-full">
@@ -44,7 +44,7 @@
       <div class="flex items-center justify-between w-full h-full">
         <div>
           <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p>
-          <p class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">University of Science</p>
+          <p class="bg-gradien   dbg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">University of Science</p>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
     </div>
   </div> {% endcomment %}
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+  <div class="!bg-custom-purple h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/leaf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
@@ -88,23 +88,37 @@
     </div>
   </div>
   {% comment %} container 5 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex h-full w-full flex-col justify-between">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} spotify {% endcomment %}
-        <img src="{% static "assets/spotify-icon.svg" %}" alt="" class="md:h-14 md:w-14 h-12 w-12">
+        <div class="flex justify-between items-center">
+          <img src="{% static "assets/spotify-icon.svg" %}" alt="" class="md:h-14 md:w-14 h-12 w-12">
+          <button @keydown.tab="playAndStop" @click="playAndStop" type="button">
+              <div x-show="!currentlyPlaying">
+                <img src="{% static "assets/play.svg" %}" alt="play button" class="h-10 w-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+              </div>
+              <div x-show="currentlyPlaying">
+                <img src="{% static "assets/pause.svg" %}" alt="pause button" class="h-10 w-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+              </div>
+          </button>
+        </div>
         <div class="flex flex-col h-[5.75rem] justify-between">
-          <p class="text-[#1db954] font-['Wotfard'] text-xl">Pause</p>
+          <p x-show="!currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Pause</p>
+          <p x-show="currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Now playing</p>
           <div class="flex items-center justify-between">
             <div>
-              <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">Remember This</a>
-              <p class="font-['Wotfard'] text-xl font-medium text-gray-text">NF</p>
+              <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">An Tinh Sang Trang</a>
+              <p class="font-['Wotfard'] text-xl font-medium text-gray-text">Chau Khai Phong</p>
             </div>
             <img src="{% static "assets/heart.svg"%}" alt="heart" class="w-8 h-8">
           </div>
         </div>
       </div>
     </div>
+    <audio x-ref="audio">
+      <source src="{% static "audios/audio.mp3" %}" type="audio/mp3" />
+    </audio>
   </div>
   {% comment %} container 6 7 8 {% endcomment %}
   {% for faq in faq_list %}

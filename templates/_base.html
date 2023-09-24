@@ -35,5 +35,22 @@
       </div>
     </div>
     <script src="{% static "js/main.js" %}"></script>
+    <script>
+      function playaudio() {
+        return {
+          currentlyPlaying: false,
+          playAndStop() {
+            if (this.currentlyPlaying) {
+              this.$refs.audio.pause();
+              this.$refs.audio.currentTime = 0;
+              this.currentlyPlaying = false;
+            } else {
+              this.$refs.audio.play();
+              this.currentlyPlaying = true;
+            }
+          }
+        }
+      }
+    </script>
   </body>
 </html>
