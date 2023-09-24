@@ -5,7 +5,7 @@
     <div class="flex h-full w-full flex-col justify-center">
       <div class="bg-gray-bg rounded-3xl p-4 pt-10 relative flex flex-col items-center border-t border-gray-border max-w-xs mx-auto transition duration-1000 -translate-y-3/4" x-intersect.half="$el.classList.add('!-translate-y-0')">
         {% comment %} title {% endcomment %}
-        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient " d></div>
+        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
         <div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
         <div class="w-full p-2 pb-4">
           <div class="relative flex w-full">
@@ -121,18 +121,4 @@
     </audio>
   </div>
   {% comment %} container 6 7 8 {% endcomment %}
-  {% for faq in faq_list %}
-    <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="flex h-full w-full flex-col justify-between">
-        {% comment %} credit {% endcomment %}
-        <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
-          <div>
-            <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">FAQ.</h1>
-            <p class="font-['Wotfard'] text-lg text-white md:text-lg font-medium">{{faq.id}}. {{ faq.question }}</p>
-            <p class="font-['Wotfard'] text-lg text-gray-text md:text-lg">{{ faq.answer }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
 </section>
