@@ -19,12 +19,13 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     cover = models.ImageField(upload_to="covers/", blank=True)
+    slug = models.SlugField(null=False, unique=True)
 
     class Meta:
         ordering = ["-created_at"]
 
     def __str__(self):
         return self.title
-    
+
     def get_absolute_url(self):
-        return reverse("post_detail", kwargs={"pk": self.pk})
+        return reverse("post_detail", kwargs={"slug": self.slug})

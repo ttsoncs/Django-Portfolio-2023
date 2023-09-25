@@ -108,8 +108,12 @@
           <p x-show="currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Now playing</p>
           <div class="flex items-center justify-between">
             <div>
-              <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">An Tinh Sang Trang</a>
-              <p class="font-['Wotfard'] text-xl font-medium text-gray-text">Chau Khai Phong</p>
+              <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">DRUGS & <span class="lg:hidden inline">NICOTINE</span><span class="hidden lg:inline">NIC</span>.</a>
+              <div class="flex items-center space-x-2">
+                <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">LYRICS</span>
+                <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">E</span>
+                <span class="font-['Wotfard'] text-xl font-medium text-gray-text">CRIM</span>
+              </div>
             </div>
             <img src="{% static "assets/heart.svg"%}" alt="heart" class="w-8 h-8">
           </div>
@@ -117,7 +121,7 @@
       </div>
     </div>
     <audio x-ref="audio">
-      <source src="{% static "audios/audio.mp3" %}" type="audio/mp3" />
+      <source src="{% static "audios/audio.webm" %}" type="audio/webm" />
     </audio>
   </div>
 </section>
