@@ -1,0 +1,17 @@
+{% load static %}
+<section class="mx-auto max-w-5xl space-y-5 px-6">
+  {% for post in post_list %}
+  <div class="grid gap-5 lg:grid-cols-2">
+    <div class="bg-gray-bg border-t-gray-border mx-auto max-w-lg space-y-3 rounded-2xl border-t p-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex items-center justify-between px-2">
+        <div class="flex flex-col">
+          <span class="font-['Wotfard'] font-medium text-white md:text-xl">{{post.title}}</span>
+          <span class="text-gray-text-light font-['Wotfard'] text-xs md:text-sm">{{post.created_at|date:'M d, Y'}}</span>
+        </div>
+        <a href="{% url "post_detail" post.pk %}" target="_blank" rel="noopener noreferrer"> <img src="{% static "assets/arrow-gray.svg" %}" alt="arrow" class="w-5 h-5 md:w-6 md:h-6"> </a>
+      </div>
+      <div class="flex aspect-[4/3] w-full items-end justify-center rounded-xl bg-[#B993D6]"><img src="{{post.cover.url}}" alt="blog cover" class="w-11/12 rounded-t-lg" /></div>
+    </div>
+  </div>
+  {% endfor %}
+</section>

@@ -1,7 +1,6 @@
-from django.views.generic import TemplateView
-from django.views.generic import ListView
+from django.views.generic import TemplateView, ListView, DetailView
 
-from .models import FAQ
+from .models import Project, Post
 
 
 class HomePageView(TemplateView):
@@ -11,18 +10,20 @@ class HomePageView(TemplateView):
 class AboutMePageView(TemplateView):
     template_name = "pages/about_me.html"
 
-    def get_context_data(self, **kwargs):
-        context = super(AboutMePageView, self).get_context_data(**kwargs)
-        context["faq_list"] = FAQ.objects.all()
-        return context
 
-
-class WorksPageView(TemplateView):
+class WorksPageView(ListView):
+    model = Project
     template_name = "pages/works.html"
 
 
-class BlogPageView(TemplateView):
+class BlogPageView(ListView):
+    model = Post
     template_name = "pages/blog.html"
+
+
+class BlogDetailPageView(DetailView):
+    model = Post
+    template_name = "pages/blog_detail.html"
 
 
 class ContactPageView(TemplateView):

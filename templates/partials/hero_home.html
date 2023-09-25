@@ -45,7 +45,7 @@
           <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
           <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
         </div>
-        <img src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
+        <img loading="lazy" src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
       </div>
     </div>
     <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
@@ -87,7 +87,7 @@
       <div class="flex items-center justify-center">
         <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple hover:bg-gray-text-light group flex w-full items-center justify-between rounded-full px-7 py-2 text-center font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-4 md:text-[1.75rem]">
           <span class="transition duration-700 group-hover:translate-x-3">Let's talk</span>
-          <img src="{% static "assets/arrow2.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
+          <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
         </a>
       </div>
     </div>
@@ -113,9 +113,9 @@
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">WORKS.</h1>
         {% comment %} link {% endcomment %}
-        <a target="_blank" rel="noopener noreferrer" href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+        <a href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
           <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
       </div>
@@ -126,9 +126,9 @@
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">BLOG.</h1>
         {% comment %} link {% endcomment %}
-        <a target="_blank" rel="noopener noreferrer" href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
-          <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <a href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#9c9c9c">
+            <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
       </div>
@@ -141,7 +141,7 @@
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         <div>
           <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">CREDIT.</h1>
-          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is build with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="text-white font-semibold">Django</a> and deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="text-white font-semibold">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="text-white font-semibold">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="text-white font-semibold">Noto Sans</a>, and <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="text-white font-semibold">Fluent Emoji</a> is utilized for emojis.</p>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is built with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="text-white font-semibold">Django</a>, follows a bento-style execution, and is deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="text-white font-semibold">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="text-white font-semibold">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="text-white font-semibold">Noto Sans</a>, with <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="text-white font-semibold">Fluent Emoji</a> is utilized for emojis.</p>
         </div>
       </div>
     </div>
