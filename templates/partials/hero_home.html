@@ -1,24 +1,24 @@
 {% load static %}
-<section class="container mx-auto grid max-w-6xl grid-cols-1 gap-3 px-6 md:grid-cols-2 lg:grid-cols-3">
+<section class="container grid max-w-6xl grid-cols-1 gap-3 px-6 mx-auto md:grid-cols-2 lg:grid-cols-3">
   {% comment %} container 1 {% endcomment %}
   <div class="bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
     {% comment %} subcontainer 1 {% endcomment %}
-    <div class="flex h-full w-full flex-col justify-between">
+    <div class="flex flex-col justify-between w-full h-full">
       {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
-        <a href="https://www.youtube.com/watch?v=JGJrmPd72Fg" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.memesmonkey.com/images/memesmonkey/29/29cbe630e39b03fb02ecaf38c381e3da.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0072ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]" style=" background: url('{% static "assets/background.svg" %}'); background-size: cover; background-position: center;">
         </a>
         <div class="flex flex-col -space-y-0.5">
-          <div class="flex items-center space-x-1.5">
+          <div class="relative flex items-center">
             <span class="text-gray-text font-['Wotfard'] text-xl font-medium">Trinh The Son</span>
-            <img src="{% static 'assets/verified.svg' %}" alt="verified" class="h-3.5 w-3.5 md:h-4 md:w-4" />
+            <img src="{% static 'assets/verified.svg' %}" alt="verified" class="h-4 w-4 absolute -right-[1.375rem] top-1/4" />
           </div>
           <p class="text-gray-text-light font-['Wotfard'] text-sm md:text-base">@ttsoncs</p>
         </div>
       </div>
       {% comment %} hello text {% endcomment %}
-      <div class="space-y-5 pt-5 md:space-y-6">
+      <div class="pt-5 space-y-5 md:space-y-6">
         <div class="relative">
           <p class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g1">Hello.</p>
           <p class="gif text-gray-text-light absolute font-['Wotfard'] text-[1.75rem] font-medium leading-tight md:text-[2.5rem]" id="g2">Xin chào.</p>
@@ -31,7 +31,7 @@
         </div>
       </div>
       {% comment %} badge {% endcomment %}
-      <div class="relative flex w-min space-x-4 rounded-full border border-green-600 px-3 py-1">
+      <div class="relative flex px-3 py-1 space-x-4 border border-green-600 rounded-full w-min">
         <div class="absolute top-[42%] h-1.5 w-1.5 rounded-full bg-green-600 ring-2 ring-green-900 md:top-[45%]"></div>
         <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Work wanted</span>
       </div>
@@ -48,15 +48,15 @@
         <img loading="lazy" src="{% static "assets/Fire.png" %}" alt="Fire" class="w-10 h-10 md:h-12 md:w-12" />
       </div>
     </div>
-    <a href="" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="flex h-full w-full flex-col justify-center items-center">
+    <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex flex-col items-center justify-center w-full h-full">
       {% comment %} linkedin {% endcomment %}
         <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</h1>
       {% comment %} link {% endcomment %}
       </div>
     </a>
     <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="flex h-full w-full flex-col justify-center items-center">
+      <div class="flex flex-col items-center justify-center w-full h-full">
       {% comment %} linkedin {% endcomment %}
         <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</h1>
       {% comment %} link {% endcomment %}
@@ -74,7 +74,7 @@
   </div>
   {% comment %} container 3 {% endcomment %}
   <div class="bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
-    <div class="flex h-full w-full flex-col justify-between">
+    <div class="flex flex-col justify-between w-full h-full">
       {% comment %} quotes {% endcomment %}
       <div class="relative max-w-md">
         <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
@@ -94,11 +94,11 @@
   </div>
   {% comment %} container 4 {% endcomment %}
   <div class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
-    <div class="relative flex h-full w-full flex-col justify-center items-center">
+    <div class="relative flex flex-col items-center justify-center w-full h-full">
       {% comment %} resume {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">RESUME.</h1>
       {% comment %} link {% endcomment %}
-      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
         <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
@@ -109,11 +109,11 @@
   <div class="h-[360px] grid grid-cols-1 gap-3">
     {% comment %} works {% endcomment %}
     <div class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/box_pattern.svg" %}'); background-size: cover; background-position: center;">
-      <div class="relative flex h-full w-full flex-col justify-center items-center">
+      <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">WORKS.</h1>
         {% comment %} link {% endcomment %}
-        <a href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+        <a href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
           <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -122,11 +122,11 @@
     </div>
     {% comment %} blog {% endcomment %}
     <div class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
-      <div class="relative flex h-full w-full flex-col justify-center items-center">
+      <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">BLOG.</h1>
         {% comment %} link {% endcomment %}
-        <a href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 rounded-full bg-white hover:ring-4 hover:ring-slate-300">
+        <a href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
           <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#9c9c9c">
             <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -136,12 +136,12 @@
   </div>
   {% comment %} containter 6 {% endcomment %}
   <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
-    <div class="flex h-full w-full flex-col justify-between">
+    <div class="flex flex-col justify-between w-full h-full">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         <div>
           <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">CREDIT.</h1>
-          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is built with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="text-white font-semibold">Django</a>, follows a bento-style execution, and is deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="text-white font-semibold">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="text-white font-semibold">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="text-white font-semibold">Noto Sans</a>, with <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="text-white font-semibold">Fluent Emoji</a> is utilized for emojis.</p>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is built with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="font-semibold text-white">Django</a>, follows a bento-style execution, and is deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="font-semibold text-white">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="font-semibold text-white">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="font-semibold text-white">Noto Sans</a>, with <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="font-semibold text-white">Fluent Emoji</a> is utilized for emojis.</p>
         </div>
       </div>
     </div>

@@ -1,26 +1,11 @@
 {% load static %}
-<section class="mx-auto px-6">
-  <div class="flex h-full w-full flex-col items-center space-y-5 max-w-sm md:max-w-lg lg:max-w-2xl mx-auto">
-    <div class="space-y-1 w-full">
+<section class="px-6 mx-auto">
+  <div class="flex flex-col items-center w-full h-full max-w-sm mx-auto space-y-5 md:max-w-lg lg:max-w-2xl">
+    <div class="w-full space-y-1 transition-opacity duration-700 opacity-0" x-intersect.half="$el.classList.add('opacity-100')">
       <h1 class="font-['Wotfard'] text-[1.75rem] font-medium text-white md:text-[2.5rem]">{{ post.title }}</h1>
       <p class="text-gray-text-light font-['Wotfard'] text-sm lg:text-base">{{post.created_at|date:'M d, Y'}}</p>
     </div>
-    <img src="{{post.cover.url}}" alt="" class="w-full rounded-2xl" />
+    <img src="{{post.cover.url}}" alt="" class="w-full transition-opacity duration-700 opacity-0 rounded-2xl" x-intersect.half="$el.classList.add('opacity-100')" />
     <div class="text-gray-text pt-2 font-['Wotfard'] text-lg lg:text-xl space-y-5">{{post.body | safe}}</div>
-    {% comment %} <div class="text-gray-text pt-2 font-['Wotfard'] text-lg lg:text-xl space-y-5">
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Introduction.</p>
-        <p>In the world of web design, finding effective ways to present content that is visually appealing and organized is crucial. One design approach that has gained popularity in recent years is the bento grid design. Inspired by the traditional Japanese bento box, this layout system offers a unique and visually pleasing way to organize content on a website. In this article, we'll dive into the world of bento grid design and explore how it can enhance the user experience by providing a balanced and harmonious presentation of information.</p>
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">The Bento Box Concept.</p>
-        <img src="{% static "blogs/post1/img1.webp" %}" alt="" class="w-full rounded-2xl" />
-        <p>To understand bento grid design, let's first explore the concept of the bento box. In Japanese cuisine, a bento box is a compartmentalized container used to serve a balanced and visually appealing meal. Each compartment holds a different food item, creating a well-organized and appetizing presentation. This concept of compartmentalization and visual harmony forms the foundation of the bento grid design in web development.</p>
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Organizing Content with Bento Grid Design.</p>
-        <p>The bento grid design takes inspiration from the bento box and applies it to web design. Instead of food items, the various sections or compartments in the grid hold different types of content such as text, images, videos, or interactive elements. By dividing the content into distinct sections, the bento grid design allows for clear separation and organization, making it easier for users to consume and navigate through the information.</p>
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Achieving Visual Balance and Harmony.</p>
-        <p>One of the key benefits of bento grid design is the visual balance and harmony it brings to a website. The grid structure ensures that each section receives its allocated space, creating a sense of order and symmetry. This balanced composition makes it pleasing to the eye and helps users to focus on the content without feeling overwhelmed. Additionally, the grid layout allows for flexibility in adapting to different screen sizes and responsive design requirements.</p>
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Enhancing User Experience.</p>
-        <p>The bento grid design enhances the user experience by providing a structured and intuitive layout. Users can easily identify and locate the information they are looking for, thanks to the clear separation of content into sections. The visual hierarchy established by the grid design also helps prioritize important content and guide users through the website seamlessly. Whether it's a portfolio showcase, a blog, or an e-commerce site, the bento grid design can elevate the overall user experience and engagement.</p>
-        <p class="text-[1.75rem] font-medium leading-tight text-white md:text-[2.5rem]">Conclusion.</p>
-        <p>The bento grid design offers a fresh and visually appealing approach to organizing content on websites. Drawing inspiration from the traditional Japanese bento box, this design concept brings order, balance, and harmony to the presentation of information. By utilizing the bento grid design, web designers can create visually engaging and user-friendly websites that captivate visitors and provide a seamless browsing experience. Consider incorporating the bento grid design into your next web project and unlock the potential for a clean, organized, and visually stunning website.</p>
-    </div> {% endcomment %}
   </div>
 </section>
