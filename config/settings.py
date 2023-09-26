@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     "tailwind",
     "theme",
     "whitenoise.runserver_nostatic",
-    "django_minify_html",
     "pages",
 ]
 
@@ -62,7 +61,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.gzip.GZipMiddleware",
-    "django_minify_html.middleware.MinifyHtmlMiddleware",
     "django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
