@@ -51,7 +51,7 @@ module.exports = {
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
         'custom-purple': '#772af4',
-        'post-1': '#C6FFDD',
+        'post-1': '#8CA6DB',
       },
       "animation": {
         "background-shine": "background-shine 2s linear infinite",

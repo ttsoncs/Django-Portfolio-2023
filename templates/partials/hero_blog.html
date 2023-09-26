@@ -5,7 +5,7 @@
     <div class="bg-gray-bg border-t-gray-border mx-auto max-w-lg space-y-3 rounded-2xl border-t p-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex items-center justify-between px-2">
         <div class="flex flex-col">
-          <h1 class="font-['Wotfard'] font-medium text-white md:text-xl">{{post.title}}</h1>
+          <h1 class="font-['Wotfard'] font-medium text-white md:text-xl leading-tight">{{post.title}}</h1>
           <span class="text-gray-text-light font-['Wotfard'] text-xs md:text-sm">{{post.created_at|date:'M d, Y'}}</span>
         </div>
         <a href="{% url "post_detail" post.slug %}"> <img src="{% static "assets/arrow-gray.svg" %}" alt="arrow" class="w-5 h-5 md:w-6 md:h-6"> </a>

@@ -1432,11 +1432,6 @@ select {
   background-color: rgb(185 147 214 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#C6FFDD\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 255 221 / var(--tw-bg-opacity));
-}
-
 .bg-current {
   background-color: currentColor;
 }
@@ -1477,7 +1472,7 @@ select {
 
 .bg-post-1 {
   --tw-bg-opacity: 1;
-  background-color: rgb(198 255 221 / var(--tw-bg-opacity));
+  background-color: rgb(140 166 219 / var(--tw-bg-opacity));
 }
 
 .bg-\[linear-gradient\(110deg\2c \#0a0a0b\2c 45\%\2c \#1e2631\2c 55\%\2c \#0a0a0b\)\] {
@@ -1764,6 +1759,14 @@ select {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .text-\[\#1ED760\] {
