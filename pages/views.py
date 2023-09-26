@@ -26,9 +26,5 @@ class BlogDetailPageView(DetailView):
     template_name = "pages/blog_detail.html"
 
 
-class ContactPageView(TemplateView):
-    template_name = "pages/contact.html"
-
-
 class RobotsTxtView(TemplateView):
     template_name = "robots.txt"

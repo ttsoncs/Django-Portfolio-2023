@@ -5,7 +5,6 @@ from .views import (
     WorksPageView,
     BlogPageView,
     BlogDetailPageView,
-    ContactPageView,
     RobotsTxtView,
 )
 
@@ -15,6 +14,5 @@ urlpatterns = [
     path("works/", WorksPageView.as_view(), name="works"),
     path("blog/", BlogPageView.as_view(), name="blog"),
     path("blog/<slug:slug>/", BlogDetailPageView.as_view(), name="post_detail"),
-    path("contact/", ContactPageView.as_view(), name="contact"),
     path("robots.txt", RobotsTxtView.as_view(content_type="text/plain"), name="robots"),
 ]
