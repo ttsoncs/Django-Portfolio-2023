@@ -20,6 +20,7 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     cover = models.ImageField(upload_to="covers/", blank=True)
     slug = models.SlugField(null=False, unique=True)
+    color = models.CharField(max_length=20, default='#fff', null=False, unique=True)
 
     class Meta:
         ordering = ["-created_at"]

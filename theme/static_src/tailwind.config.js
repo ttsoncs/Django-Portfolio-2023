@@ -43,25 +43,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      gridTemplateRows: {
-        16: "repeat(16, minmax(0, 1fr))",
-        24: "repeat(24, minmax(0, 1fr))",
-        26: "repeat(26, minmax(0, 1fr))",
-        38: "repeat(38, minmax(0, 1fr))",
-        74: "repeat(74, minmax(0, 1fr))",
-      },
-      gridRow: {
-        'span-8': 'span 8 / span 8',
-        'span-9': 'span 9 / span 9',
-        'span-10': 'span 10 / span 10',
-        'span-11': 'span 11 / span 11',
-        'span-16': 'span 16 / span 16',
-      },
-      gridRowStart: {
-        '7': '7',
-        '8': '8',
-        '9': '9',
-      },
       colors: {
         'custom-black': '#0a0a0b',
         'gray-border': '#212427',
@@ -69,7 +50,8 @@ module.exports = {
         'gray-bg-hover': '#1a1a1a',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
-        'custom-purple': '#772af4'
+        'custom-purple': '#772af4',
+        'post-1': '#C6FFDD',
       },
       "animation": {
         "background-shine": "background-shine 2s linear infinite",

@@ -1,5 +1,11 @@
 {% load static %}
-<section class="mx-auto max-w-6xl space-y-5 px-6">    
-    <h2 class="text-white">{{ post.title }}</h2>
-    <p>{{ post.body }}</p>
+<section class="mx-auto px-6">
+  <div class="flex h-full w-full flex-col items-center space-y-5 max-w-sm md:max-w-lg lg:max-w-2xl mx-auto">
+    <div class="space-y-1 w-full">
+      <h1 class="font-['Wotfard'] text-[1.75rem] font-medium text-white md:text-[2.5rem]">{{ post.title }}</h1>
+      <p class="text-gray-text-light font-['Wotfard'] text-sm lg:text-base">{{post.created_at|date:'M d, Y'}}</p>
+    </div>
+    <img src="{{post.cover.url}}" alt="" class="w-full rounded-2xl" />
+    <div class="text-gray-text pt-2 font-['Wotfard'] text-lg lg:text-xl">{{post.body}}</div>
+  </div>
 </section>
