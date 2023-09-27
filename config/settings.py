@@ -158,8 +158,6 @@ DEFAULT_FROM_EMAIL = "ttson.cs@gmail.com"
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"
-EMAIL_HOST_PASSWORD = (
-    "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"
-)
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
