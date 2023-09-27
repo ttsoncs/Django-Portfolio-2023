@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+{% block title %}404 - {% endblock %}
+{% block content %}
+    <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 bg-custom-black">
+      <div class="space-y-5">
+        <div>
+          <p class="text-white font-['Wotfard'] font-semibold text-3xl md:text-5xl">Not Found</p>
+          <p class="text-gray-text font-['Wotfard'] text-xl md:text-2xl">Sorry, there is nothing at this URL.</p>
+        </div>
+        <a href="{% url "home" %}" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ce93d8" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+          </svg>
+          <p class="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 bg-clip-text text-transparent font-['Wotfard'] text-xl">Go back home.</p>
+        </a>
+      </div>
+    </div>
+{% endblock content %}
