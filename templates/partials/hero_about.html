@@ -97,12 +97,12 @@
     </div>
   </div>
   {% comment %} container 6 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg h-[270px] border-t border-gray-border rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex flex-col justify-between w-full h-full">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} spotify {% endcomment %}
         <div class="flex items-center justify-between">
-          <img src="{% static "assets/spotify-icon.svg" %}" alt="" class="w-12 h-12 md:h-14 md:w-14">
+          <img src="{% static "assets/spotify_icon.svg" %}" alt="spotify icon" class="w-12 h-12 md:h-14 md:w-14">
           <button @keydown.tab="playAndStop" @click="playAndStop" type="button">
               <div x-show="!currentlyPlaying">
                 <img src="{% static "assets/play.svg" %}" alt="play button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
@@ -124,7 +124,10 @@
                 <span class="font-['Wotfard'] text-xl font-medium text-gray-text">CRIM</span>
               </div>
             </div>
-            <img src="{% static "assets/heart.svg"%}" alt="heart" class="w-8 h-8">
+            <button x-data="{like: false}" @click="like = !like">
+              <img src="{% static "assets/heart_fill.svg"%}" alt="heart" class="w-8 h-8" x-show="like">
+              <img src="{% static "assets/heart_outline.svg"%}" alt="heart" class="w-8 h-8" x-show="!like">
+            </button>
           </div>
         </div>
       </div>
