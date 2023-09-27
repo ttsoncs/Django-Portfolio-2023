@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
-    "django.middleware.cache.UpdateCacheMiddleware",
+    # "django.middleware.cache.UpdateCacheMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -61,12 +61,12 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.gzip.GZipMiddleware",
-    "django.middleware.cache.FetchFromCacheMiddleware",
+    # "django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
-CACHE_MIDDLEWARE_ALIAS = "default"
-CACHE_MIDDLEWARE_SECONDS = 604800
-CACHE_MIDDLEWARE_KEY_PREFIX = ""
+# CACHE_MIDDLEWARE_ALIAS = "default"
+# CACHE_MIDDLEWARE_SECONDS = 604800
+# CACHE_MIDDLEWARE_KEY_PREFIX = ""
 
 ROOT_URLCONF = "config.urls"
 
@@ -153,3 +153,13 @@ TAILWIND_APP_NAME = "theme"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+DEFAULT_FROM_EMAIL = "ttson.cs@gmail.com"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD = (
+    "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"
+)
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
