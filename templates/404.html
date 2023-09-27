@@ -1,7 +1,8 @@
 {% extends "_base.html" %}
+{% load static %}
 {% block title %}404 - {% endblock %}
 {% block content %}
-  <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 transition-opacity duration-700 opacity-0 bg-custom-black" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/404.svg" %}'); background-size: cover; background-position: center;">
+  <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 !bg-custom-black" style="background: url('{% static "assets/404.svg" %}'); background-size: cover; background-position: center;">
     <div class="space-y-5">
       <div>
         <p class="text-white font-['Wotfard'] font-semibold text-3xl md:text-5xl">Not Found</p>
