@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "tailwind",
     "theme",
     "whitenoise.runserver_nostatic",
+    'widget_tweaks',
     "pages",
 ]
 

@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import View, TemplateView, ListView, DetailView
 
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
@@ -36,10 +36,12 @@ class RobotsTxtView(TemplateView):
     template_name = "robots.txt"
 
 
-def contactView(request):
-    if request.method == "GET":
+class ContactPageView(View):
+    def get(self, request):
         form = ContactForm()
-    else:
+        return render(request, "pages/contact.html", {"form": form})
+
+    def post(self, request):
         form = ContactForm(request.POST)
         if form.is_valid():
             subject = form.cleaned_data["subject"]
@@ -50,8 +52,7 @@ def contactView(request):
             except BadHeaderError:
                 return HttpResponse("Invalid header found.")
             return redirect("success")
-    return render(request, "pages/contact.html", {"form": form})
-
+        return render(request, "pages/contact.html", {"form": form})
 
 def successView(request):
     return HttpResponse("Success! Thank you for your message.")
