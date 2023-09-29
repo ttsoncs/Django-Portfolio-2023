@@ -1,11 +1,2 @@
 {% load static %}
-<section class="px-6 mx-auto">
-  <div class="flex flex-col items-center w-full h-full max-w-sm mx-auto space-y-5 md:max-w-lg lg:max-w-2xl">
-    <div class="w-full space-y-1 transition-opacity duration-700 opacity-0" x-intersect.half="$el.classList.add('opacity-100')">
-      <h1 class="font-['Wotfard'] text-[1.75rem] font-medium text-white md:text-[2.5rem]">{{ post.title }}</h1>
-      <p class="text-gray-text-light font-['Wotfard'] text-sm lg:text-base">{{post.created_at|date:'M d, Y'}}</p>
-    </div>
-    <img src="{{post.cover.url}}" alt="" class="w-full transition-opacity duration-700 opacity-0 rounded-2xl" x-intersect.half="$el.classList.add('opacity-100')" />
-    <div class="text-gray-text pt-2 font-['Wotfard'] text-lg lg:text-xl space-y-5">{{post.body | safe}}</div>
-  </div>
-</section>
+<section class="px-6 mx-auto"> <div class="flex flex-col items-center w-full h-full max-w-sm mx-auto space-y-5 md:max-w-lg lg:max-w-2xl"> <div class="w-full space-y-1 transition-opacity duration-700 opacity-0" x-intersect.half="$el.classList.add('opacity-100')"> <h1 class="font-['Wotfard'] text-[1.75rem] font-medium text-white md:text-[2.5rem]">{{ post.title }}</h1> <p class="text-gray-text-light font-['Wotfard'] text-sm lg:text-base">{{post.created_at|date:'M d, Y'}}</p> </div> <img src="{{post.cover.url}}" alt="" class="w-full transition-opacity duration-700 opacity-0 rounded-2xl" x-intersect.half="$el.classList.add('opacity-100')"> <div class="text-gray-text pt-2 font-['Wotfard'] text-lg lg:text-xl space-y-5">{{post.body | safe}}</div> </div> </section>

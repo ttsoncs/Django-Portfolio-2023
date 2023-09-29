@@ -54,16 +54,18 @@ SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.cache.UpdateCacheMiddleware",
+    "django.middleware.gzip.GZipMiddleware",
+    'htmlmin.middleware.HtmlMinifyMiddleware',
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.gzip.GZipMiddleware",
     "django.middleware.cache.FetchFromCacheMiddleware",
+    'htmlmin.middleware.MarkRequestMiddleware',
 ]
 
 CACHE_MIDDLEWARE_ALIAS = "default"
@@ -170,3 +172,6 @@ EMAIL_HOST_USER = "apikey"
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+HTML_MINIFY = True
+KEEP_COMMENTS_ON_MINIFYING = True
