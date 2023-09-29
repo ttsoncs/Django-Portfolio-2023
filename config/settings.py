@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     "theme",
     "whitenoise.runserver_nostatic",
     'widget_tweaks',
-    "django_minify_html",
     "pages",
 ]
 
@@ -64,7 +63,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.gzip.GZipMiddleware",
-    "django_minify_html.middleware.MinifyHtmlMiddleware",
     "django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
@@ -142,7 +140,14 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = "var/www/ttson/static"
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {  
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage", 
+    },
+}
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media/"

@@ -1,12 +1,11 @@
 asgiref==3.7.2
+Brotli==1.1.0
 Django==4.2.5
 django-appconf==1.0.5
 django-environ==0.11.2
-django-minify-html==1.6.1
 django-tailwind==3.6.0
 django-widget-tweaks==1.5.0
 EditorConfig==0.12.3
-minify_html==0.11.1
 Pillow==10.0.1
 sqlparse==0.4.4
 whitenoise==6.5.0
