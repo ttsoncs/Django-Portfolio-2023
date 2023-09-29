@@ -1,22 +1,157 @@
 {% load static %}
 {% block signature %}
-<link href="https://fonts.cdnfonts.com/css/balleny" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/balleny" rel="stylesheet">                
 {% endblock signature %}
 <section class="container grid max-w-6xl grid-cols-1 gap-3 px-6 mx-auto md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
   {% comment %} container 1 {% endcomment %}
-  <div class="md:h-[732px] px-4 pb-4 md:p-0 md:row-span-2 lg:row-span-2"><div class="flex flex-col justify-center w-full h-full"><div class="bg-gray-bg rounded-3xl p-4 pt-10 relative flex flex-col items-center border-t border-gray-border max-w-xs mx-auto transition duration-[2s] -translate-y-3/4" x-intersect.half="$el.classList.add('!-translate-y-0')">{% comment %} title {% endcomment %}<div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div><div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div><div class="w-full p-2 pb-4"><div class="relative flex w-full"><span class="relative z-10 bg-gray-bg whitespace-normal pr-2 font-['Wotfard'] text-3xl font-medium text-white">Trinh The</span><div class="absolute w-full h-px bg-white top-1/2"></div></div><p class="font-['Wotfard'] text-3xl font-medium text-white">Son</p><p class="text-gray-text-light font-['Wotfard'] text-lg">Web Developer</p></div>{% comment %} image {% endcomment %}<div class="relative"><img src="{% static 'images/avatar.webp' %}" alt="avatar" class="bg-gray-bg-hover w-full rounded-2xl"><p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl select-none">Son</p></div></div></div></div>
+  <div class="md:h-[732px] px-4 pb-4 md:p-0 md:row-span-2 lg:row-span-2">
+    <div class="flex flex-col justify-center w-full h-full">
+      <div class="bg-gray-bg rounded-3xl p-4 pt-10 relative flex flex-col items-center border-t border-gray-border max-w-xs mx-auto transition duration-[2s] -translate-y-3/4" x-intersect.half="$el.classList.add('!-translate-y-0')">
+        {% comment %} title {% endcomment %}
+        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
+        <div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
+        <div class="w-full p-2 pb-4">
+          <div class="relative flex w-full">
+            <span class="relative z-10 bg-gray-bg whitespace-normal pr-2 font-['Wotfard'] text-3xl font-medium text-white">Trinh The</span>
+            <div class="absolute w-full h-px bg-white top-1/2"></div>
+          </div>
+          <p class="font-['Wotfard'] text-3xl font-medium text-white">Son</p>
+          <p class="text-gray-text-light font-['Wotfard'] text-lg">Web Developer</p>
+        </div>
+        {% comment %} image {% endcomment %}
+        <div class="relative">
+          <img src="{% static 'images/avatar.webp' %}" alt="avatar" class="bg-gray-bg-hover w-full rounded-2xl"/>
+          <p class="text-gray-text-light absolute bottom-8 right-4 -rotate-[25deg] font-['Balleny'] text-5xl select-none">Son</p>
+        </div>
+      </div>
+    </div>
+  </div>
   {% comment %} container 2 {% endcomment %}
-  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 lg:col-start-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob.svg" %}'); background-size: cover; background-position: center;"> <div class="flex flex-col justify-between w-full h-full"> <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10"> {% comment %} text {% endcomment %} <div class="relative max-w-md"> <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6"> <div> <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl">&emsp;&nbsp;<span class="inline md:hidden">&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span> <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">Full-stack development is my focus.</span> </div> </div> </div> </div> </div>
+  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 lg:col-start-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob.svg" %}'); background-size: cover; background-position: center;">
+    <div class="flex flex-col justify-between w-full h-full">
+      <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        {% comment %} text {% endcomment %}
+        <div class="relative max-w-md">
+          <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+          <div>
+            <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
+            <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">Full-stack development is my focus.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   {% comment %} container 3 {% endcomment %}
-  {% comment %}
-  <div class="h-[360px] grid grid-cols-1 gap-3"> <div class="bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')"> <div class="flex items-center justify-between w-full h-full"> <div> <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p> <p class="bg-gradien dbg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">University of Science</p> </div> </div> </div> <div class="relative bg-gray-bg rounded-3xl h-[80px] border-t border-gray-border transition-opacity opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')"> <div class="w-full h-full"> <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div> <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div> <div class="relative flex items-center w-full h-full overflow-hidden"> <div class="select-none animate-marquee whitespace-nowrap"> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> </div> <div class="absolute left-0 select-none animate-marquee2 whitespace-nowrap"> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span> </div> </div> </div> </div> <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')"> <div class="flex items-center justify-between w-full h-full overflow-hidden"> <div> <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Workplace</p> <p class="font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">NULL</p> </div> </div> </div> </div>
-  {% endcomment %}
+  {% comment %} <div class="h-[360px] grid grid-cols-1 gap-3">
+    <div class="bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex items-center justify-between w-full h-full">
+        <div>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Education</p>
+          <p class="bg-gradien   dbg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">University of Science</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-gray-bg rounded-3xl h-[80px] border-t border-gray-border transition-opacity opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="w-full h-full">
+        <div class="absolute top-0 left-0 z-10 w-10 h-full from-gray-bg rounded-s-3xl bg-gradient-to-r to-transparent"></div>
+        <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
+        <div class="relative flex items-center w-full h-full overflow-hidden">
+          <div class="select-none animate-marquee whitespace-nowrap">
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+          </div>
+          <div class="absolute left-0 select-none animate-marquee2 whitespace-nowrap">
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+            <span class="text-gray-text-light mx-4 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">I have talents that can't be put on resumes.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex items-center justify-between w-full h-full overflow-hidden">
+        <div>
+          <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Workplace</p>
+          <p class="font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">NULL</p>
+        </div>
+      </div>
+    </div>
+  </div> {% endcomment %}
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob1.svg" %}'); background-size: cover; background-position: center"> <div class="flex flex-col justify-between w-full h-full"> {% comment %} credit {% endcomment %} <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10"> <div> <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">SKILLS.</h1> <p class="font-['Wotfard'] text-lg text-white md:text-lg">Currently, I work with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="font-semibold text-white">Django</a> for backend development, and <a target="_blank" rel="noopener noreferrer" href="https://alpinejs.dev/" class="font-semibold text-white">Alpine.js</a> for frontend interactivity. Additionally, I have a solid foundation in <a target="_blank" rel="noopener noreferrer" href="https://en.cppreference.com/w/" class="font-semibold text-white">C++</a>.</p> </div> </div> </div> </div>
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob1.svg" %}'); background-size: cover; background-position: center">
+    <div class="flex flex-col justify-between w-full h-full">
+      {% comment %} credit {% endcomment %}
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">SKILLS.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">Currently, I work with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="font-semibold text-white">Django</a> for backend development, and <a target="_blank" rel="noopener noreferrer" href="https://alpinejs.dev/" class="font-semibold text-white">Alpine.js</a> for frontend interactivity. Additionally, I have a solid foundation in <a target="_blank" rel="noopener noreferrer" href="https://en.cppreference.com/w/" class="font-semibold text-white">C++</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   {% comment %} container 5 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob2.svg" %}'); background-size: cover; background-position: center"> <div class="flex flex-col justify-between w-full h-full"> {% comment %} credit {% endcomment %} <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10"> <div> <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent">EDUCATION.</h1> <p class="font-['Wotfard'] text-lg text-white md:text-lg">The <a target="_blank" rel="noopener noreferrer" href="https://en.hcmus.edu.vn/" class="font-semibold text-white">University of Science</a> offered me a unique opportunity to build a strong foundation in my chosen field, setting the stage for my future success.</p> </div> </div> </div> </div>
-  {% comment %} container 6 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob3.svg" %}'); background-size: cover; background-position: center"> <div class="flex flex-col justify-between w-full h-full"> {% comment %} credit {% endcomment %} <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10"> <div> <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-violet-300 to-violet-400 bg-clip-text text-transparent">CAREER.</h1> <p class="font-['Wotfard'] text-lg text-white md:text-lg"></p> </div> </div> </div> </div>
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob2.svg" %}'); background-size: cover; background-position: center">
+    <div class="flex flex-col justify-between w-full h-full">
+      {% comment %} credit {% endcomment %}
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent">EDUCATION.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">The <a target="_blank" rel="noopener noreferrer" href="https://en.hcmus.edu.vn/" class="font-semibold text-white">University of Science</a> offered me a unique opportunity to build a strong foundation in my chosen field, setting the stage for my future success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    {% comment %} container 6 {% endcomment %}
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob3.svg" %}'); background-size: cover; background-position: center">
+    <div class="flex flex-col justify-between w-full h-full">
+      {% comment %} credit {% endcomment %}
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-[2rem] bg-gradient-to-r from-violet-300 to-violet-400 bg-clip-text text-transparent">CAREER.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
   {% comment %} container 7 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] border-t border-gray-border rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;"> <div class="flex flex-col justify-between w-full h-full"> <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10"> {% comment %} spotify {% endcomment %} <div class="flex items-center justify-between"> <img src="{% static "assets/spotify_icon.svg" %}" alt="spotify icon" class="w-12 h-12 md:h-14 md:w-14"> <button @keydown.tab="playAndStop" @click="playAndStop" type="button"> <div x-show="!currentlyPlaying"> <img src="{% static "assets/play.svg" %}" alt="play button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300"> </div> <div x-show="currentlyPlaying"> <img src="{% static "assets/pause.svg" %}" alt="pause button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300"> </div> </button> </div> <div class="flex flex-col h-[5.75rem] justify-between"> <p x-show="!currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Pause</p> <p x-show="currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Now playing</p> <div class="flex items-center justify-between"> <div> <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">DRUGS & <span class="inline lg:hidden">NICOTINE</span><span class="hidden lg:inline">NIC</span>.</a> <div class="flex items-center space-x-2"> <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">LYRICS</span> <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">E</span> <span class="font-['Wotfard'] text-xl font-medium text-gray-text">CRIM</span> </div> </div> <button x-data="{like: false}" @click="like = !like"> <img src="{% static "assets/heart_fill.svg"%}" alt="heart" class="w-8 h-8" x-show="like"> <img src="{% static "assets/heart_outline.svg"%}" alt="heart" class="w-8 h-8" x-show="!like"> </button> </div> </div> </div> </div> <audio x-ref="audio"> <source src="{% static "audios/audio.webm" %}" type="audio/webm"> </audio> </div>
+  <div class="!bg-gray-bg h-[270px] border-t border-gray-border rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="flex flex-col justify-between w-full h-full">
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        {% comment %} spotify {% endcomment %}
+        <div class="flex items-center justify-between">
+          <img src="{% static "assets/spotify_icon.svg" %}" alt="spotify icon" class="w-12 h-12 md:h-14 md:w-14">
+          <button @keydown.tab="playAndStop" @click="playAndStop" type="button">
+              <div x-show="!currentlyPlaying">
+                <img src="{% static "assets/play.svg" %}" alt="play button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+              </div>
+              <div x-show="currentlyPlaying">
+                <img src="{% static "assets/pause.svg" %}" alt="pause button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+              </div>
+          </button>
+        </div>
+        <div class="flex flex-col h-[5.75rem] justify-between">
+          <p x-show="!currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Pause</p>
+          <p x-show="currentlyPlaying" class="text-[#1ED760] font-['Wotfard'] text-xl">Now playing</p>
+          <div class="flex items-center justify-between">
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="" class="font-['Wotfard'] text-2xl font-semibold md:text-[1.75rem] text-white">DRUGS & <span class="inline lg:hidden">NICOTINE</span><span class="hidden lg:inline">NIC</span>.</a>
+              <div class="flex items-center space-x-2">
+                <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">LYRICS</span>
+                <span class="font-['Wotfard'] text-xs font-medium text-custom-black bg-gray-text px-1 rounded-sm">E</span>
+                <span class="font-['Wotfard'] text-xl font-medium text-gray-text">CRIM</span>
+              </div>
+            </div>
+            <button x-data="{like: false}" @click="like = !like">
+              <img src="{% static "assets/heart_fill.svg"%}" alt="heart" class="w-8 h-8" x-show="like">
+              <img src="{% static "assets/heart_outline.svg"%}" alt="heart" class="w-8 h-8" x-show="!like">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio x-ref="audio">
+      <source src="{% static "audios/audio.webm" %}" type="audio/webm" />
+    </audio>
+  </div>
 </section>
