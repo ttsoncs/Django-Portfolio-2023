@@ -1,4 +1,4 @@
-{% load static tailwind_tags %}
+{% load static tailwind_tags compress %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Noto+Sans+SC:wght@700&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
     {% block signature %}{% endblock signature %}
     {% tailwind_css %}
+    {% compress css %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}" media="print" onload="this.media='all'" />
+    {% endcompress %}
   </head>
   <body class="bg-custom-black overflow-x-hidden !scroll-smooth antialiased" x-data></body>
     <div>
@@ -34,6 +36,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.0/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    {% compress js %}
     <script src="{% static "js/base.js" %}"></script>
     <script>
       function playaudio() {
@@ -52,5 +55,6 @@
         }
       }
     </script>
+    {% endcompress %}
   </body>
 </html>
