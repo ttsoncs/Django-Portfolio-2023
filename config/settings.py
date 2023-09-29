@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "theme",
     "whitenoise.runserver_nostatic",
     'widget_tweaks',
-    "compressor",
+    "django_minify_html",
     "pages",
 ]
 
@@ -64,6 +64,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.gzip.GZipMiddleware",
+    "django_minify_html.middleware.MinifyHtmlMiddleware",
     "django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
@@ -164,13 +165,3 @@ EMAIL_HOST_USER = "apikey"
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-)
-
-COMPRESS_ENABLED = True
-COMPRESS_ROOT = STATIC_ROOT
-COMPRESS_OFFLINE = True
