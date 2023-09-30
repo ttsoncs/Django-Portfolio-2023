@@ -8,7 +8,7 @@
           <h1 class="font-['Wotfard'] font-medium text-white text-lg md:text-xl">{{post.title}}</h1>
           <span class="text-gray-text-light font-['Wotfard'] text-sm md:text-base">{{post.created_at|date:'M d, Y'}}</span>
         </div>
-        <a href="{% url "post_detail" post.slug %}"> <img src="{% static "assets/arrow-gray.svg" %}" alt="arrow" class="w-5 h-5 md:w-6 md:h-6"> </a>
+        <a href="{% url "post_detail" post.slug %}"> <img src="{% static "images/arrow-gray.svg" %}" alt="arrow" class="w-5 h-5 md:w-6 md:h-6"> </a>
       </div>
       <div class="flex aspect-[4/3] w-full items-end justify-center rounded-xl" @load.window="$el.classList.add('{{post.color}}')"><img src="{{post.cover.url}}" alt="blog cover" class="w-11/12 rounded-t-lg" /></div>
     </div>

@@ -8,7 +8,7 @@
     <div class="flex flex-col justify-center w-full h-full">
       <div class="bg-gray-bg rounded-3xl p-4 pt-10 relative flex flex-col items-center border-t border-gray-border max-w-xs mx-auto transition duration-[2s] -translate-y-3/4" x-intersect.half="$el.classList.add('!-translate-y-0')">
         {% comment %} title {% endcomment %}
-        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500"></div>
+        <div class="absolute -top-[93.5%] z-10 h-full w-12 bg-gradient-to-b from-purple-200 via-purple-400 to-purple-800"></div>
         <div class="to-custom-black absolute top-[5%] h-2 w-16 rounded-full bg-gradient-to-t from-[#434343]"></div>
         <div class="w-full p-2 pb-4">
           <div class="relative flex w-full">
@@ -27,12 +27,12 @@
     </div>
   </div>
   {% comment %} container 2 {% endcomment %}
-  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 lg:col-start-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg border-gray-border h-[270px] rounded-3xl border-t p-6 md:h-[360px] lg:p-8 lg:col-start-3 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/blob.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex flex-col justify-between w-full h-full">
       <div class="relative flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} text {% endcomment %}
         <div class="relative max-w-md">
-          <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+          <img src="{% static "images/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
           <div>
             <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-white text-2xl"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Hello! I'm Son, a 4th-year Computer Science major.</span>
             <span class="leading-tight font-['Wotfard'] md:text-[1.75rem] font-medium text-gray-text text-2xl">Full-stack development is my focus.</span>
@@ -79,7 +79,7 @@
     </div>
   </div> {% endcomment %}
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob1.svg" %}'); background-size: cover; background-position: center">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/blob1.svg" %}'); background-size: cover; background-position: center">
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
@@ -91,7 +91,7 @@
     </div>
   </div>
   {% comment %} container 5 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob2.svg" %}'); background-size: cover; background-position: center">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/blob2.svg" %}'); background-size: cover; background-position: center">
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
@@ -103,7 +103,7 @@
     </div>
   </div>
     {% comment %} container 6 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/blob3.svg" %}'); background-size: cover; background-position: center">
+  <div class="!bg-gray-bg h-[270px] rounded-3xl md:h-[360px] p-6 lg:p-8 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/blob3.svg" %}'); background-size: cover; background-position: center">
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
@@ -115,18 +115,18 @@
     </div>
   </div>
   {% comment %} container 7 {% endcomment %}
-  <div class="!bg-gray-bg h-[270px] border-t border-gray-border rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "assets/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-gray-bg h-[270px] border-t border-gray-border rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" x-data="playaudio()" style="background: url('{% static "images/surf_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex flex-col justify-between w-full h-full">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         {% comment %} spotify {% endcomment %}
         <div class="flex items-center justify-between">
-          <img src="{% static "assets/spotify_icon.svg" %}" alt="spotify icon" class="w-12 h-12 md:h-14 md:w-14">
+          <img src="{% static "images/spotify_icon.svg" %}" alt="spotify icon" class="w-12 h-12 md:h-14 md:w-14">
           <button @keydown.tab="playAndStop" @click="playAndStop" type="button">
               <div x-show="!currentlyPlaying">
-                <img src="{% static "assets/play.svg" %}" alt="play button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+                <img src="{% static "images/play.svg" %}" alt="play button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
               </div>
               <div x-show="currentlyPlaying">
-                <img src="{% static "assets/pause.svg" %}" alt="pause button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+                <img src="{% static "images/pause.svg" %}" alt="pause button" class="w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
               </div>
           </button>
         </div>
@@ -143,8 +143,8 @@
               </div>
             </div>
             <button x-data="{like: false}" @click="like = !like">
-              <img src="{% static "assets/heart_fill.svg"%}" alt="heart" class="w-8 h-8" x-show="like">
-              <img src="{% static "assets/heart_outline.svg"%}" alt="heart" class="w-8 h-8" x-show="!like">
+              <img src="{% static "images/heart_fill.svg"%}" alt="heart" class="w-8 h-8" x-show="like">
+              <img src="{% static "images/heart_outline.svg"%}" alt="heart" class="w-8 h-8" x-show="!like">
             </button>
           </div>
         </div>

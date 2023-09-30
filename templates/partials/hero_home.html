@@ -7,12 +7,12 @@
       {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
         <a href="https://www.memesmonkey.com/images/memesmonkey/29/29cbe630e39b03fb02ecaf38c381e3da.jpeg" target="_blank" rel="noopener noreferrer">
-          <img loading="lazy" src="{% static 'assets/smirking-face.png' %}" alt="avatar" class="ring-offset-gray-bg h-14 w-14 bg-[#1da1f2]/30 rounded-full ring-[2.5px] ring-[#0866ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]">
+          <img loading="lazy" src="{% static 'images/face_with_medical_mask.png' %}" alt="face with medical mask" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0866ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]">
         </a>
         <div class="flex flex-col -space-y-0.5">
           <div class="relative flex items-center">
             <span class="text-gray-text font-['Wotfard'] text-xl font-medium">Trinh The Son</span>
-            <img src="{% static 'assets/verified.svg' %}" alt="verified" class="h-4 w-4 absolute -right-[1.375rem] top-[22.5%]" />
+            <img src="{% static 'images/verified.svg' %}" alt="verified" class="h-4 w-4 absolute -right-[1.375rem] top-[22.5%]" />
           </div>
           <p class="text-gray-text-light font-['Wotfard'] text-sm md:text-base">@ttsoncs</p>
         </div>
@@ -32,9 +32,9 @@
         </div>
       </div>
       {% comment %} badge {% endcomment %}
-      <div class="relative flex px-3 py-1 space-x-4 border border-green-600 rounded-full w-min">
+      <div class="relative flex px-3 py-1 space-x-3.5 border border-green-600 rounded-full w-min">
         <div class="absolute top-[42%] h-1.5 w-1.5 rounded-full bg-green-600 ring-2 ring-green-900 md:top-[45%]"></div>
-        <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Work wanted</span>
+        <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Available</span>
       </div>
     </div>
   </div>
@@ -46,7 +46,7 @@
           <p class="text-gray-text-light font-['Wotfard'] text-2xl font-medium md:text-[1.75rem]">Title</p>
           <p class="animate-text font-['Wotfard'] text-2xl font-medium text-white md:text-[1.75rem]">Web Developer</p>
         </div>
-        <img loading="lazy" src="{% static "assets/compass.png" %}" alt="compass" class="w-10 h-10 md:h-12 md:w-12" />
+        <img loading="lazy" src="{% static "images/compass.png" %}" alt="compass" class="h-12 w-12" />
       </div>
     </div>
     <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
@@ -78,7 +78,7 @@
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} quotes {% endcomment %}
       <div class="relative max-w-md">
-        <img src="{% static "assets/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
+        <img src="{% static "images/quotes-left.svg" %}" alt="quotes left" class="absolute top-0 left-0 w-6 h-6">
         <div>
           <span class="font-['Wotfard'] text-2xl font-medium leading-tight text-white md:text-[1.75rem]"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Have a question or want to discuss something?</span>
           <span class="text-gray-text font-['Wotfard'] text-2xl font-medium leading-tight md:text-[1.75rem]"> Drop me a message! </span>
@@ -88,13 +88,13 @@
       <div class="flex items-center justify-center">
         <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple hover:bg-gray-text-light group flex w-full items-center justify-between rounded-full px-7 py-2 text-center font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-4 md:text-[1.75rem]">
           <span class="transition duration-700 group-hover:translate-x-3">Let's talk</span>
-          <img src="{% static "assets/arrow.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
+          <img src="{% static "images/arrow.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
         </a>
       </div>
     </div>
   </div>
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="relative flex flex-col items-center justify-center w-full h-full">
       {% comment %} resume {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">RESUME.</h1>
@@ -109,7 +109,7 @@
   {% comment %} container 5 {% endcomment %}
   <div class="h-[360px] grid grid-cols-1 gap-3">
     {% comment %} works {% endcomment %}
-    <div class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/box_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">WORKS.</h1>
@@ -122,7 +122,7 @@
       </div>
     </div>
     {% comment %} blog {% endcomment %}
-    <div class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">BLOG.</h1>
@@ -136,7 +136,7 @@
     </div>
   </div>
   {% comment %} containter 6 {% endcomment %}
-  <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "assets/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} credit {% endcomment %}
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
