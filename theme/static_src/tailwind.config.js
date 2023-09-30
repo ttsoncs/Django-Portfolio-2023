@@ -57,8 +57,8 @@ module.exports = {
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
         "border-width": "border-width 3s infinite alternate",
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
         spin: 'spin 15s linear infinite',
       },
       "keyframes": {
@@ -93,11 +93,6 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
-        spin: {
-          "to": {
-            transform: 'rotate(360deg)'
-          }
-        }
       }
     },
   },
