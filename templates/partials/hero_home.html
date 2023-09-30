@@ -49,18 +49,16 @@
         <img loading="lazy" src="{% static "images/compass.png" %}" alt="compass" class="h-12 w-12" />
       </div>
     </div>
-    <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+    <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
-      {% comment %} linkedin {% endcomment %}
-        <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">LinkedIn</h1>
-      {% comment %} link {% endcomment %}
+        {% comment %} linkedin {% endcomment %}
+        <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem] transition-transform duration-300 group-hover:scale-105">LinkedIn</h1>
       </div>
     </a>
-    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition hover:bg-gray-bg-hover opacity-0 duration-700" x-intersect.half="$el.classList.add('opacity-100')">
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 h-[80px] lg:p-8 col-span-1 border-t border-gray-border transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
-      {% comment %} linkedin {% endcomment %}
-        <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem]">GitHub</h1>
-      {% comment %} link {% endcomment %}
+        {% comment %} github {% endcomment %}
+        <h1 class="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text font-['Wotfard'] text-2xl font-medium text-transparent md:text-[1.75rem] transition-transform duration-300 group-hover:scale-105">GitHub</h1>
       </div>
     </a>
     <div class="relative z-10 overflow-hidden bg-gray-bg h-[128px] rounded-3xl p-6 col-span-2 border-t border-gray-border opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')">
@@ -94,46 +92,70 @@
     </div>
   </div>
   {% comment %} container 4 {% endcomment %}
-  <div class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+  <div class="h-[270px] md:h-[360px] grid grid-cols-2 grid-rows-2 gap-3">
+    <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-[#0077b5] rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        {% comment %} linkedin {% endcomment %}
+        <img src="{% static "images/linkedin.svg" %}" alt="linkedin logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </a>
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-green-500 rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        {% comment %} github {% endcomment %}
+        <img src="{% static "images/github.svg" %}" alt="github logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </a>
+    <a href="https://zaloapp.com/qr/p/vslcavsd6aq2?src=qr" target="_blank" rel="noopener noreferrer" class="bg-[#0068ff] rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        {% comment %} linkedin {% endcomment %}
+        <img src="{% static "images/zalo.svg" %}" alt="zalo logo" class="w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="bg-black rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        {% comment %} linkedin {% endcomment %}
+        <img src="{% static "images/twitter.svg" %}" alt="twitter logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </a>
+  </div>
+  {% comment %} <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="!bg-pink-600 h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="relative flex flex-col items-center justify-center w-full h-full">
-      {% comment %} resume {% endcomment %}
-        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">RESUME.</h1>
-      {% comment %} link {% endcomment %}
-      <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+      <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-105">RESUME.</h1>
+      <div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
         <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
-      </a>
+      </div>
     </div>
-  </div>
+  </a> {% endcomment %}
   {% comment %} container 5 {% endcomment %}
   <div class="h-[360px] grid grid-cols-1 gap-3">
     {% comment %} works {% endcomment %}
-    <div class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <a a href="{% url "works" %}" class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
-        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">WORKS.</h1>
+        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-105">WORKS.</h1>
         {% comment %} link {% endcomment %}
-        <a href="{% url "works" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
           <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
     {% comment %} blog {% endcomment %}
-    <div class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <a a href="{% url "blog" %}" class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
-        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">BLOG.</h1>
+        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-105">BLOG.</h1>
         {% comment %} link {% endcomment %}
-        <a href="{% url "blog" %}" class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
           <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#9c9c9c">
             <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   {% comment %} containter 6 {% endcomment %}
   <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
