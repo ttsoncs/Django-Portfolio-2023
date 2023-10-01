@@ -55,12 +55,12 @@
         <div class="absolute top-0 right-0 z-10 w-10 h-full from-gray-bg rounded-e-3xl bg-gradient-to-l to-transparent"></div>
         <div class="relative flex items-center w-full h-full overflow-hidden">
           <div class="select-none animate-marquee whitespace-nowrap">
-            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">¯\_(ツ)_/¯</span>
-            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">¯\_(ツ)_/¯</span>
+            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Under Construction</span>
+            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Under Construction</span>
           </div>
           <div class="absolute left-0 select-none animate-marquee2 whitespace-nowrap">
-            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">¯\_(ツ)_/¯</span>
-            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">¯\_(ツ)_/¯</span>
+            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Under Construction</span>
+            <span class="text-gray-text-light mx-5 font-['Wotfard'] text-2xl md:text-[1.75rem] font-medium">Under Construction</span>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
         <img src="{% static "images/linkedin.svg" %}" alt="linkedin logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
       </div>
     </a>
-    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-black rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
         {% comment %} github {% endcomment %}
         <img src="{% static "images/github.svg" %}" alt="github logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
@@ -134,9 +134,41 @@
     </div>
   </a> {% endcomment %}
   {% comment %} container 6 {% endcomment %}
+  <div class="h-[360px] grid grid-cols-1 grid-rows-2 gap-3">
+    {% comment %} works {% endcomment %}
+    <div class="!bg-gray-bg rounded-3xl p-6 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="w-full h-full grid grid-cols-10 grid-rows-4 gap-1.5" x-data="{color: ['#121314', '#121314', '#121314' ,'#9be9a8', '#30c463', '#30a14e', '#216e39'], index: 0}">
+        <template x-for="i in 40">
+          <div class="rounded-md" :style="`background-color: ${color[Math.floor(Math.random() * color.length)]}`"></div>
+        </template>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="!bg-pink-600 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+      <div class="relative flex flex-col items-center justify-center w-full h-full">
+        {% comment %} title {% endcomment %}
+        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">RESUME.</h1>
+        {% comment %} link {% endcomment %}
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </a>
+    {% comment %} <a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="!bg-pink-600 rounded-3xl p-6 lg:p-8 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+      <div class="relative flex flex-col items-center justify-center w-full h-full">
+        <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">RESUME.</h1>
+        <div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full md:h-12 md:w-12 hover:ring-4 hover:ring-slate-300">
+          <svg viewBox="0 0 24 24" class="w-5 h-5 md:h-6 md:w-6" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </a> {% endcomment %}
+  </div>
   <div class="h-[360px] grid grid-cols-1 gap-3">
     {% comment %} works {% endcomment %}
-    <a a href="{% url "works" %}" class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <a href="{% url "works" %}" class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">WORKS.</h1>
@@ -149,7 +181,7 @@
       </div>
     </a>
     {% comment %} blog {% endcomment %}
-    <a a href="{% url "blog" %}" class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <a href="{% url "blog" %}" class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
       <div class="relative flex flex-col items-center justify-center w-full h-full">
         {% comment %} title {% endcomment %}
         <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">BLOG.</h1>
@@ -163,7 +195,7 @@
     </a>
   </div>
   {% comment %} containter 7 {% endcomment %}
-  <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
+  {% comment %} <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
     <div class="flex flex-col justify-between w-full h-full">
       <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
         <div>
@@ -172,5 +204,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 </section>
