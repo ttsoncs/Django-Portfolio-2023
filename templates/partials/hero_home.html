@@ -7,12 +7,14 @@
       {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
         <a href="https://www.memesmonkey.com/images/memesmonkey/29/29cbe630e39b03fb02ecaf38c381e3da.jpeg" target="_blank" rel="noopener noreferrer" class="relative flex items-center justify-center">
-          <img loading="lazy" src="{% static 'images/face_with_medical_mask.png' %}" alt="face with medical mask" class="h-14 w-14 rounded-full md:h-16 md:w-16">
-          <div class="absolute h-[4.25rem] w-[4.25rem] md:h-[4.75rem] md:w-[4.75rem] animate-spin2 rounded-full border-2 border-dashed border-custom-purple"></div>
+          <div class="overflow-hidden rounded-full h-14 w-14 md:h-16 md:w-16">
+            <img loading="lazy" src="{% static 'images/avatar.webp' %}" alt="face with medical mask" class="scale-150">
+          </div>
+          <div class="absolute h-[4.25rem] w-[4.25rem] md:h-[4.75rem] md:w-[4.75rem] animate-spin2 rounded-full border-2 border-dashed border-[#1da1f2]"></div>
         </a>
         <div class="flex flex-col -space-y-0.5">
           <div class="relative flex items-center">
-            <span class="text-white font-['Wotfard'] text-xl font-medium">Trinh The Son</span>
+            <span class="text-gray-text font-['Wotfard'] text-xl font-medium">Trinh The Son</span>
             <img src="{% static 'images/verified.svg' %}" alt="verified" class="h-4 w-4 absolute -right-[1.375rem] top-[22.5%]" />
           </div>
           <p class="text-gray-text-light font-['Wotfard'] text-base md:text-lg">@ttsoncs</p>
@@ -33,7 +35,7 @@
         </div>
       </div>
       {% comment %} badge {% endcomment %}
-      <div class="relative flex px-3 py-1 space-x-3.5 border border-green-600 rounded-full w-min">
+      <div class="relative flex px-3 py-1 space-x-3.5 border border-gray-text-light  rounded-full w-min">
         <div class="absolute top-[42%] h-1.5 w-1.5 rounded-full bg-green-600 ring-2 ring-green-900 md:top-[45%]"></div>
         <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Available</span>
       </div>
@@ -185,15 +187,4 @@
       </div>
     </a>
   </div>
-  {% comment %} containter 7 {% endcomment %}
-  {% comment %} <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
-    <div class="flex flex-col justify-between w-full h-full">
-      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
-        <div>
-          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">CREDIT.</h1>
-          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is built with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="font-semibold text-white">Django</a>, follows a bento-style execution, and is deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="font-semibold text-white">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="font-semibold text-white">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="font-semibold text-white">Noto Sans</a>, with <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="font-semibold text-white">Fluent Emoji</a> is utilized for emojis.</p>
-        </div>
-      </div>
-    </div>
-  </div> {% endcomment %}
 </section>

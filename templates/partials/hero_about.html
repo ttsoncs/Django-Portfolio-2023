@@ -154,4 +154,15 @@
       <source src="{% static "audios/audio.webm" %}" type="audio/webm" />
     </audio>
   </div>
+    {% comment %} containter 7 {% endcomment %}
+  <div class="h-[270px] rounded-3xl p-6 md:h-[360px] lg:p-8 opacity-0 transition-opacity duration-700" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/rain_pattern.svg" %}'); background-size: cover; background-position: center;">
+    <div class="flex flex-col justify-between w-full h-full">
+      <div class="flex flex-col justify-between h-full space-y-5 md:space-y-10">
+        <div>
+          <h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem]">CREDIT.</h1>
+          <p class="font-['Wotfard'] text-lg text-white md:text-lg">This site is built with <a target="_blank" rel="noopener noreferrer" href="https://www.djangoproject.com/" class="font-semibold text-white">Django</a>, follows a bento-style execution, and is deploy on <a target="_blank" rel="noopener noreferrer" href="https://www.pythonanywhere.com" class="font-semibold text-white">PythonAnywhere</a>. The fonts used are <a target="_blank" rel="noopener noreferrer" href="https://www.atipofoundry.com/fonts/wotfard" class="font-semibold text-white">Wotfard</a> and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/noto/specimen/Noto+Sans" class="font-semibold text-white">Noto Sans</a>, with <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/fluentui-emoji" class="font-semibold text-white">Fluent Emoji</a> is utilized for emojis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

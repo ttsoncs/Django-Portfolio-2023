@@ -60,7 +60,7 @@ module.exports = {
         marquee: 'marquee 10s linear infinite',
         marquee2: 'marquee2 10s linear infinite',
         spin: 'spin 15s linear infinite',
-        spin2: 'spin 45s linear infinite',
+        spin2: 'spin 60s linear infinite',
       },
       "keyframes": {
         "background-shine": {
