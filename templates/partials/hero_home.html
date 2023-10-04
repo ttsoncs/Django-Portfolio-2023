@@ -6,15 +6,16 @@
     <div class="flex flex-col justify-between w-full h-full">
       {% comment %} avatar {% endcomment %}
       <div class="flex items-center space-x-5">
-        <a href="https://www.memesmonkey.com/images/memesmonkey/29/29cbe630e39b03fb02ecaf38c381e3da.jpeg" target="_blank" rel="noopener noreferrer">
-          <img loading="lazy" src="{% static 'images/face_with_medical_mask.png' %}" alt="face with medical mask" class="ring-offset-gray-bg h-14 w-14 rounded-full ring-[2.5px] ring-[#0866ff] ring-offset-[3.5px] md:h-[4.25rem] md:w-[4.25rem] md:ring-[3px]">
+        <a href="https://www.memesmonkey.com/images/memesmonkey/29/29cbe630e39b03fb02ecaf38c381e3da.jpeg" target="_blank" rel="noopener noreferrer" class="relative flex items-center justify-center">
+          <img loading="lazy" src="{% static 'images/face_with_medical_mask.png' %}" alt="face with medical mask" class="h-14 w-14 rounded-full md:h-16 md:w-16">
+          <div class="absolute h-[4.25rem] w-[4.25rem] md:h-[4.75rem] md:w-[4.75rem] animate-spin2 rounded-full border-2 border-dashed border-yellow-400"></div>
         </a>
         <div class="flex flex-col -space-y-0.5">
           <div class="relative flex items-center">
             <span class="text-gray-text font-['Wotfard'] text-xl font-medium">Trinh The Son</span>
             <img src="{% static 'images/verified.svg' %}" alt="verified" class="h-4 w-4 absolute -right-[1.375rem] top-[22.5%]" />
           </div>
-          <p class="text-gray-text-light font-['Wotfard'] text-sm md:text-base">@ttsoncs</p>
+          <p class="text-gray-text-light font-['Wotfard'] text-base md:text-lg">@ttsoncs</p>
         </div>
       </div>
       {% comment %} hello text {% endcomment %}
