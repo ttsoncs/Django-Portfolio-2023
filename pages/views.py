@@ -54,5 +54,5 @@ class ContactPageView(View):
             return redirect("success")
         return render(request, "pages/contact.html", {"form": form})
 
-def successView(request):
-    return HttpResponse("Success! Thank you for your message.")
+class SuccessPageView(TemplateView):
+    template_name = "pages/success.html"

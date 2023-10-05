@@ -7,7 +7,7 @@ from .views import (
     BlogDetailPageView,
     RobotsTxtView,
     ContactPageView,
-    successView,
+    SuccessPageView,
 )
 
 urlpatterns = [
@@ -17,6 +17,6 @@ urlpatterns = [
     path("blog/", BlogPageView.as_view(), name="blog"),
     path("blog/<slug:slug>/", BlogDetailPageView.as_view(), name="post_detail"),
     path("contact/", ContactPageView.as_view(), name="contact"),
-    path("success/", successView, name="success"),
+    path("success/", SuccessPageView.as_view(), name="success"),
     path("robots.txt", RobotsTxtView.as_view(content_type="text/plain"), name="robots"),
 ]

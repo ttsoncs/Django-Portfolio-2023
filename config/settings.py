@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "tailwind",
     "theme",
     "whitenoise.runserver_nostatic",
-    'widget_tweaks',
+    "widget_tweaks",
     "pages",
 ]
 
@@ -55,22 +55,22 @@ SITE_ID = 1
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    "django.middleware.cache.UpdateCacheMiddleware",
+    # "django.middleware.cache.UpdateCacheMiddleware",
     "django.middleware.gzip.GZipMiddleware",
-    'htmlmin.middleware.HtmlMinifyMiddleware',
+    "htmlmin.middleware.HtmlMinifyMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.cache.FetchFromCacheMiddleware",
-    'htmlmin.middleware.MarkRequestMiddleware',
+    # "django.middleware.cache.FetchFromCacheMiddleware",
+    "htmlmin.middleware.MarkRequestMiddleware",
 ]
 
-CACHE_MIDDLEWARE_ALIAS = "default"
-CACHE_MIDDLEWARE_SECONDS = 604800
-CACHE_MIDDLEWARE_KEY_PREFIX = ""
+# CACHE_MIDDLEWARE_ALIAS = "default"
+# CACHE_MIDDLEWARE_SECONDS = 604800
+# CACHE_MIDDLEWARE_KEY_PREFIX = ""
 
 ROOT_URLCONF = "config.urls"
 
@@ -146,8 +146,8 @@ STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
     },
-    "staticfiles": {  
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage", 
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
@@ -165,7 +165,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-DEFAULT_FROM_EMAIL = "ttson.cs@gmail.com"
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"

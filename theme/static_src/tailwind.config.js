@@ -43,6 +43,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        '7': 'repeat(7, minmax(0, 1fr))',
+      },
+      gridTemplateColumns: {
+        '14': 'repeat(14, minmax(0, 1fr))',
+      },
       colors: {
         'custom-black': '#0a0a0b',
         'gray-border': '#212427',

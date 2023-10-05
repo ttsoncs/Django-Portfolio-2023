@@ -35,9 +35,9 @@
         </div>
       </div>
       {% comment %} badge {% endcomment %}
-      <div class="relative flex px-3 py-1 space-x-3.5 border border-gray-text-light  rounded-full w-min">
+      <div class="relative flex px-3 py-1 space-x-3.5 border border-gray-border rounded-full w-min">
         <div class="absolute top-[42%] h-1.5 w-1.5 rounded-full bg-green-600 ring-2 ring-green-900 md:top-[45%]"></div>
-        <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Available</span>
+        <span class="animate-background-shine whitespace-nowrap bg-[linear-gradient(110deg,#525252,45%,#9c9c9c,55%,#525252)] bg-[length:250%_100%] bg-clip-text font-['Wotfard'] text-sm text-transparent md:text-base">Available for work</span>
       </div>
     </div>
   </div>
@@ -138,10 +138,10 @@
   {% comment %} container 5 {% endcomment %}
   <div class="h-[360px] grid grid-cols-1 grid-rows-2 gap-3">
     {% comment %} works {% endcomment %}
-    <div class="!bg-gray-bg rounded-3xl p-6 opacity-0 transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
-      <div class="w-full h-full grid grid-cols-10 grid-rows-4 gap-1.5" x-data="{color: ['#161b22', '#161b22', '#161b22' ,'#9be9a8', '#30c463', '#30a14e', '#216e39'], index: 0}">
-        <template x-for="i in 40">
-          <div class="rounded-md" :style="`background-color: ${color[Math.floor(Math.random() * color.length)]}`"></div>
+    <div class="!bg-gray-bg rounded-3xl p-6 opacity-0 flex justify-center items-center transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
+      <div class="max-w-xs w-full h-full grid grid-cols-14 grid-rows-6 gap-1.5" x-data="{color: ['#161b22', '#161b22', '#161b22' ,'#9be9a8', '#30c463', '#30a14e', '#216e39'], index: 0}">
+        <template x-for="i in 84">
+          <div class="rounded-sm aspect-[1/1]" :style="`background-color: ${color[Math.floor(Math.random() * color.length)]}`"></div>
         </template>
       </div>
     </div>
