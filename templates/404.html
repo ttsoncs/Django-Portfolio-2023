@@ -2,16 +2,18 @@
 {% load static %}
 {% block title %}404 - {% endblock %}
 {% block content %}
-  <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 !bg-custom-black" style="background: url('{% static "images/redirect.svg" %}'); background-size: cover; background-position: center;">
-    <div class="space-y-5">
-      <div>
-        <p class="text-white font-['Wotfard'] font-semibold text-3xl md:text-5xl">Not Found</p>
-        <p class="text-gray-text font-['Wotfard'] text-xl md:text-2xl">Sorry, there is nothing at this URL.</p>
+  <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 !bg-custom-black" style="background: url('{% static "images/redirect.svg" %}'); background-size: cover; background-position: center;" x-data="{countdown: 7, redirect: false, redirect() { window.location.href = '/'; }, initCountdown() { setInterval(() => { if (this.countdown > 0) { this.countdown--; } else this.redirect()}, 1000);}}" x-init="initCountdown()">
+      <div class="text-white text-xl">{{api}}</div>
+      <div class="space-y-5">
+        <div>
+          <p class="text-white font-['Wotfard'] font-semibold text-3xl md:text-5xl">Not Found</p>
+          <p class="text-gray-text font-['Wotfard'] text-xl md:text-2xl">Sorry, there is nothing at this URL.</p>
+        </div>
+        <a href="{% url "home" %}" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke-width="1" viewBox="0 0 24 24" color="#000000"><path stroke="#ce93d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12H3m0 0 8.5-8.5M3 12l8.5 8.5"></path></svg>
+          <p class="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 bg-clip-text text-transparent font-['Wotfard'] text-xl">Go back home.</p>
+        </a>
+        <span class="text-gray-text-light font-['Wotfard'] text-base" x-text="'(Redirecting in ' + countdown + ' seconds)'"></span>
       </div>
-      <a href="{% url "home" %}" class="flex items-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke-width="1" viewBox="0 0 24 24" color="#000000"><path stroke="#ce93d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12H3m0 0 8.5-8.5M3 12l8.5 8.5"></path></svg>
-        <p class="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 bg-clip-text text-transparent font-['Wotfard'] text-xl">Go back home.</p>
-      </a>
-    </div>
   </div>
 {% endblock content %}

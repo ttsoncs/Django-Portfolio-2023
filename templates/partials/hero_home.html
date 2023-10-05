@@ -141,7 +141,7 @@
     <div class="!bg-gray-bg rounded-3xl p-6 opacity-0 flex justify-center items-center transition-opacity duration-700 border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="max-w-xs w-full h-full grid grid-cols-14 grid-rows-6 gap-1.5" x-data="{color: ['#161b22', '#161b22', '#161b22' ,'#9be9a8', '#30c463', '#30a14e', '#216e39'], index: 0}">
         <template x-for="i in 84">
-          <div class="rounded-sm aspect-[1/1]" :style="`background-color: ${color[Math.floor(Math.random() * color.length)]}`"></div>
+          <div class="rounded-[3px] aspect-[1/1]" :style="`background-color: ${color[Math.floor(Math.random() * color.length)]}`"></div>
         </template>
       </div>
     </div>
