@@ -1,3 +1,4 @@
+from typing import Any
 from django.views.generic import View, TemplateView, ListView, DetailView
 
 from django.conf import settings
@@ -61,3 +62,8 @@ class ContactPageView(View):
 
 class SuccessPageView(TemplateView):
     template_name = "pages/success.html"
+
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["api"] = settings.EMAIL_HOST_PASSWORD
+        return context        

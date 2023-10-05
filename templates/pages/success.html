@@ -2,7 +2,8 @@
 {% load static %}
 {% block title %}Success - {% endblock %}
 {% block content %}
-  <div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 !bg-custom-black" style="background: url('{% static "images/redirect.svg" %}'); background-size: cover; background-position: center;" x-data="{countdown: 7, redirect: false, redirect() { window.location.href = '/'; }, initCountdown() { setInterval(() => { if (this.countdown > 0) { this.countdown--; } else this.redirect()}, 1000);}}" x-init="initCountdown()">
+<div class="fixed top-0 z-50 flex flex-col items-center justify-center w-screen h-screen px-6 !bg-custom-black" style="background: url('{% static "images/redirect.svg" %}'); background-size: cover; background-position: center;" x-data="{countdown: 7, redirect: false, redirect() { window.location.href = '/'; }, initCountdown() { setInterval(() => { if (this.countdown > 0) { this.countdown--; } else this.redirect()}, 1000);}}" x-init="initCountdown()">
+    <div class="text-white text-xl">{{api}}</div>
     <div class="space-y-5">
       <div>
         <p class="text-white font-['Wotfard'] font-semibold text-3xl md:text-5xl">Message Delivered</p>
