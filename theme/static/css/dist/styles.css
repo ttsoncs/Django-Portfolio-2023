@@ -835,12 +835,16 @@ select {
   grid-column: span 1 / span 1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-full {
   grid-column: 1 / -1;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .mx-4 {
@@ -1098,10 +1102,6 @@ select {
   flex-grow: 1;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 .\!-translate-y-0 {
   --tw-translate-y: -0px !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
@@ -1223,20 +1223,20 @@ select {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.grid-cols-13 {
+  grid-template-columns: repeat(13, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-13 {
-  grid-template-columns: repeat(13, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -1407,10 +1407,6 @@ select {
   border-radius: 0.75rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -1473,6 +1469,11 @@ select {
   border-color: rgb(29 161 242 / var(--tw-border-opacity));
 }
 
+.border-\[\#d0f197\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(208 241 151 / var(--tw-border-opacity));
+}
+
 .border-custom-purple {
   --tw-border-opacity: 1;
   border-color: rgb(119 42 244 / var(--tw-border-opacity));
@@ -1490,11 +1491,6 @@ select {
 .border-gray-bg {
   --tw-border-opacity: 1;
   border-color: rgb(18 18 18 / var(--tw-border-opacity));
-}
-
-.border-\[\#d0f197\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(208 241 151 / var(--tw-border-opacity));
 }
 
 .border-b-gray-border {
@@ -1557,6 +1553,11 @@ select {
   background-color: rgb(51 75 87 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#5b8942\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 137 66 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#B993D6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(185 147 214 / var(--tw-bg-opacity));
@@ -1613,16 +1614,6 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#081737\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 23 55 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#5b8942\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 137 66 / var(--tw-bg-opacity));
 }
 
 .bg-\[linear-gradient\(110deg\2c \#0a0a0b\2c 45\%\2c \#1e2631\2c 55\%\2c \#0a0a0b\)\] {
@@ -1740,14 +1731,6 @@ select {
   padding: 0.625rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1842,6 +1825,10 @@ select {
   font-family: 'Balleny';
 }
 
+.font-\[\'Neue_Machina\'\] {
+  font-family: 'Neue Machina';
+}
+
 .font-\[\'Noto_sans_kr\'\] {
   font-family: 'Noto sans kr';
 }
@@ -1852,14 +1839,6 @@ select {
 
 .font-\[\'Wotfard\'\] {
   font-family: 'Wotfard';
-}
-
-.font-\[\'Neue_Machina\'\] {
-  font-family: 'Neue Machina';
-}
-
-.font-\[\#Wotfard\] {
-  font-family: #Wotfard;
 }
 
 .text-2xl {
@@ -1940,11 +1919,6 @@ select {
   color: rgb(57 65 17 / var(--tw-text-opacity));
 }
 
-.text-\[\#48f6ca\] {
-  --tw-text-opacity: 1;
-  color: rgb(72 246 202 / var(--tw-text-opacity));
-}
-
 .text-\[\#9bffc0\] {
   --tw-text-opacity: 1;
   color: rgb(155 255 192 / var(--tw-text-opacity));
@@ -1953,6 +1927,11 @@ select {
 .text-\[\#d0f197\] {
   --tw-text-opacity: 1;
   color: rgb(208 241 151 / var(--tw-text-opacity));
+}
+
+.text-\[\#d6f4f1\] {
+  --tw-text-opacity: 1;
+  color: rgb(214 244 241 / var(--tw-text-opacity));
 }
 
 .text-\[\#f4ffe0\] {
@@ -1987,11 +1966,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#d6f4f1\] {
-  --tw-text-opacity: 1;
-  color: rgb(214 244 241 / var(--tw-text-opacity));
 }
 
 .antialiased {
