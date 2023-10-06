@@ -62,8 +62,3 @@ class ContactPageView(View):
 
 class SuccessPageView(TemplateView):
     template_name = "pages/success.html"
-
-    def get_context_data(self, **kwargs: Any):
-        context = super().get_context_data(**kwargs)
-        context["api"] = settings.EMAIL_HOST_PASSWORD
-        return context        
