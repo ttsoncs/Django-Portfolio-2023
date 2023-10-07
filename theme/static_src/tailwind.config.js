@@ -63,8 +63,10 @@ module.exports = {
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
         "border-width": "border-width 3s infinite alternate",
-        marquee: 'marquee 10s linear infinite',
-        marquee2: 'marquee2 10s linear infinite',
+        marquee1l: 'marquee1l 50s linear infinite',
+        marquee2l: 'marquee2l 50s linear infinite',
+        marquee1r: 'marquee1r 35s linear infinite',
+        marquee2r: 'marquee2r 35s linear infinite',
         spin: 'spin 15s linear infinite',
         spin2: 'spin 60s linear infinite',
       },
@@ -92,12 +94,20 @@ module.exports = {
             "opacity": "1"
           }
         },
-        marquee: {
+        marquee1l: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
-        marquee2: {
+        marquee2l: {
           '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        marquee1r: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        marquee2r: {
+          '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
       }
