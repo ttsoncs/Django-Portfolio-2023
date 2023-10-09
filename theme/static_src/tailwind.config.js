@@ -51,7 +51,7 @@ module.exports = {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        'custom-black': '#0a0a0b',
+        'custom-black': '#000',
         'gray-border': '#212427',
         'gray-bg': '#121212',
         'gray-bg-hover': '#1a1a1a',
