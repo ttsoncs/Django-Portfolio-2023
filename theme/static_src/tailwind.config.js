@@ -52,8 +52,8 @@ module.exports = {
       },
       colors: {
         'custom-black': '#000',
-        'gray-border': '#212427',
-        'gray-bg': '#121212',
+        'gray-border': '#262626',
+        'gray-bg': '#0a0a0a',
         'gray-bg-hover': '#1a1a1a',
         'gray-text': '#9c9c9c',
         'gray-text-light': '#525252',
