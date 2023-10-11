@@ -52,8 +52,8 @@
       </div>
     </div>
     <div class="grid grid-cols-2 h-[80px] gap-3">
-      <a href="{% url "contact" %}" class="bg-gray-bg rounded-3xl transition-opacity opacity-0 duration-700 group border-t border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
-        <div class="grid place-items-center w-full h-full">
+      <a href="{% url "contact" %}" class="transition-opacity duration-700 border-t opacity-0 bg-gray-bg rounded-3xl group border-gray-border" x-intersect.half="$el.classList.add('opacity-100')">
+        <div class="grid w-full h-full place-items-center">
           <span class="text-gray-text font-['Wotfard'] text-2xl font-medium md:text-[1.75rem] transition-transform duration-300 group-hover:scale-105">Hire Me</span>
         </div>
       </a>
@@ -68,12 +68,16 @@
                       that.copyNotification = false;
                   }, 3000);
               }
-          }" class="flex items-center transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
-          <button @click="copyToClipboard();" class="flex items-center justify-center font-['Wotfard'] font-medium space-x-2 h-full w-full text-2xl md:text-[1.75rem] text-white bg-gray-bg rounded-3xl group border-t border-gray-border">
+          }" class="flex items-center transition-opacity duration-700 opacity-0 group" x-intersect.half="$el.classList.add('opacity-100')">
+          <button @click="copyToClipboard();" class="flex items-center justify-center font-['Wotfard'] font-medium h-full w-full text-2xl md:text-[1.75rem] text-white bg-gray-bg rounded-3xl group border-t border-gray-border">
+            <div class="flex items-center space-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" x-show="!copyNotification" class="w-6 h-6 md:w-7 md:h-7" fill="#fff" stroke-width="1" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1" stroke-linecap="round" d="M8.5 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2.5"></path><path stroke="#000000" stroke-width="1" stroke-linecap="round" d="M8 6.4V4.5a.5.5 0 0 1 .5-.5c.276 0 .504-.224.552-.496C9.2 2.652 9.774 1 12 1s2.8 1.652 2.948 2.504c.048.272.276.496.552.496a.5.5 0 0 1 .5.5v1.9a.6.6 0 0 1-.6.6H8.6a.6.6 0 0 1-.6-.6Z"></path></svg>
               <span x-show="!copyNotification" class="transition-transform duration-300 group-hover:scale-105">Email</span>
+            </div>
+            <div class="flex items-center space-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" x-show="copyNotification" class="w-6 h-6 md:w-7 md:h-7" fill="#22c55e" stroke-width="1" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1" stroke-linecap="round" d="M8.5 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2.5"></path><path stroke="#000000" stroke-width="1" stroke-linecap="round" d="M8 6.4V4.5a.5.5 0 0 1 .5-.5c.276 0 .504-.224.552-.496C9.2 2.652 9.774 1 12 1s2.8 1.652 2.948 2.504c.048.272.276.496.552.496a.5.5 0 0 1 .5.5v1.9a.6.6 0 0 1-.6.6H8.6a.6.6 0 0 1-.6-.6Z"></path></svg>
               <span x-show="copyNotification" class="text-green-500 transition-transform duration-300 group-hover:scale-105" x-cloak>Copied</span>
+            </div>
           </button>
       </div>
     </div>
@@ -100,9 +104,14 @@
       </div>
       {% comment %} mail {% endcomment %}
       <div class="flex items-center justify-center">
-        <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple hover:bg-gray-text-light group flex w-full items-center justify-between rounded-full px-7 py-2 text-center font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-4 md:text-[1.75rem]">
-          <span class="transition duration-700 group-hover:translate-x-3">Let's talk</span>
-          <img src="{% static "images/arrow.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3">
+        <a href="mailto:ttson.cs@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-custom-purple group flex w-full items-center justify-between rounded-full py-2 text-center font-['Wotfard'] text-2xl font-medium text-white transition duration-700 md:py-2 md:text-[1.75rem]">
+          <span class="transition duration-700 group-hover:translate-x-3 pl-6">Let's talk</span>
+          {% comment %} <img src="{% static "images/arrow.svg" %}" alt="arrow" class="w-5 h-5 transition duration-700 md:h-6 md:w-6 group-hover:-translate-x-3"> {% endcomment %}
+          <div class="flex items-center justify-center w-10 h-10 bg-white rounded-full mr-2 transition duration-700 group-hover:-translate-x-3">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 bg-white" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#772af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
@@ -112,25 +121,25 @@
     <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="bg-[#0077b5] rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
         {% comment %} linkedin {% endcomment %}
-        <img src="{% static "images/linkedin.svg" %}" alt="linkedin logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
+        <img src="{% static "images/linkedin.svg" %}" alt="linkedin logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110">
       </div>
     </a>
-    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+    <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="col-span-1 p-6 transition-opacity duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-3xl lg:p-8 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
         {% comment %} github {% endcomment %}
-        <img src="{% static "images/github.svg" %}" alt="github logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
+        <img src="{% static "images/github.svg" %}" alt="github logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110">
       </div>
     </a>
     <a href="https://zaloapp.com/qr/p/vslcavsd6aq2?src=qr" target="_blank" rel="noopener noreferrer" class="bg-[#0068ff] rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
         {% comment %} linkedin {% endcomment %}
-        <img src="{% static "images/zalo.svg" %}" alt="zalo logo" class="w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 group-hover:scale-110">
+        <img src="{% static "images/zalo.svg" %}" alt="zalo logo" class="w-16 h-16 transition-transform duration-300 md:w-20 md:h-20 group-hover:scale-110">
       </div>
     </a>
-    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="bg-gray-bg rounded-3xl p-6 lg:p-8 col-span-1 transition-opacity opacity-0 duration-700 group" x-intersect.half="$el.classList.add('opacity-100')">
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="col-span-1 p-6 transition-opacity duration-700 border-t opacity-0 border-gray-border bg-gray-bg rounded-3xl lg:p-8 group" x-intersect.half="$el.classList.add('opacity-100')">
       <div class="flex flex-col items-center justify-center w-full h-full">
-        {% comment %} linkedin {% endcomment %}
-        <img src="{% static "images/twitter.svg" %}" alt="twitter logo" class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
+        {% comment %} twitter {% endcomment %}
+        <img src="{% static "images/twitter.svg" %}" alt="twitter logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110">
       </div>
     </a>
   </div>
