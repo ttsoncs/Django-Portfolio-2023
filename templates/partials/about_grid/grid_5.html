@@ -1,0 +1,23 @@
+{% load static %}
+<div class="h-[360px] grid grid-cols-1 grid-rows-2 gap-3">
+	<a target="_blank" rel="noopener noreferrer" href="{% static "documents/TrinhTheSon_Resume.pdf" %}" class="!bg-pink-600 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/dot_pattern.svg" %}'); background-size: cover; background-position: center;">
+		<div class="relative flex flex-col items-center justify-center w-full h-full">
+			<h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">RESUME.</h1>
+			<div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+				<svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="#d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+		</div>
+	</a>
+	<a href="{% url "about" %}" class="!bg-[#68CDD0] rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/plus_pattern.svg" %}'); background-size: cover; background-position: center;">
+		<div class="relative flex flex-col items-center justify-center w-full h-full">
+			<h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">ABOUT.</h1>
+			<div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+				<svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#68CDD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+		</div>
+	</a>
+</div>

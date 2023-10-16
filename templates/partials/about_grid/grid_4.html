@@ -1,0 +1,15 @@
+{% load static %}
+<div class="grid h-[270px] grid-cols-2 grid-rows-2 gap-3 md:h-[360px]">
+  <a href="https://linkedin.com/in/ttsoncs" target="_blank" rel="noopener noreferrer" class="group col-span-1 rounded-3xl bg-[#0077b5] p-6 opacity-0 transition-opacity duration-700 lg:p-8" x-intersect.half="$el.classList.add('opacity-100')">
+    <div class="flex flex-col items-center justify-center w-full h-full"><img src="{% static "images/linkedin.svg" %}" alt="linkedin logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110"></div>
+  </a>
+  <a href="https://github.com/ttsoncs/" target="_blank" rel="noopener noreferrer" class="col-span-1 p-6 transition-opacity duration-700 border-t opacity-0 border-gray-border bg-gradient-to-bl from-gray-border via-gray-bg to-gray-bg group rounded-3xl lg:p-8" x-intersect.half="$el.classList.add('opacity-100')">
+    <div class="flex flex-col items-center justify-center w-full h-full"><img src="{% static "images/github.svg" %}" alt="github logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110"></div>
+  </a>
+  <a href="https://zaloapp.com/qr/p/vslcavsd6aq2?src=qr" target="_blank" rel="noopener noreferrer" class="group col-span-1 rounded-3xl bg-[#0068ff] p-6 opacity-0 transition-opacity duration-700 lg:p-8" x-intersect.half="$el.classList.add('opacity-100')">
+    <div class="flex flex-col items-center justify-center w-full h-full"><img src="{% static "images/zalo.svg" %}" alt="zalo logo" class="w-16 h-16 transition-transform duration-300 md:w-20 md:h-20 group-hover:scale-110"></div>
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="col-span-1 p-6 transition-opacity duration-700 border-t opacity-0 border-gray-border bg-gradient-to-bl from-gray-border via-gray-bg to-gray-bg group rounded-3xl lg:p-8" x-intersect.half="$el.classList.add('opacity-100')">
+    <div class="flex flex-col items-center justify-center w-full h-full"><img src="{% static "images/twitter.svg" %}" alt="twitter logo" class="w-10 h-10 transition-transform duration-300 md:w-12 md:h-12 group-hover:scale-110"></div>
+  </a>
+</div>

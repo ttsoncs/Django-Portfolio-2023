@@ -1,0 +1,23 @@
+{% load static %}
+<div class="h-[360px] grid grid-cols-1 gap-3">
+	<a href="{% url "works" %}" class="!bg-green-500 rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/box_pattern.svg" %}'); background-size: cover; background-position: center;">
+		<div class="relative flex flex-col items-center justify-center w-full h-full">
+			<h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">WORKS.</h1>
+			<div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+				<svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+		</div>
+	</a>
+	<a href="{% url "blog" %}" class="!bg-[#003e54] rounded-3xl p-6 opacity-0 transition-opacity duration-700 group" x-intersect.half="$el.classList.add('opacity-100')" style="background: url('{% static "images/cross_pattern.svg" %}'); background-size: cover; background-position: center;">
+		<div class="relative flex flex-col items-center justify-center w-full h-full">
+			<h1 class="font-['Wotfard'] md:text-[2.5rem] font-semibold text-white text-[2rem] transition-transform duration-300 group-hover:scale-110">BLOG.</h1>
+			<div class="absolute bottom-0 left-0 flex items-center justify-center w-10 h-10 transition duration-300 bg-white rounded-full hover:ring-4 hover:ring-slate-300">
+				<svg viewBox="0 0 24 24" class="w-5 h-5" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#9c9c9c">
+					<path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="#003e54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+		</div>
+	</a>
+</div>

@@ -1,5 +1,5 @@
 {% load static %}
-<header class="fixed top-0 left-0 z-20 hidden w-screen md:sticky lg:bg-custom-black" @load.window="$el.classList.remove('hidden')">
+<header class="fixed top-0 left-0 z-20 hidden w-screen max-w-6xl mx-auto md:sticky lg:bg-custom-black" @load.window="$el.classList.remove('hidden')">
   <div x-data="{ open: false }" @resize.window="open = (window.innerWidth >= 768) ? true : false" x-init="open = (window.innerWidth >= 768) ? true : false" class="bg-custom-black/90 lg:bg-custom-black mx-auto flex w-full flex-col p-6 max-lg:backdrop-blur-[6px] md:flex-row md:items-center md:justify-between md:rounded-none md:border-none" :class="{'border-b border-b-gray-border rounded-b-3xl': open, 'border-none rounded-none': !open}">
     <div class="flex items-center justify-between md:mb-0 md:border-none md:pb-0 lg:justify-start" :class="{'pb-6 border-b border-b-gray-border': open, 'pb-0': !open}" x-cloak>
       <a href="{% url "home" %}">
